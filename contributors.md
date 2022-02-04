@@ -2,3 +2,4 @@
 A list of contributors
 
 * Ashley Blacquiere ([ash-teach](https://github.com/ash-teach))
+* Adam Boucek ([bouceka](https://github.com/bouceka))
