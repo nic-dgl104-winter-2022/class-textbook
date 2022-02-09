@@ -12,3 +12,4 @@ A list of contributors
 * Destiny Lewis ([destiny-lewis](https://github.com/destiny-lewis))
 * Phat Tran ([ducphattran](https://github.com/ducphattran))
 * Tyson Foster
+* Brian Massick ([BrianMassick](https://github.com/BrianMassick))
