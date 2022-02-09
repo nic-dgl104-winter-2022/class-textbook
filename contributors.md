@@ -2,6 +2,7 @@
 A list of contributors
 
 * Ashley Blacquiere ([ash-teach](https://github.com/ash-teach))
+* Shay McNeilly ([shayneilly](https://github.com/shayneilly))
 * Trevor Jacob ([Trev004](https://github.com/Trev004))
 * Ma. Katrina P. Magsakay ([magsakay](https://github.com/magsakay))
 * Sandeep Dhaliwal ([SDhaliwal89](https://github.com/SDhaliwal89))
