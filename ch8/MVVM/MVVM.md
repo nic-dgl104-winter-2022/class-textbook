@@ -16,7 +16,11 @@ As in other patterns such as MVP or MVC, a View is a user interface that display
 
 A ViewModel is like a middleman that prepares data for a View. It binds data and business logic from the repository.
 
-<img src="./assets/ViewModel.png" width="700" >
+<figure align="center">
+<img src="./assets/ViewModel.png" height="auto" width="700">
+<figcaption>View-ViewModel </figcaption>
+</figure>
+
 
 In the image, you can see how that all works. A ViewModel makes the appropriate data observable. That means ViewModel exposes relevant data from a Model, and ViewModels don’t need to be directly connected to Views. Views are observing it and catch changes that ViewModel makes.
 
@@ -27,7 +31,10 @@ We would use the [LiveData](https://developer.android.com/topic/libraries/archit
 
 Model or also known as a DataModel, it exposes data. However, there is one intermediate step between the Model and a ViewModel called Repository. The Repository is known as the [Single Source of Truth](https://www.mulesoft.com/resources/esb/what-is-single-source-of-truth-ssot) (SSOT). It has access to the data sources and decides where the data is coming from. The data can be of any kind, and they can come from a remote server or the local database. Whenever a ViewModel needs some data, it gets them from the Repository. As it was with a ViewModel and a ViewModel, the Repository doesn’t know what ViewModels is using its data.
 
-<img src="./assets/Model.png" width="700">
+<figure align="center">
+<img src="./assets/Model.png" height="auto" width="700">
+<figcaption>Model class structure</figcaption>
+</figure>
 
 ## Pros
 
@@ -48,21 +55,31 @@ MVVM offers lots of advantages of separation of concerns by leveraging data bind
 
 Personally, it seems complicated the first time. Once you figure out how MVVM works and you might benefit from it, you will stick to this pattern.
 
+# Crash Code
+
+For my coding demonstration I picked a MVVM tutorial [[2](https://www.youtube.com/watch?v=eUQebUJLnXI)] by Denis Panjuta ([Tutorials.eu](tutorials.eu)). The original course doesn't provide any code resource, therefore I decided to show it and explain MVVM pattern in practice.
+
+We will build a simple app that displays a mock data from [Rick and Morty API](https://rickandmortyapi.com/). We will need a recycler view, Repository, HTTP Client, Moshi, and LiveData. This project will give a notion how MVVM works in Android Development.
+
+<figure align="center">
+<img src="./assets/MVVM_coding_example.png" height="500">
+<figcaption>Architecture used for out example</figcaption>
+</figure>
 
 ### Resource:
 
-[Model View View-Model (MVVM): Getting Started](https://codingwithmitch.com/blog/getting-started-with-mvvm-android/)
+1. [Model View View-Model (MVVM): Getting Started](https://codingwithmitch.com/blog/getting-started-with-mvvm-android/)
 
-[MVVM in Android- Model View View Model Tutorial with Project](https://www.youtube.com/watch?v=eUQebUJLnXI)
+2. [MVVM in Android- Model View View Model Tutorial with Project](https://www.youtube.com/watch?v=eUQebUJLnXI)
 
-[Guide to app architecture ](https://developer.android.com/jetpack/guide)
+3. [Guide to app architecture ](https://developer.android.com/jetpack/guide)
 
-[Introduction to MVVM on Android](https://resocoder.com/2018/08/31/introduction-to-mvvm-on-android/)
+4. [Introduction to MVVM on Android](https://resocoder.com/2018/08/31/introduction-to-mvvm-on-android/)
 
-[Simple Android MVVM using RX and Kotlin](https://medium.com/corebuild-software/simple-android-mvvm-using-rx-and-kotlin-9769a91b03ef)
+5. [Simple Android MVVM using RX and Kotlin](https://medium.com/corebuild-software/simple-android-mvvm-using-rx-and-kotlin-9769a91b03ef)
 
-[Android Architecture Patterns Part 3: Model-View-ViewModel](https://medium.com/upday-devs/android-architecture-patterns-part-3-model-view-viewmodel-e7eeee76b73b)
+6. [Android Architecture Patterns Part 3: Model-View-ViewModel](https://medium.com/upday-devs/android-architecture-patterns-part-3-model-view-viewmodel-e7eeee76b73b)
 
-[Separation of concerns](https://en.wikipedia.org/wiki/Separation_of_concerns)
+7. [Separation of concerns](https://en.wikipedia.org/wiki/Separation_of_concerns)
 
-[What is a Single Source of Truth (SSOT)](https://www.mulesoft.com/resources/esb/what-is-single-source-of-truth-ssot)
+8. [What is a Single Source of Truth (SSOT)](https://www.mulesoft.com/resources/esb/what-is-single-source-of-truth-ssot)
