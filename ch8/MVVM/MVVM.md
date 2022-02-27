@@ -28,11 +28,22 @@ Model or also known as a DataModel, it exposes data. However, there is one inter
 
 <img src="./assets/Model.png" width="700">
 
+## Pros
+ * Due to the separation of ViewModel and Model, they are testable with libraries such as JUnit.
+ * ViewModel is no longer bound to a specific View.
+ * Reduces a number of interfaces that MVP makes you do.
+ * It makes code easier, scalable, and maintainable.
+ * Prevents putting extra code inside a View.
+
+## Cons
+* It is a bit complicated to understand how it works and distinguish it from other patterns.
+* It can be overkill for smaller apps.
+
+
 ## Conclusion
 MVVM offers lots of advantages of separation of concerns by leveraging data binding. Also, the Models drive as much business logic as possible and avoid the logic in Views.
 
 Personally, it seems complicated the first time. Once you figure out how MVVM works and you might benefit from it, you will stick to this pattern.
-
 
 
 
