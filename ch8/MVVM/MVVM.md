@@ -65,7 +65,7 @@ We will build a simple app that displays a mock data from [Rick and Morty API](h
 
 <figure align="center">
 <img src="./assets/MVVM_coding_example.png" height="500">
-<figcaption>Architecture used for out example</figcaption>
+<figcaption>Architecture used for our example</figcaption>
 </figure>
 
 ## Get started
