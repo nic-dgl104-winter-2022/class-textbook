@@ -6,7 +6,10 @@ As a part of my course, I want to introduce you to MVVM. Microsoft introduced th
 
 MVVM uses [Separation of concerns](https://en.wikipedia.org/wiki/Separation_of_concerns), separating a computer program into distinct sections. In the case of MVVM, there are three parts that help accomplish the separation of concerns: View, ViewModel, and DataModel.
 
-<img src="./assets/MVVM_general.png" width="700">
+<figure align="center">
+<img src="./assets/MVVM_general.png" height="auto" width="700">
+<figcaption>MVVM architecture</figcaption>
+</figure>
 
 ## View
 
@@ -18,9 +21,8 @@ A ViewModel is like a middleman that prepares data for a View. It binds data and
 
 <figure align="center">
 <img src="./assets/ViewModel.png" height="auto" width="700">
-<figcaption>View-ViewModel </figcaption>
+<figcaption>View-ViewModel class structure</figcaption>
 </figure>
-
 
 In the image, you can see how that all works. A ViewModel makes the appropriate data observable. That means ViewModel exposes relevant data from a Model, and ViewModels don’t need to be directly connected to Views. Views are observing it and catch changes that ViewModel makes.
 
@@ -40,7 +42,7 @@ Model or also known as a DataModel, it exposes data. However, there is one inter
 
 - Due to the separation of ViewModel and Model, they are testable with libraries such as JUnit.
 - ViewModel is no longer bound to a specific View.
-- Reduces a number of interfaces that MVP makes you do.
+- Reduces a number of interfaces that [MVP](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93presenter) makes you do.
 - It makes code easier, scalable, and maintainable.
 - Prevents putting extra code inside a View.
 
@@ -55,16 +57,374 @@ MVVM offers lots of advantages of separation of concerns by leveraging data bind
 
 Personally, it seems complicated the first time. Once you figure out how MVVM works and you might benefit from it, you will stick to this pattern.
 
-# Crash Code
+# Crash Course
 
 For my coding demonstration I picked a MVVM tutorial [[2](https://www.youtube.com/watch?v=eUQebUJLnXI)] by Denis Panjuta ([Tutorials.eu](tutorials.eu)). The original course doesn't provide any code resource, therefore I decided to show it and explain MVVM pattern in practice.
 
-We will build a simple app that displays a mock data from [Rick and Morty API](https://rickandmortyapi.com/). We will need a recycler view, Repository, HTTP Client, Moshi, and LiveData. This project will give a notion how MVVM works in Android Development.
+We will build a simple app that displays a mock data from [Rick and Morty API](https://rickandmortyapi.com/). We will need a recycler view, Repository, HTTP Client, Moshi, and LiveData. This project will give a notion how MVVM works in Android Development. Our architecture will reflect the image below, so we will pass local database.
 
 <figure align="center">
 <img src="./assets/MVVM_coding_example.png" height="500">
 <figcaption>Architecture used for out example</figcaption>
 </figure>
+
+## Get started
+
+We have to create a new Empty Activity as a starting point. Also, it's necessary to pick Kotlin as the default language. When the project is completed, it's essential to import several libraries.
+
+### build.gradle
+
+```gradle
+dependencies {
+
+	def moshi_version = "1.9.3"
+	def retrofit_version = "2.9.0"
+
+	// First we declare a variable for the lifecycle version so we can we use it
+	def lifecycle_version = "2.4.0-alpha02"
+
+	//ViewModel - Will help us manage data in a lifecycle in ViewModels
+	implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
+
+	//LiveData - Will help us to handle observables
+	implementation "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version"
+
+	// Retrofit - A type-safe HTTP client for Android and Java
+	implementation "com.squareup.retrofit2:retrofit:$retrofit_version"
+
+	// Moshi - It makes it easy to parse JSON into Java and Kotlin classes
+	implementation "com.squareup.moshi:moshi-kotlin:$moshi_version"
+
+	// Retrofit with moshi
+	implementation "com.squareup.retrofit2:converter-moshi:$retrofit_version"
+
+	// Coil - Use an image only with url
+	implementation("io.coil-kt:coil:1.3.0")
+
+```
+
+This tutorial is not focused on an excellent user interface, although we will try to make it more user-friendly with a RecyclerView. We have to create a RecyclerView item XML and an adapter. As you can see in the image below, there is a list of characters displayed in cards.
+
+<figure align="center">
+<img src="./assets/MVVM_app_hompage.png" height="500">
+<figcaption>Demo app</figcaption>
+</figure>
+
+We will create XML files with a cardView and ConstraintLayout with an ImageView and TextView. The second XML file will be our main activity, where we will display the RecyclerView and a ProgressBar that will indicate whether the data are fetching from a server.
+
+### rv_item.xml
+
+```xml
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	app:cardUseCompatPadding="true">
+
+	<androidx.constraintlayout.widget.ConstraintLayout
+		android:layout_width="wrap_content"
+		android:layout_height="match_parent"
+		android:gravity="center">
+
+		<ImageView
+			android:id="@+id/image"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:scaleType="centerCrop"
+			android:src="@drawable/ic_launcher_background"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toTopOf="parent" />
+
+		<TextView
+			android:id="@+id/name"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:textColor="@color/black"
+			android:textSize="14sp"
+			app:layout_constraintEnd_toEndOf="@+id/image"
+			app:layout_constraintStart_toStartOf="@+id/image"
+			app:layout_constraintTop_toBottomOf="@+id/image"
+			tools:text="Name"
+
+			/>
+
+	</androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
+```
+
+### activity_main.xml
+
+```XML
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+	<ProgressBar
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/progressBar"
+		tools:visibility="visible"
+		android:visibility="gone"
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		/>
+
+	<androidx.recyclerview.widget.RecyclerView
+		android:id="@+id/characterRv"
+		android:layout_height="match_parent"
+		android:layout_width="match_parent"
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintBottom_toBottomOf="parent"
+		/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+```
+
+Once we have prepared the XML files, we have to prepare Kotlin files that will handle [Rick and Morty API](https://rickandmortyapi.com/), we have to create an adapter that will manage the RecyclerView.
+
+### MainAdapter.kt
+
+```kotlin
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import android.widget.ImageView
+import android.widget.TextView
+import androidx.recyclerview.widget.RecyclerView
+import coil.load
+import coil.transform.CircleCropTransformation
+
+class MainAdapter(val characterList: List<Character>) :
+	RecyclerView.Adapter<MainAdapter.MainViewHolder>() {
+
+	inner class MainViewHolder(private val itemView: View) : RecyclerView.ViewHolder(itemView) {
+		fun bindData(character: Character) {
+			val name = itemView.findViewById<TextView>(R.id.name)
+			val image = itemView.findViewById<ImageView>(R.id.image)
+
+			name.text = character.name
+			// for displaying images that have only url we use coil library
+			image.load(character.image) {
+				transformations(CircleCropTransformation())
+			}
+		}
+	}
+
+	override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MainViewHolder {
+		return MainViewHolder(
+			LayoutInflater.from(parent.context).inflate(R.layout.rv_item, parent, false)
+		)
+	}
+
+	override fun onBindViewHolder(holder: MainViewHolder, position: Int) {
+		holder.bindData(characterList[position])
+	}
+
+	override fun getItemCount(): Int {
+		return characterList.size
+	}
+}
+```
+
+When you have the adapter done. We will start with a Kotlin class Character.kt will indicate a data class where we will structure the data we want to display. We use a library [Moshi](https://github.com/square/moshi) that parses JSON into a Kotlin class.
+
+### Character.kt
+
+```kotlin
+import com.squareup.moshi.Json
+
+data class Character(
+	@Json(name = "name")
+	val name: String,
+	@Json(name = "image")
+	val image: String
+)
+
+data class CharacterResponse(
+	@Json(name = "results")
+	val result: List<Character>
+)
+```
+
+Next, we will make an API service that uses a library retrofit for requesting the remote API.
+
+### ApiClient.kt
+
+```kotlin
+import com.squareup.moshi.Moshi
+import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
+import retrofit2.Call
+import retrofit2.Retrofit
+import retrofit2.converter.moshi.MoshiConverterFactory
+import retrofit2.http.GET
+import retrofit2.http.Query
+
+// object allows us to call ApiClient service without initializing the class
+object ApiClient {
+
+	private val BASE_URL = "https://rickandmortyapi.com/api/"
+
+	private val moshi = Moshi.Builder().add(KotlinJsonAdapterFactory()).build()
+
+	// lazy means it is used just when it is needed
+	private val retrofit: Retrofit by lazy {
+		Retrofit.Builder().baseUrl(BASE_URL)
+			.addConverterFactory(MoshiConverterFactory.create(moshi)).build()
+	}
+
+	val apiService:ApiService by lazy {
+		retrofit.create(ApiService::class.java)
+	}
+}
+
+interface ApiService {
+	@GET("character")
+	fun fetchCharacters(@Query("page")page:String): Call<CharacterResponse>
+}
+```
+
+Now we will make a repository that has the decision-making role. It decides where the data comes from. Does it fetch data from the local database? Does it fetch the data from a remote data source? How long does it need to keep the data?
+
+However, our repository will be simple and only calls ApiClient to fetch the characters.
+
+### Repository.kt
+
+```kotlin
+class Repository(private val apiService: ApiService) {
+	fun getCharacters(page:String) = apiService.fetchCharacters(page)
+}
+```
+
+Before we create our ViewModel, we should make a screen state that will help with the asynchronous stages of a request. Let's make a sealed class ScreenState.kt
+
+### ScreenState.kt
+
+```kotlin
+sealed class ScreenState<T>(val data: T? = null, val message: String? = null) {
+
+	class Success<T>(data: T) : ScreenState<T>(data)
+
+	class Loading<T>(data: T? = null) : ScreenState<T>(data)
+
+	class Error<T>(message: String, data: T? = null) : ScreenState<T>(data, message)
+}
+```
+
+In our ViewModel, we will manage an observable that will notify our Views (in our case, only one View) there is a change and send the data once it fetches from the repository.
+
+```kotlin
+import androidx.lifecycle.LiveData
+import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.ViewModel
+import retrofit2.Call
+import retrofit2.Callback
+import retrofit2.Response
+
+class MainViewModel(private val repository: Repository = Repository(ApiClient.apiService)) :
+	ViewModel() {
+
+	// create an observable
+	private var _charactersLiveData = MutableLiveData<ScreenState<List<Character>?>>()
+
+	// create a getter for the observable
+	val characterLiveData: LiveData<ScreenState<List<Character>?>> get() = _charactersLiveData
+
+	// first execution after constructor
+	init {
+		fetchCharacter()
+	}
+
+	private fun fetchCharacter() {
+		// we define a call we want to make
+		val client = repository.getCharacters("1")
+		// our observable gets a heads up that data is loading
+		_charactersLiveData.postValue(ScreenState.Loading())
+		// enqueue will send a request asynchronously, the parameter is a callback
+		client.enqueue(object : Callback<CharacterResponse> {
+			override fun onResponse(
+				call: Call<CharacterResponse>,
+				response: Response<CharacterResponse>
+			) {
+				if (response.isSuccessful) {
+					_charactersLiveData.postValue(ScreenState.Success(response.body()?.result))
+				} else {
+					_charactersLiveData.postValue(ScreenState.Error(response.code().toString()))
+				}
+			}
+			override fun onFailure(call: Call<CharacterResponse>, t: Throwable) {
+				_charactersLiveData.postValue(ScreenState.Error(t.message.toString()))
+			}
+		})
+	}
+}
+```
+
+Finally, we can wire everything up and create our MainActivity, observing LiveData from the ViewModel. There will be a progress bar that will occur while the data are fetching. Based on each stage that we initialized in ScreenState.kt, we will display the progress bar, recycler view, or snack bar with an error.
+
+```kotlin
+import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+import android.view.View
+import android.widget.ProgressBar
+import androidx.lifecycle.ViewModelProvider
+import androidx.recyclerview.widget.RecyclerView
+import androidx.recyclerview.widget.StaggeredGridLayoutManager
+import com.google.android.material.snackbar.Snackbar
+
+
+class MainActivity : AppCompatActivity() {
+
+	// gets initialized once it's needed and it calls Init method the starts fetching data
+	private val viewModel: MainViewModel by lazy {
+		ViewModelProvider(this).get(MainViewModel::class.java)
+	}
+
+	override fun onCreate(savedInstanceState: Bundle?) {
+		super.onCreate(savedInstanceState)
+		setContentView(R.layout.activity_main)
+
+		viewModel.characterLiveData.observe(this) { state ->
+			processCharactersResponse(state)
+		}
+	}
+
+	private fun processCharactersResponse(state: ScreenState<List<Character>?>) {
+
+		val pb = findViewById<ProgressBar>(R.id.progressBar)
+		when (state) {
+			is ScreenState.Loading -> {
+				pb.visibility = View.VISIBLE
+			}
+			is ScreenState.Success -> {
+				pb.visibility = View.GONE
+				if (state.data != null) {
+					val adapter = MainAdapter(state.data)
+					val recyclerView = findViewById<RecyclerView>(R.id.characterRv)
+					recyclerView?.layoutManager =
+						StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL)
+					recyclerView?.adapter = adapter
+				}
+			}
+			is ScreenState.Error -> {
+				pb.visibility = View.GONE
+				val view = pb.rootView
+				// tells the snack bar where it is
+				Snackbar.make(view, state.message!!, Snackbar.LENGTH_LONG).show()
+			}
+		}
+	}
+}
+ ```
+
+## Conclusion
+That's it! Now you can make an app in MVVM pattern! Wasn't it fun? You can improve the app and implement a local database with a library Room and SQLite to have a complete code example in MVVM. Once you code finishes the crash course, it will make more sense than theoretically explaining the pattern.
 
 ### Resource:
 
