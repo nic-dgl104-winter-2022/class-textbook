@@ -107,7 +107,6 @@ This tutorial is not focused on an excellent user interface, although we will tr
 
 <figure align="center">
 <img src="./assets/MVVM_app_hompage.png" height="500">
-<figcaption>Demo app</figcaption>
 </figure>
 
 We will create XML files with a cardView and ConstraintLayout with an ImageView and TextView. The second XML file will be our main activity, where we will display the RecyclerView and a ProgressBar that will indicate whether the data are fetching from a server.
@@ -319,6 +318,7 @@ sealed class ScreenState<T>(val data: T? = null, val message: String? = null) {
 
 In our ViewModel, we will manage an observable that will notify our Views (in our case, only one View) there is a change and send the data once it fetches from the repository.
 
+### MainViewModel.kt
 ```kotlin
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
@@ -368,6 +368,7 @@ class MainViewModel(private val repository: Repository = Repository(ApiClient.ap
 
 Finally, we can wire everything up and create our MainActivity, observing LiveData from the ViewModel. There will be a progress bar that will occur while the data are fetching. Based on each stage that we initialized in ScreenState.kt, we will display the progress bar, recycler view, or snack bar with an error.
 
+### MainActivity.kt
 ```kotlin
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
