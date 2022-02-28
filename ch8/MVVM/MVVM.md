@@ -1,4 +1,6 @@
+<p align="center">
 <img src="./assets/unsplash_illustration_image.jpg" width="700">
+</p>
 
 # A detailed exploration of the Model View ViewModel architectural pattern
 
@@ -6,10 +8,10 @@ As a part of my course, I want to introduce you to MVVM. Microsoft introduced th
 
 MVVM uses [Separation of concerns](https://en.wikipedia.org/wiki/Separation_of_concerns), separating a computer program into distinct sections. In the case of MVVM, there are three parts that help accomplish the separation of concerns: View, ViewModel, and DataModel.
 
-<figure align="center">
+<p align="center">
 <img src="./assets/MVVM_general.png" height="auto" width="700">
-<figcaption>MVVM architecture</figcaption>
-</figure>
+<p align="center"><i>MVVM architecture</i></p>
+</p>
 
 ## View
 
@@ -19,10 +21,10 @@ As in other patterns such as MVP or MVC, a View is a user interface that display
 
 A ViewModel is like a middleman that prepares data for a View. It binds data and business logic from the repository.
 
-<figure align="center">
+<p align="center">
 <img src="./assets/ViewModel.png" height="auto" width="700">
-<figcaption>View-ViewModel class structure</figcaption>
-</figure>
+<p align="center"><i>View-ViewModel class structure</i></p>
+</p>
 
 In the image, you can see how that all works. A ViewModel makes the appropriate data observable. That means ViewModel exposes relevant data from a Model, and ViewModels don’t need to be directly connected to Views. Views are observing it and catch changes that ViewModel makes.
 
@@ -33,10 +35,10 @@ We would use the [LiveData](https://developer.android.com/topic/libraries/archit
 
 Model or also known as a DataModel, it exposes data. However, there is one intermediate step between the Model and a ViewModel called Repository. The Repository is known as the [Single Source of Truth](https://www.mulesoft.com/resources/esb/what-is-single-source-of-truth-ssot) (SSOT). It has access to the data sources and decides where the data is coming from. The data can be of any kind, and they can come from a remote server or the local database. Whenever a ViewModel needs some data, it gets them from the Repository. As it was with a ViewModel and a ViewModel, the Repository doesn’t know what ViewModels is using its data.
 
-<figure align="center">
+<p align="center">
 <img src="./assets/Model.png" height="auto" width="700">
-<figcaption>Model class structure</figcaption>
-</figure>
+<p align="center"><i>Model class structure</i></p>
+</p>
 
 ## Pros
 
@@ -63,10 +65,10 @@ For my coding demonstration I picked a MVVM tutorial [[2](https://www.youtube.co
 
 We will build a simple app that displays a mock data from [Rick and Morty API](https://rickandmortyapi.com/). We will need a recycler view, Repository, HTTP Client, Moshi, and LiveData. This project will give a notion how MVVM works in Android Development. Our architecture will reflect the image below, so we will pass local database.
 
-<figure align="center">
-<img src="./assets/MVVM_coding_example.png" height="500">
-<figcaption>Architecture used for our example</figcaption>
-</figure>
+<p align="center">
+<img src="./assets/MVVM_coding_example.png" height="auto" width="500">
+<p align="center"><i>Architecture used for our example</i></p>
+</p>
 
 ## Get started
 
@@ -105,9 +107,10 @@ dependencies {
 
 This tutorial is not focused on an excellent user interface, although we will try to make it more user-friendly with a RecyclerView. We have to create a RecyclerView item XML and an adapter. As you can see in the image below, there is a list of characters displayed in cards.
 
-<figure align="center">
-<img src="./assets/MVVM_app_hompage.png" height="500">
-</figure>
+<p align="center">
+<img src="./assets/MVVM_app_hompage.png" height="500" >
+<p align="center"><i>Demo app</i></p>
+</p>
 
 We will create XML files with a cardView and ConstraintLayout with an ImageView and TextView. The second XML file will be our main activity, where we will display the RecyclerView and a ProgressBar that will indicate whether the data are fetching from a server.
 
@@ -319,6 +322,7 @@ sealed class ScreenState<T>(val data: T? = null, val message: String? = null) {
 In our ViewModel, we will manage an observable that will notify our Views (in our case, only one View) there is a change and send the data once it fetches from the repository.
 
 ### MainViewModel.kt
+
 ```kotlin
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
@@ -369,6 +373,7 @@ class MainViewModel(private val repository: Repository = Repository(ApiClient.ap
 Finally, we can wire everything up and create our MainActivity, observing LiveData from the ViewModel. There will be a progress bar that will occur while the data are fetching. Based on each stage that we initialized in ScreenState.kt, we will display the progress bar, recycler view, or snack bar with an error.
 
 ### MainActivity.kt
+
 ```kotlin
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -422,9 +427,10 @@ class MainActivity : AppCompatActivity() {
 		}
 	}
 }
- ```
+```
 
 ## Conclusion
+
 That's it! Now you can make an app in MVVM pattern! Wasn't it fun? You can improve the app and implement a local database with a library Room and SQLite to have a complete code example in MVVM. Once you code finishes the crash course, it will make more sense than theoretically explaining the pattern.
 
 ### Resource:
