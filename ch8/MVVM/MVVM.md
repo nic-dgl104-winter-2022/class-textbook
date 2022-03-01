@@ -4,9 +4,9 @@
 
 # A detailed exploration of the Model View ViewModel architectural pattern
 
-As a part of my course, I want to introduce you to MVVM. Microsoft introduced this pattern in 2005, and it runs on [.NET](https://dotnet.microsoft.com/en-us/), [Silverlight](https://www.microsoft.com/silverlight/). Also, Google fully supports and [encourages using MVVM](https://developer.android.com/jetpack/guide) for Android development with their first-party libraries such as LiveData. Kotlin is a technology I’m going to use for my demonstration.
+As part of my course, I want to introduce you to MVVM. Microsoft introduced this pattern in 2005, and it runs on [.NET](https://dotnet.microsoft.com/en-us/), [Silverlight](https://www.microsoft.com/silverlight/). Google also fully supports and [encourages using MVVM](https://developer.android.com/jetpack/guide) for Android development with their first-party libraries such as LiveData. Kotlin is the technology that I’m going to use for my demonstration.
 
-MVVM uses [Separation of concerns](https://en.wikipedia.org/wiki/Separation_of_concerns), separating a computer program into distinct sections. In the case of MVVM, there are three parts that help accomplish the separation of concerns: View, ViewModel, and DataModel.
+MVVM uses [Separation of concerns](https://en.wikipedia.org/wiki/Separation_of_concerns) to separate a computer program into distinct sections. In the case of MVVM, there are three parts that help accomplish the separation of concerns: View, ViewModel, and DataModel.
 
 <p align="center">
 <img src="./assets/MVVM_general.png" height="auto" width="700">
@@ -26,14 +26,14 @@ A ViewModel is like a middleman that prepares data for a View. It binds data and
 <p align="center"><i>View-ViewModel class structure</i></p>
 </p>
 
-In the image, you can see how that all works. A ViewModel makes the appropriate data observable. That means ViewModel exposes relevant data from a Model, and ViewModels don’t need to be directly connected to Views. Views are observing it and catch changes that ViewModel makes.
+In the image above, you can see how this all works. A ViewModel makes the appropriate data observable. That means the ViewModel exposes relevant data from the Model, and ViewModels don’t need to be directly connected to Views. Views are observing it and reflect changes that the ViewModel makes.
 
-The advantage of this approach is that a ViewModel doesn’t know that Views are observing it. It can be easier for testing that there is less engagement between classes.
-We would use the [LiveData](https://developer.android.com/topic/libraries/architecture/livedata) library for this observing data to create observables. The biggest advantage of this library is that it unsubscribe activities or fragments that have been already destroyed. A developer is free from managing the lifecycle methods then.
+The advantage of this approach is that the ViewModel doesn’t know that Views are observing it. Having less engagement between classes makes easier to test.
+We would use the [LiveData](https://developer.android.com/topic/libraries/architecture/livedata) library for observing data to create observables. The biggest advantage of this library is that it unsubscribes activities or fragments that have been destroyed. A developer is then free from managing the lifecycle methods.
 
 ## Model
 
-Model or also known as a DataModel, it exposes data. However, there is one intermediate step between the Model and a ViewModel called Repository. The Repository is known as the [Single Source of Truth](https://www.mulesoft.com/resources/esb/what-is-single-source-of-truth-ssot) (SSOT). It has access to the data sources and decides where the data is coming from. The data can be of any kind, and they can come from a remote server or the local database. Whenever a ViewModel needs some data, it gets them from the Repository. As it was with a ViewModel and a ViewModel, the Repository doesn’t know what ViewModels is using its data.
+Model, also known as a DataModel, exposes data. However, there is one intermediate step between the Model and a ViewModel which is called Repository. The Repository is known as the [Single Source of Truth](https://www.mulesoft.com/resources/esb/what-is-single-source-of-truth-ssot) (SSOT). It has access to the data sources and decides where the data is coming from. The data can be of any kind, and they can come from a remote server or the local database. Whenever a ViewModel needs some data, this comes from the Repository. As it was with a View and a ViewModel, the Repository doesn’t know that ViewModels is using its data.
 
 <p align="center">
 <img src="./assets/Model.png" height="auto" width="700">
@@ -42,28 +42,28 @@ Model or also known as a DataModel, it exposes data. However, there is one inter
 
 ## Pros
 
-- Due to the separation of ViewModel and Model, they are testable with libraries such as JUnit.
-- ViewModel is no longer bound to a specific View.
-- Reduces a number of interfaces that [MVP](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93presenter) makes you do.
-- It makes code easier, scalable, and maintainable.
-- Prevents putting extra code inside a View.
+- Due to the separation of the ViewModel and the Model, they are testable with libraries such as JUnit.
+- The ViewModel is no longer bound to a specific View.
+- MVVM reduces the number of interfaces that [MVP](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93presenter) makes you do.
+- It makes the code easier to read, more scalable, and  more maintainable.
+- It prevents putting extra code inside a View.
 
 ## Cons
 
-- It is a bit complicated to understand how it works and distinguish it from other patterns.
+- It is a bit complicated to understand how it works and to distinguish it from other patterns.
 - It can be overkill for smaller apps.
 
 ## Conclusion
 
 MVVM offers lots of advantages of separation of concerns by leveraging data binding. Also, the Models drive as much business logic as possible and avoid the logic in Views.
 
-Personally, it seems complicated the first time. Once you figure out how MVVM works and you might benefit from it, you will stick to this pattern.
+Personally, I feel it seems complicated at first. However, once you figure out how MVVM works, you might benefit from it and you will stick to this pattern.
 
 # Crash Course
 
 For my coding demonstration I picked a MVVM tutorial [[2](https://www.youtube.com/watch?v=eUQebUJLnXI)] by Denis Panjuta ([Tutorials.eu](tutorials.eu)). The original course doesn't provide any code resource, therefore I decided to show it and explain MVVM pattern in practice.
 
-We will build a simple app that displays a mock data from [Rick and Morty API](https://rickandmortyapi.com/). We will need a recycler view, Repository, HTTP Client, Moshi, and LiveData. This project will give a notion how MVVM works in Android Development. Our architecture will reflect the image below, so we will pass local database.
+We will build a simple app that displays mock data from [Rick and Morty API](https://rickandmortyapi.com/). We will need a recycler view, Repository, HTTP Client, Moshi, and LiveData. This project will give an idea of how MVVM works in Android Development. Our architecture will reflect the image below, so we will remove a local database from the pattern.
 
 <p align="center">
 <img src="./assets/MVVM_coding_example.png" height="auto" width="500">
@@ -105,14 +105,14 @@ dependencies {
 
 ```
 
-This tutorial is not focused on an excellent user interface, although we will try to make it more user-friendly with a RecyclerView. We have to create a RecyclerView item XML and an adapter. As you can see in the image below, there is a list of characters displayed in cards.
+This tutorial is not focused on an excellent user interface, although we will try to make it more user-friendly with a RecyclerView. We have to create a RecyclerView item XML and an adapter. As you can see in the image below, there is a list of characters displayed on cards.
 
 <p align="center">
 <img src="./assets/MVVM_app_hompage.png" height="500" >
 <p align="center"><i>Demo app</i></p>
 </p>
 
-We will create XML files with a cardView and ConstraintLayout with an ImageView and TextView. The second XML file will be our main activity, where we will display the RecyclerView and a ProgressBar that will indicate whether the data are fetching from a server.
+We will create XML files with a CardView and ConstraintLayout with an ImageView and a TextView. The second XML file will be our main activity, where we will display the RecyclerView and a ProgressBar that will indicate whether the data is being fetched from a server.
 
 ### rv_item.xml
 
@@ -189,7 +189,7 @@ We will create XML files with a cardView and ConstraintLayout with an ImageView 
 </androidx.constraintlayout.widget.ConstraintLayout>
 ```
 
-Once we have prepared the XML files, we have to prepare Kotlin files that will handle [Rick and Morty API](https://rickandmortyapi.com/), we have to create an adapter that will manage the RecyclerView.
+Once we have prepared the XML files, we have to prepare Kotlin files that will handle [Rick and Morty API](https://rickandmortyapi.com/), and we have to create an adapter that will manage the RecyclerView.
 
 ### MainAdapter.kt
 
@@ -235,7 +235,7 @@ class MainAdapter(val characterList: List<Character>) :
 }
 ```
 
-When you have the adapter done. We will start with a Kotlin class Character.kt will indicate a data class where we will structure the data we want to display. We use a library [Moshi](https://github.com/square/moshi) that parses JSON into a Kotlin class.
+Once we've completed the adapter, we will start with a Kotlin class Character.kt which will indicate a 'data class' where we will structure the data we want to display. We use a library [Moshi](https://github.com/square/moshi) that parses JSON into a Kotlin class.
 
 ### Character.kt
 
@@ -255,7 +255,7 @@ data class CharacterResponse(
 )
 ```
 
-Next, we will make an API service that uses a library retrofit for requesting the remote API.
+Next, we will make an API service that uses a library Retrofit for requesting the remote API.
 
 ### ApiClient.kt
 
@@ -292,9 +292,9 @@ interface ApiService {
 }
 ```
 
-Now we will make a repository that has the decision-making role. It decides where the data comes from. Does it fetch data from the local database? Does it fetch the data from a remote data source? How long does it need to keep the data?
+Now we will make a Repository that has the decision-making role. It decides where the data comes from. Does it fetch data from the local database? Does it fetch the data from a remote data source? How long does it need to keep the data?
 
-However, our repository will be simple and only calls ApiClient to fetch the characters.
+However, our Repository will be simple and only call ApiClient to fetch the characters.
 
 ### Repository.kt
 
@@ -304,7 +304,7 @@ class Repository(private val apiService: ApiService) {
 }
 ```
 
-Before we create our ViewModel, we should make a screen state that will help with the asynchronous stages of a request. Let's make a sealed class ScreenState.kt
+Before we create our ViewModel, we should make a screen state that will help with the asynchronous stages of a request. Let's make a sealed class ScreenState.kt.
 
 ### ScreenState.kt
 
@@ -319,7 +319,7 @@ sealed class ScreenState<T>(val data: T? = null, val message: String? = null) {
 }
 ```
 
-In our ViewModel, we will manage an observable that will notify our Views (in our case, only one View) there is a change and send the data once it fetches from the repository.
+In our ViewModel, we will manage an observable that will notify our Views (in our case, only one View) that there is a change and send the data once it fetches it from the repository.
 
 ### MainViewModel.kt
 
@@ -370,7 +370,7 @@ class MainViewModel(private val repository: Repository = Repository(ApiClient.ap
 }
 ```
 
-Finally, we can wire everything up and create our MainActivity, observing LiveData from the ViewModel. There will be a progress bar that will occur while the data are fetching. Based on each stage that we initialized in ScreenState.kt, we will display the progress bar, recycler view, or snack bar with an error.
+Finally, we can wire everything up and create our MainActivity, observing LiveData from the ViewModel. There will be a progress bar that will occur while the data is being fetched. Based on each stage that we initialized in ScreenState.kt, we will display the progress bar, recycler view, or snack bar with an error.
 
 ### MainActivity.kt
 
@@ -431,7 +431,7 @@ class MainActivity : AppCompatActivity() {
 
 ## Conclusion
 
-That's it! Now you can make an app in MVVM pattern! Wasn't it fun? You can improve the app and implement a local database with a library Room and SQLite to have a complete code example in MVVM. Once you code finishes the crash course, it will make more sense than theoretically explaining the pattern.
+That's it! Now you can make an app in MVVM pattern! Wasn't it fun? You can improve the app and implement a local database with a library Room and SQLite to have a complete code example in MVVM. Once you finish the crash course, it will make more sense than having the pattern theoretically explained.
 
 ### Resource:
 
