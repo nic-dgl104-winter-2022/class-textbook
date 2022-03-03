@@ -53,11 +53,36 @@ const charCodes = map.call('Hello World', (x) => x.charCodeAt(0));
  
  ### Reduce
  
-  The functional method reduce(), contrary to how it might sound, **adds the sum of all values in an array**. Within reduce(), you can pass a function known as the callback function, or callbackFn, which can take four arguments of _previousValue, currentValue, currentIndex,_ and _array_. 
+  The simplist way of thinking of functional method reduce(), adds the sum of all values in an array, but that isn't quite right. What the reducer does is takes two arguements, which can be an object, array, or function, and returns only a single value. The termninology of these arguments are known as the reducer and accumulator; the latter of which is thhe value we end with, and the reducer the action we will perform on the two arguments. Let's take a look at what some reducer examples can perform
+  
+  This use of reduce() simply adds and then returns the sum of all the values in the array.
   ```javascript
-  let sum = [0, 1, 2, 3].reduce(function (previousValue, currentValue) {
-  return previousValue + currentValue
-  }, 0)
+  //this is our initial value i.e. the starting point
+  const initialValue = 0;
+  
+  //numbers array
+  const numbers = [5, 10, 15];
+  
+  //reducer method that takes in the accumulator and next item
+  const reducer = (accumulator, item) => {
+  return accumulator + item;
+  };
+  
+  //we give the reduce method our reducer function and our initial value
+  const total = numbers.reduce(reducer, initialValue)
+  ```
+  This use of reduce() takes an array of arrays, and concatinates all of the indexes of the sub-arrays into a new single array. 
+  ```javascript
+  let concatinate = [[2, 4], [6, 8], [10, 12]].reduce(
+  function(previousValue, currentValue) {
+    return previousValue.concat(currentValue)
+  },
+  []
+)
+// flattened is [2, 4, 6, 8, 10, 12]
+  ```
+  ```javascript
+  
   ```
   
  ### FlatMap
@@ -73,3 +98,5 @@ const charCodes = map.call('Hello World', (x) => x.charCodeAt(0));
 - https://www.infoworld.com/article/3613715/what-is-functional-programming-a-practical-guide.html
 - https://www.joelonsoftware.com/2006/08/01/can-your-programming-language-do-this/
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map
+- https://enlear.academy/reducers-in-javascript-f5317b34cba2
+- https://www.digitalocean.com/community/tutorials/js-finally-understand-reduce
