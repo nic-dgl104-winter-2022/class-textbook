@@ -116,7 +116,7 @@ const charCodes = map.call('Hello World', (x) => x.charCodeAt(0));
   ```
   
  ### flatmap() and flat()
- <p align='center'><img src = ' https://download.eclipse.org/microprofile/microprofile-reactive-streams-operators-1.0/apidocs/org/eclipse/microprofile/reactive/streams/operators/doc-files/example.png' width = "350"></p>
+ <p align='center'><img src = 'https://cdn.discordapp.com/attachments/910117718924099594/948956015234256966/unknown.png' width = "350"></p>
 
  
  The flapmap() method is actually a combination of two other methods-- as the name would imply, flat() and map(). Before touching on flatmap(), we should first cover what flat() itself does.
