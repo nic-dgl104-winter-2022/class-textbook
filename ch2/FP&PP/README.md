@@ -53,6 +53,13 @@ const charCodes = map.call('Hello World', (x) => x.charCodeAt(0));
  
  ### Reduce
  
+  The functional method reduce(), contrary to how it might sound, **adds the sum of all values in an array**. Within reduce(), you can pass a function known as the callback function, or callbackFn, which can take four arguments of _previousValue, currentValue, currentIndex,_ and _array_. 
+  ```javascript
+  let sum = [0, 1, 2, 3].reduce(function (previousValue, currentValue) {
+  return previousValue + currentValue
+  }, 0)
+  ```
+  
  ### FlatMap
  
  ### Sort
