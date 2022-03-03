@@ -24,6 +24,7 @@ As noted here, object oriented programming addresses software evolution by creat
   Here, I will cover some methods that are used in functional programming, particularily the most common ones such as **map**, **reduce**, **flatmap**, and **sort**. JavaScript will be the language used in the following examples.
  
  ### map()
+  <p align='center'><img src = 'https://upload.wikimedia.org/wikipedia/commons/0/06/Mapping-steps-loillibe-new.gif' width = "300"></p>
  
  The functional map() method **takes a given array** and modifies the elements within its indexes to **output a new array**. Below are a few examples on applications of the method, albeit rather simple.
  
