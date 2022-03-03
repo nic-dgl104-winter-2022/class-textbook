@@ -26,7 +26,7 @@ A ViewModel is like a middleman that prepares data for a View. It binds data and
 <p align="center"><i>View-ViewModel class structure</i></p>
 </p>
 
-In the image above, you can see how this all works. A ViewModel makes the appropriate data observable. That means the ViewModel exposes relevant data from the Model, and ViewModels don’t need to be directly connected to Views. Views are observing it and reflect changes that the ViewModel makes.
+In the image above, you can see how this all works. A ViewModel makes the appropriate data [observable](https://www.raywenderlich.com/books/reactive-programming-with-kotlin/v2.0/chapters/2-observables). That means the ViewModel exposes relevant data from the Model, and ViewModels don’t need to be directly connected to Views. Views are observing it and reflect changes that the ViewModel makes.
 
 The advantage of this approach is that the ViewModel doesn’t know that Views are observing it. Having less engagement between classes makes easier to test.
 We would use the [LiveData](https://developer.android.com/topic/libraries/architecture/livedata) library for observing data to create observables. The biggest advantage of this library is that it unsubscribes activities or fragments that have been destroyed. A developer is then free from managing the lifecycle methods.
