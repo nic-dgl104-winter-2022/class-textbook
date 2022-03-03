@@ -138,7 +138,21 @@ const result = names.flatMap((name, index) => [name, index]);
 // [ 'jane', 1, 'john', 2 ]
 ```
  
- ### Sort
+ ### sort()
+ 
+ The sort() method as it sounds, sorts the contents of a given array. Unlike the previous methods of functional programming, this sort() method does in fact change the contents of the array as it returns it. The sort method aligns the contents alphabetically, even if they are numbers. Meaning that an array of ascending numbers would first be sorted by the first character the compiler sees.
+ 
+ Sorting Names and Numbers:
+ 
+ ```javascript
+const months = ['March', 'Jan', 'Feb', 'Dec'];
+months.sort();
+// expected output: Array ["Dec", "Feb", "Jan", "March"]
+
+const array1 = [1, 30, 4, 21, 100000];
+array1.sort();
+// expected output: Array [1, 100000, 21, 30, 4]
+ ```
 
 # Platform Programming
 
