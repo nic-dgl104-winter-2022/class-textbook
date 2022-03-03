@@ -112,7 +112,31 @@ const charCodes = map.call('Hello World', (x) => x.charCodeAt(0));
   }, {});
   ```
   
- ### FlatMap
+ ### flatmap()
+ 
+ The flapmap() method is actually a combination of two other methods-- as the name would imply, flat() and map(). Before touching on flatmap(), we should first cover what flat() itself does.
+ 
+ Like we were able to do with the reduce() method, flat()'s exclusive roll is to create a new array from all of the values of arrays that may be nested within other arrays. In the following example:
+ ```javascript
+ const nested = [['a', 'b'], ['c']];
+
+const flattened = nested.flat();
+
+console.log(flattened);
+// ['a', 'b', 'c']
+ ```
+ We simply recieve a new array from a nested array that contained two addtional arrays.
+ 
+ Thinking back to the map() method, flatmap() would simply apply both methods onto the given array. However it's important to note that the map() function is done first, and then the flat() method after, contrary to what the name would otherwise suggest. The only thing you should keep in mind as you use flatmap() is that it is only able to flatten arrays that are nested 'one level deep'. Nests of nested arrays would only flatten the array by one level. In this event, you would want to call the methods seperately using flat() and map().
+
+An example of flatmap()
+```javascript
+const names = ['jane', 'john'];
+
+const result = names.flatMap((name, index) => [name, index]);
+
+// [ 'jane', 1, 'john', 2 ]
+```
  
  ### Sort
 
@@ -127,3 +151,4 @@ const charCodes = map.call('Hello World', (x) => x.charCodeAt(0));
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map
 - https://enlear.academy/reducers-in-javascript-f5317b34cba2
 - https://www.digitalocean.com/community/tutorials/js-finally-understand-reduce
+- https://www.samanthaming.com/tidbits/71-how-to-flatten-array-using-array-flat/
