@@ -15,8 +15,8 @@ Here, I will introduce you to functional programming and some of its paradigms. 
 
 As noted here, object oriented programming addresses software evolution by creating more content to accomplish the task at hand, often by creating new classes which can bloat the software and scales poorly. Functional programming on the other hand would minimize the amount of new code added, solving complex problems in a simpler way with the use of lambda operators, improving modularity, and code maintainabilty by use of nested functions. This isn't to say that OOP and Functional Programming are mutually exclusive; though being able to recognize where a developer is able to use functional programming is beneficial to development as a whole.
 
-## What is Functional Programming?
+**_What is Functional Programming?_**
  
- Functional Programming is about building functions for immutable variables-- ones that cannot be changed. 
+ Functional programming is best understood as an approach towards coding-- using functions most effectively to create concise and rectifiable code. This is what is meant to be a paradigm, a pattern, model, or methodology for how something is done or accomplished.
 
 # Platform Programming
