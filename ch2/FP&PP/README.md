@@ -162,7 +162,7 @@ array1.sort();
 - https://www.freecodecamp.org/news/how-and-why-to-use-functional-programming-in-modern-javascript-fda2df86ad1b/#:~:text=Advantages%20Of%20Functional%20Programming,improve%20maintainability%20of%20the%20code.
 - https://www.infoworld.com/article/3613715/what-is-functional-programming-a-practical-guide.html
 - https://www.joelonsoftware.com/2006/08/01/can-your-programming-language-do-this/
-- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript
 - https://enlear.academy/reducers-in-javascript-f5317b34cba2
 - https://www.digitalocean.com/community/tutorials/js-finally-understand-reduce
 - https://www.samanthaming.com/tidbits/71-how-to-flatten-array-using-array-flat/
