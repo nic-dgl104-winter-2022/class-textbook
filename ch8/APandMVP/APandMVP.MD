@@ -285,7 +285,7 @@ For more on the history visit the [MVP wiki -Wikipedia.](https://en.wikipedia.or
 
 #### **Not suited for small projects**
 
-* Which is ironic considering I used a small project as an example, but it is still true. These patterns are mainly used for larger projects as it's complex and for smaller projects [it will be redundant.]https://developpaper.com/mvp-architecture-in-android-development/#:~:text=**-,malpractice,-Redundant%2C%20especially%20small)<sup>[[18]](#18)</sup> Basically, this pattern will be overkill.
+* Which is ironic considering I used a small project as an example, but it is still true. These patterns are mainly used for larger projects as it's complex and for smaller projects [it will be redundant.](https://developpaper.com/mvp-architecture-in-android-development/#:~:text=**-,malpractice,-Redundant%2C%20especially%20small)<sup>[[18]](#18)</sup> Basically, this pattern will be overkill.
 
 ## Conclusion
 Thank you for reading through this. Hopefully, you understand architectural patterns a bit more and can see their benefits and implement them in your future projects. With that, that wraps up the section on MVP, an overview on MV* patterns and the meaning of architectural patterns. Next, we will discuss another MV* Framework, MVVM.
