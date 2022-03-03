@@ -161,15 +161,18 @@ array1.sort();
 
 # Platform Programming
 
-## Intro
+##
 
 Platform programming is known as the 'setting' or environment where developed software is able to run, using the tools meant to support it. These settings can include the operating system of computers, the hardware of electronics, or other software within the architecture, such as a browser running webpages. These different tiers of abstraction are all valid aspects of platform programming as a whole, and so we can say that platform programming is the setting where programs can run.
 
 Depending on the platform, a developer may view a platform as a hinderance to the coding process or as a boon for it. For example, all of the functionality you may expect from developing for a phone may not be present the same way it would be for developing a car's android interface, even if they have similiar architecture. At the same time, there may be features invovled in the car's platform that may not be present in others, which would assist the development process otherwise.
 
-Cross platform developoment 
+Cross platform development as the name would suggest, is software that is designed so that its code is abstract enough to work in a variety of platforms. Depending on the hardware that is being used to execute on, there may be the need for specific builds of the software to be able to run on each of them, but depending on the level of abstraction, some can be run without the need of special builds if for example, the software is written in an interpreted language that are common parts of a variety of supported platforms. A straightforward example of this could be a game that runs on the Unity engine, which is a platform that is common between Windows, Linux, and iOS devices.
 
-cross platform development abstracts away form aspescts of device-specific programming
+## Runtime Libraries
+
+
+
 
 kotlin, swift, javascript, html, css, java -- programming languages of interest
 
