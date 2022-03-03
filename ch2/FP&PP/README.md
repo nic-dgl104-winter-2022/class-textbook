@@ -156,6 +156,17 @@ array1.sort();
 
 # Platform Programming
 
+Platform Programming is software development to be executed on a specific platform using a specific set of tools.
+Platforms are often associated with a device ps4/ps5/switch/android cars/fridge/ etc. android runs on many different devices, many cannot
+
+cross platform development abstracts away form aspescts of device-specific programming
+
+kotlin, swift, javascript, html, css, java -- programming languages of interest
+
+Common tools in device programming. Specific IDE (Android Studio, Xcode)
+
+What strategies can we adopt to better understand what APIs and tools are available to us?
+
 # References
 
 - https://towardsdatascience.com/why-developers-are-falling-in-love-with-functional-programming-13514df4048e
