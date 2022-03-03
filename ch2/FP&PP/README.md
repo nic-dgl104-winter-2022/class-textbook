@@ -97,7 +97,7 @@ const charCodes = map.call('Hello World', (x) => x.charCodeAt(0));
   ]
   
   //And we want it to look like this:
-  const pokemonModified = {
+  const simplePeople = {
   Alice: { Age: "8" },
   Steve: { Age: "21" },
   Belmont: { Age: "32" }
