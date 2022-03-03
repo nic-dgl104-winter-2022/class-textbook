@@ -51,9 +51,9 @@ const charCodes = map.call('Hello World', (x) => x.charCodeAt(0));
 // charCodes now equals [72, 101, 108, 108, 111, 32, 87, 111, 114, 108, 100]
  ```
  
- ### Reduce
+ ### reduce()
  
-  The simplist way of thinking of functional method reduce(), adds the sum of all values in an array, but that isn't quite right. What the reducer does is takes two arguements, which can be an object, array, or function, and returns only a single value. The termninology of these arguments are known as the reducer and accumulator; the latter of which is thhe value we end with, and the reducer the action we will perform on the two arguments. Let's take a look at what some reducer examples can perform
+  The simplist way of thinking of functional method reduce(), adds the sum of all values in an array, but that isn't quite right. What the reducer does is takes two arguements, which can be an object, array, or function, and returns only a single value. The termninology of these arguments are known as the reducer and accumulator; the latter of which is thhe value we end with, and the reducer the action we will perform on the two arguments. Let's take a look at what some reducer examples can perform:
   
   This use of reduce() simply adds and then returns the sum of all the values in the array.
   ```javascript
@@ -73,13 +73,19 @@ const charCodes = map.call('Hello World', (x) => x.charCodeAt(0));
   ```
   This use of reduce() takes an array of arrays, and concatinates all of the indexes of the sub-arrays into a new single array. 
   ```javascript
-  let concatinate = [[2, 4], [6, 8], [10, 12]].reduce(
-  function(previousValue, currentValue) {
-    return previousValue.concat(currentValue)
-  },
-  []
-)
-// flattened is [2, 4, 6, 8, 10, 12]
+  function flattenArray(data) {
+    // our initial value this time is a blank array
+    const initialValue = [];
+
+    // call reduce on our data
+    return data.reduce((total, value) => {
+        // if the value is an array then recursively call reduce
+        // if the value is not an array then just concat our value
+        return total.concat(Array.isArray(value) ? flattenArray(value) : value);
+      }, initialValue);
+    }
+  )
+  // flattened is [2, 4, 6, 8, 10, 12]
   ```
   ```javascript
   
