@@ -18,5 +18,23 @@ As noted here, object oriented programming addresses software evolution by creat
 **_What is Functional Programming?_**
  
  Functional programming is best understood as an approach towards coding-- using functions most effectively to create concise and rectifiable code. This is what is meant to be a paradigm, a pattern, model, or methodology for how something is done or accomplished.
+ 
+ ## Functional Tools
+ 
+ ### Map
+ 
+ ### Reduce
+ 
+ ### FlatMap
+ 
+ ### Sort
 
 # Platform Programming
+
+# References
+
+- https://towardsdatascience.com/why-developers-are-falling-in-love-with-functional-programming-13514df4048e
+- https://www.freecodecamp.org/news/how-and-why-to-use-functional-programming-in-modern-javascript-fda2df86ad1b/#:~:text=Advantages%20Of%20Functional%20Programming,improve%20maintainability%20of%20the%20code.
+- https://www.infoworld.com/article/3613715/what-is-functional-programming-a-practical-guide.html
+- https://www.joelonsoftware.com/2006/08/01/can-your-programming-language-do-this/
+- 
