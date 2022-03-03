@@ -161,8 +161,13 @@ array1.sort();
 
 # Platform Programming
 
-Platform Programming is software development to be executed on a specific platform using a specific set of tools.
-Platforms are often associated with a device ps4/ps5/switch/android cars/fridge/ etc. android runs on many different devices, many cannot
+## Intro
+
+Platform programming is known as the 'setting' or environment where developed software is able to run, using the tools meant to support it. These settings can include the operating system of computers, the hardware of electronics, or other software within the architecture, such as a browser running webpages. These different tiers of abstraction are all valid aspects of platform programming as a whole, and so we can say that platform programming is the setting where programs can run.
+
+Depending on the platform, a developer may view a platform as a hinderance to the coding process or as a boon for it. For example, all of the functionality you may expect from developing for a phone may not be present the same way it would be for developing a car's android interface, even if they have similiar architecture. At the same time, there may be features invovled in the car's platform that may not be present in others, which would assist the development process otherwise.
+
+Cross platform developoment 
 
 cross platform development abstracts away form aspescts of device-specific programming
 
@@ -183,3 +188,4 @@ What strategies can we adopt to better understand what APIs and tools are availa
 - https://www.digitalocean.com/community/tutorials/js-finally-understand-reduce
 - https://www.samanthaming.com/tidbits/71-how-to-flatten-array-using-array-flat/
 - https://en.wikipedia.org/wiki/Map_(higher-order_function)
+- https://en.wikipedia.org/wiki/Computing_platform
