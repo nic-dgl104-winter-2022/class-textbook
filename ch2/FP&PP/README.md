@@ -161,7 +161,7 @@ array1.sort();
 
 # Platform Programming
 
-##
+## Intro
 
 Platform programming is known as the 'setting' or environment where developed software is able to run, using the tools meant to support it. These settings can include the operating system of computers, the hardware of electronics, or other software within the architecture, such as a browser running webpages. These different tiers of abstraction are all valid aspects of platform programming as a whole, and so we can say that platform programming is the setting where programs can run.
 
