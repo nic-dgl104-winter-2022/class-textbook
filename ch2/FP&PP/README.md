@@ -5,6 +5,7 @@ Here, I will introduce you to functional programming and some of its paradigms. 
 > Object-oriented languages are good when you have a fixed set of operations on things, and as your code evolves, you primarily add new things. This can be accomplished by adding new classes which implement existing methods, and the existing classes are left alone. 
 > 
 > Functional languages are good when you have a fixed set of things, and as your code evolves, you primarily add new operations on existing things. This can be accomplished by adding new functions which compute with existing data types, and the existing functions are left alone.
+> 
 > Norman Ramsey
 
 As noted here, object oriented programming addresses software evolution by creating more content to accomplish the task at hand, often by creating new classes which can bloat the software and scales poorly. Functional programming on the other hand would minimize the amount of new code added, solving complex problems in a simpler way with the use of lambda operators, improving modularity, and code maintainabilty by use of nested functions.
