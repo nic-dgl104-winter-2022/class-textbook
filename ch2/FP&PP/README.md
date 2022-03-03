@@ -87,8 +87,29 @@ const charCodes = map.call('Hello World', (x) => x.charCodeAt(0));
   )
   // flattened is [2, 4, 6, 8, 10, 12]
   ```
+  Finally, let's do an example where we have some objects with a pair of defined variables, and we want to display the information in a particular way, as shown in the code below:
   ```javascript
+  //We have an array of objects that looks like this:
+  const person = [
+  { name: "Alice", Age: "8" },
+  { name: "Steve", Age: "21" },
+  { name: "Belmont", Age: "32" }
+  ]
   
+  //And we want it to look like this:
+  const pokemonModified = {
+  Alice: { Age: "8" },
+  Steve: { Age: "21" },
+  Belmont: { Age: "32" }
+  };
+  
+  //To do so, we make use of reduce():
+  const simpleObjects = info =>
+  info.reduce((acc, item) => {
+    // add object key to our object i.e. Alice: { Age: '8' }
+    acc[item.name] = { type: item.type };
+    return acc;
+  }, {});
   ```
   
  ### FlatMap
