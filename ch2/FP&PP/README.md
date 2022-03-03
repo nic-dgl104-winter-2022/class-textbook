@@ -1,7 +1,9 @@
 
 <p align = "center"><img src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/004935cd-848e-4eb4-aefe-252ce0cfc041/fp-preview.png"></p>
 
-# An Overview of Functional Programming and Functional Paradigms
+# Functional Programming and Functional Paradigms
+
+## Intro
 
 Here, I will introduce you to functional programming and some of its paradigms. A new and learning programmer may be relucant to learn a different method to achieve the same result, especially when the functional approach can be a difficult approach to understand. However, Functional Programming and its paradigms are best served when software **evolves** over its lifetime, as it was so eloquently put here on [StackOverflow](https://stackoverflow.com/questions/2078978/functional-programming-vs-object-oriented-programming):
 
@@ -11,9 +13,10 @@ Here, I will introduce you to functional programming and some of its paradigms. 
 > 
 > Norman Ramsey
 
-As noted here, object oriented programming addresses software evolution by creating more content to accomplish the task at hand, often by creating new classes which can bloat the software and scales poorly. Functional programming on the other hand would minimize the amount of new code added, solving complex problems in a simpler way with the use of lambda operators, improving modularity, and code maintainabilty by use of nested functions.
+As noted here, object oriented programming addresses software evolution by creating more content to accomplish the task at hand, often by creating new classes which can bloat the software and scales poorly. Functional programming on the other hand would minimize the amount of new code added, solving complex problems in a simpler way with the use of lambda operators, improving modularity, and code maintainabilty by use of nested functions. This isn't to say that OOP and Functional Programming are mutually exclusive; though being able to recognize where a developer is able to use functional programming is beneficial to development as a whole.
 
-What is Functional Programming?
+## What is Functional Programming?
  
+ Functional Programming is about building functions for immutable variables-- ones that cannot be changed. 
 
 # Platform Programming
