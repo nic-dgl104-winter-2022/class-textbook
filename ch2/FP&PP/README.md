@@ -53,7 +53,7 @@ const charCodes = map.call('Hello World', (x) => x.charCodeAt(0));
  
  ### reduce()
  
- <p align='center'><img src = 'https://cdn.discordapp.com/attachments/910117718924099594/948954099339116564/unknown.png'></p>
+ <p align='center'><img src = 'https://cdn.discordapp.com/attachments/910117718924099594/948954099339116564/unknown.png' width = "200"></p>
  
   The simplist way of thinking of functional method reduce(), adds the sum of all values in an array, but that isn't quite right. What the reducer does is takes two arguements, which can be an object, array, or function, and returns only a single value. The termninology of these arguments are known as the reducer and accumulator; the latter of which is thhe value we end with, and the reducer the action we will perform on the two arguments. Let's take a look at what some reducer examples can perform:
   
