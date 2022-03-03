@@ -25,12 +25,31 @@ As noted here, object oriented programming addresses software evolution by creat
  
  ### map()
  
- The functional map() method takes a given array and modifies the elements within its indexes to output a new array. Below are a few examples on applications of the method, albeit rather simple.
+ The functional map() method **takes a given array** and modifies the elements within its indexes to **output a new array**. Below are a few examples on applications of the method, albeit rather simple.
+ 
  
  ```javascript
  // A use of .map() that takes the numberArray and creates a new array of the modified numbers.
 const numberArray = [9, 16, 81];
 const numberRoots = numbers.map((num) => Math.sqrt(num));
+// A new array numberRoots with the content of [3, 4, 9] is created.
+ ```
+ ```javascript
+ // This use of .map() takes an array of objects and modifies them to a new array of objects.
+ const kvArray = [{ key: 1, value: 10 },
+                 { key: 2, value: 20 },
+                 { key: 3, value: 30 }];
+
+const reformattedArray = kvArray.map(({ key, value}) => ({ [key]: value }));
+
+// A new array reformattedArray with the content of [{1: 10}, {2: 20}, {3: 30}]
+ ```
+ ```javascript
+ // This code snippet uses map() on a String to create an array representing the character values ASCII bytes.
+const map = Array.prototype.map;
+const charCodes = map.call('Hello World', (x) => x.charCodeAt(0));
+
+// charCodes now equals [72, 101, 108, 108, 111, 32, 87, 111, 114, 108, 100]
  ```
  
  ### Reduce
