@@ -117,6 +117,9 @@ const charCodes = map.call('Hello World', (x) => x.charCodeAt(0));
   
  ### flatmap() and flat()
  
+ ![image](https://user-images.githubusercontent.com/32383732/156588834-d687ffa6-bbd5-444f-8793-61653e56971e.png)
+
+ 
  The flapmap() method is actually a combination of two other methods-- as the name would imply, flat() and map(). Before touching on flatmap(), we should first cover what flat() itself does.
  
  Like we were able to do with the reduce() method, flat()'s exclusive roll is to create a new array from all of the values of arrays that may be nested within other arrays. In the following example:
@@ -180,3 +183,4 @@ What strategies can we adopt to better understand what APIs and tools are availa
 - https://enlear.academy/reducers-in-javascript-f5317b34cba2
 - https://www.digitalocean.com/community/tutorials/js-finally-understand-reduce
 - https://www.samanthaming.com/tidbits/71-how-to-flatten-array-using-array-flat/
+- https://en.wikipedia.org/wiki/Map_(higher-order_function)
