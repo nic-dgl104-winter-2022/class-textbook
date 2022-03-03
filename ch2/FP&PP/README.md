@@ -182,13 +182,13 @@ What strategies can we adopt to better understand what APIs and tools are availa
 
 # References
 
-- https://towardsdatascience.com/why-developers-are-falling-in-love-with-functional-programming-13514df4048e
-- https://www.freecodecamp.org/news/how-and-why-to-use-functional-programming-in-modern-javascript-fda2df86ad1b/#:~:text=Advantages%20Of%20Functional%20Programming,improve%20maintainability%20of%20the%20code.
-- https://www.infoworld.com/article/3613715/what-is-functional-programming-a-practical-guide.html
-- https://www.joelonsoftware.com/2006/08/01/can-your-programming-language-do-this/
-- https://developer.mozilla.org/en-US/docs/Web/JavaScript
-- https://enlear.academy/reducers-in-javascript-f5317b34cba2
-- https://www.digitalocean.com/community/tutorials/js-finally-understand-reduce
-- https://www.samanthaming.com/tidbits/71-how-to-flatten-array-using-array-flat/
-- https://en.wikipedia.org/wiki/Map_(higher-order_function)
-- https://en.wikipedia.org/wiki/Computing_platform
+- [Why Programmers are falling in love with Functional Programming](https://towardsdatascience.com/why-developers-are-falling-in-love-with-functional-programming-13514df4048e)
+- [How and why to use Functional Programming](https://www.freecodecamp.org/news/how-and-why-to-use-functional-programming-in-modern-javascript-fda2df86ad1b/#:~:text=Advantages%20Of%20Functional%20Programming,improve%20maintainability%20of%20the%20code.)
+- [What is Functional Programming](https://www.infoworld.com/article/3613715/what-is-functional-programming-a-practical-guide.html)
+- [Can your Programming Language do this?](https://www.joelonsoftware.com/2006/08/01/can-your-programming-language-do-this/)
+- [Mozilla Javascript developer Tools](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- [Reducers in Javascript](https://enlear.academy/reducers-in-javascript-f5317b34cba2)
+- [Understanding Reduce](https://www.digitalocean.com/community/tutorials/js-finally-understand-reduce)
+- [How to flatten an array](https://www.samanthaming.com/tidbits/71-how-to-flatten-array-using-array-flat/)
+- [Map Fushion and Haskell performance](http://www.randomhacks.net.s3-website-us-east-1.amazonaws.com/2007/02/10/map-fusion-and-haskell-performance/)
+- [What is a Platform?](https://en.wikipedia.org/wiki/Computing_platform)
