@@ -161,24 +161,13 @@ array1.sort();
 
 # Platform Programming
 
-## Intro
-
 Platform programming is known as the 'setting' or environment where developed software is able to run, using the tools meant to support it. These settings can include the operating system of computers, the hardware of electronics, or other software within the architecture, such as a browser running webpages. These different tiers of abstraction are all valid aspects of platform programming as a whole, and so we can say that platform programming is the setting where programs can run.
 
-Depending on the platform, a developer may view a platform as a hinderance to the coding process or as a boon for it. For example, all of the functionality you may expect from developing for a phone may not be present the same way it would be for developing a car's android interface, even if they have similiar architecture. At the same time, there may be features invovled in the car's platform that may not be present in others, which would assist the development process otherwise.
+No matter what the platform is, a good developer should be able to produce code for a platform given that the necessary knowledge resources are provided for it. A quote that I particularily like is, "A good artist should be familiar with a variety of mediums, and should still produce great work if they were working with crayons or paints". This came from a comparison of modeling software, but the same applies to programming; while platforms have tools others may not, a good programmer would meet these challenges and still be able to produce software that accomplishes the task at hand. All of the functionality you may expect from developing for a phone may not be present the same way it would be for developing a car's android interface, even if they have similiar architecture. At the same time, there may be features invovled in the car's platform that may not be present in others, which would assist the development process otherwise.
 
-Cross platform development as the name would suggest, is software that is designed so that its code is abstract enough to work in a variety of platforms. Depending on the hardware that is being used to execute on, there may be the need for specific builds of the software to be able to run on each of them, but depending on the level of abstraction, some can be run without the need of special builds if for example, the software is written in an interpreted language that are common parts of a variety of supported platforms. A straightforward example of this could be a game that runs on the Unity engine, which is a platform that is common between Windows, Linux, and iOS devices.
+## Cross Platform Development
 
-## Runtime Libraries
-
-
-
-
-kotlin, swift, javascript, html, css, java -- programming languages of interest
-
-Common tools in device programming. Specific IDE (Android Studio, Xcode)
-
-What strategies can we adopt to better understand what APIs and tools are available to us?
+As its name suggests, cross platform development is the ability to develop code for use onto multiple platforms. Given a variety of platforms for software to be developed on, the platform may need the software to be interpreted differnetly depending on what language the given hardware operates in. The most mainstream example of this may be in videogames, where a title can be developed across multiple platforms, or in phones that run on a particular version of the architecture; most notably Android or iOS. When in cross-platform development, having a framework that is able to build for different platforms is an essential tool. In the case of app development for phones, some frameworks may include Xamarin, React Native, and Flutter to name a few. A framework would be able to create the appropriate interpretation or 'build' of the software that is being developed so it can run on the platform the team or individual is working on. Cross development allows your software to reach a larger audience by being able to operate on many platforms, though it must be kept in mind that cross-platform development would be limited by the 'lowest-denominator' of platforms for the software to operate on, unless specialized versions of the software were created for particular platforms.
 
 # References
 
@@ -192,3 +181,4 @@ What strategies can we adopt to better understand what APIs and tools are availa
 - [How to flatten an array](https://www.samanthaming.com/tidbits/71-how-to-flatten-array-using-array-flat/)
 - [Map Fushion and Haskell performance](http://www.randomhacks.net.s3-website-us-east-1.amazonaws.com/2007/02/10/map-fusion-and-haskell-performance/)
 - [What is a Platform?](https://en.wikipedia.org/wiki/Computing_platform)
+- [Guide to Cross Platform Development](https://www.netsolutions.com/insights/cross-platform-app-frameworks-in-2019/)
