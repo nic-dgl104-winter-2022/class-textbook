@@ -167,6 +167,8 @@ No matter what the platform is, a good developer should be able to produce code 
 
 ## Cross Platform Development
 
+<p align='center'><img src='https://envisionitagency.com/uploads/2018/04/frameworks.png' width='400'></p>
+
 As its name suggests, cross platform development is the ability to develop code for use onto multiple platforms. Given a variety of platforms for software to be developed on, the platform may need the software to be interpreted differnetly depending on what language the given hardware operates in. The most mainstream example of this may be in videogames, where a title can be developed across multiple platforms, or in phones that run on a particular version of the architecture; most notably Android or iOS. When in cross-platform development, having a framework that is able to build for different platforms is an essential tool. In the case of app development for phones, some frameworks may include Xamarin, React Native, and Flutter to name a few. A framework would be able to create the appropriate interpretation or 'build' of the software that is being developed so it can run on the platform the team or individual is working on. Cross development allows your software to reach a larger audience by being able to operate on many platforms, though it must be kept in mind that cross-platform development would be limited by the 'lowest-denominator' of platforms for the software to operate on, unless specialized versions of the software were created for particular platforms.
 
 # References
