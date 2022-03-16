@@ -100,14 +100,6 @@ In our example:
 Our listeners will track when the **“Hello, World!”** button is pressed and that information will be passed on to the presenter.
 
 ```Java 
-import java.awt.GridLayout;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.util.ArrayList;
-import javax.swing.JButton;
-import javax.swing.JFrame;
-import javax.swing.JLabel;
-import javax.swing.WindowConstants;
 
 /**
 * Provides the UI elements
@@ -221,7 +213,6 @@ private final Model model;
 In our application file, we import the swingutilites so we can run our application
 Also inheriting the other classes we created
 ``` Java
-import javax.swing.SwingUtilities;
 
 public class Application {
     public Application() {
