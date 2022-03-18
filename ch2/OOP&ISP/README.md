@@ -3,7 +3,7 @@
 ---
 Intro
 
-OOP paradigms
+## OOP paradigms
 >Object Oriented programming (OOP) is a programming paradigm that relies on the concept of classes and objects. 
 It is used to structure a software program into simple, reusable pieces of code blueprints (usually called classes), 
 which are used to create individual instances of objects. 
@@ -64,13 +64,13 @@ On the other hand, when we didn't use OPP, we had to create a different variable
 
 
 
-##Open-closed + examples & writeup
+## Open-closed + examples & writeup
 
-##Interface Segregation Principle + examples & writeup    
-
-
+## Interface Segregation Principle + examples & writeup    
 
 
-Refrances:
+
+
+## Refrances:
 
 * [What is object-oriented programming? OOP explained in depth By Erin Doherty](https://www.educative.io/blog/object-oriented-programming) 
