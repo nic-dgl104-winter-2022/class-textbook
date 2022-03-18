@@ -30,10 +30,10 @@ In short, OOP will is ideal for complex structures which allow you to reuse your
 A real example of how OOP can create an easy program for a pet shop. 
 
 when we use OPP, we specify the attribute and method once, and as more dogs check-in, we fill out their name and age; for today's date and age, data will be pulled from the main class to reflect today's date and age. 
-:one: We crated parent class "Dog class"
-:two: We creatrd child classes represanting diffrant subcategories "Attributes & Methods"
-:three: We added unique attributes and behaviors "Name, Birthday, Today's date, Calculate age" 
-:four: We Createed objects from the child class "Rufus & fluffy information"
+* :one: We crated parent class "Dog class"
+* :two: We creatrd child classes represanting diffrant subcategories "Attributes & Methods"
+* :three: We added unique attributes and behaviors "Name, Birthday, Today's date, Calculate age" 
+* :four: We Createed objects from the child class "Rufus & fluffy information"
 
 ```
 NON-OPP
