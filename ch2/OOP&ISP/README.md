@@ -17,13 +17,16 @@ Inside Methods, we have functions that are only accessible to car objects;
 for example, the Repaint method will help us change the car color for each instance  we create; 
 the same goes for Tiers upgrade method.
 
-
-
 Why should you use OOP
 *Opp wil help you simplify your complex structer :relaxed:
 *You can use it across programs! :star2:
 *You can set class specific behaviour through polymorphism :+1:
 *It will make debuging a braze :relieved:
+
+
+
+
+
 
 
 
