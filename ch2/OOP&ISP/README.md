@@ -21,7 +21,7 @@ Inside Methods, we have functions that are only accessible to car objects;
 for example, the Repaint method will help us change the car color for each instance  we create; 
 the same goes for Tiers upgrade method.
 
- Why should you use OOP
+#### Why should you use OOP
 * Opp wil help you simplify your complex structer :relaxed:
 * You can use it across programs! :star2:
 * You can set class specific behaviour through polymorphism :+1:
@@ -67,7 +67,7 @@ In short, OOP will is ideal for complex structures which allow you to reuse your
 
 
 ### Principles of OOP
-Inheritance
+#### Inheritance
 Defenition: child classes inherit data and behaviors from parent class
 Meaning, child classes can inherit properties and behaviours from their parents. Inheritance supports reusability.
 
@@ -81,15 +81,15 @@ public class dogs extends cats{
 
 }
 ```
-Encapsulation
+#### Encapsulation
 Defenition: refers to objects holding all necessary information.
 Example: bank software declarer your balance as a private variable; therefore, it's only available to you when you log in. if they declare it as a public variable, it would be available to everyone, and they fail to protect your privacy. 
 
 
-Abstraction: only exposing high level public methods for accessing an object
+#### Abstraction: only exposing high level public methods for accessing an object
 
 
-Polymorphism: many methods can do the same task
+#### Polymorphism: many methods can do the same task
 
 
 
