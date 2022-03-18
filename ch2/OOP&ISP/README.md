@@ -10,7 +10,7 @@ which are used to create individual instances of objects.
 There are many object-oriented programming languages including JavaScript, C++, Java, and Python. 
 
 
-<img src="pic/oop-car-example.png" width="806" height="471"/>
+<img src="pic/oop-car-example.png" width="600" height="471"/>
 
 As illustrated in the picture, we first have a Car class that contains Attributes and Methods. 
 Inside Attributes, we got color, brand, year make then witing each attribute we have different values. 
