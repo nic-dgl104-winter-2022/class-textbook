@@ -221,7 +221,7 @@ your code structure and see what you can improve following the dry principle
 
 #### Example
 
-The pet store owner now wants us to have a massage at the bottom of the receipt that says, "Thank you for your visit todayDate." 
+The pet store owner now wants us to have a massage at the bottom of the receipt that says, "Thank you for your visit on todayDate." 
 What would our code look like if we didn't follow the dry concept? 
 
 ```
@@ -242,4 +242,3 @@ It's better now, the whole code took only one line, and in case the owner wants 
 - [x] :one: Reduce workload by reducing unnecessary code :construction:
 - [x] :two: Maintain and debug your code easily :cake:
 - [x] :three: Avoid technical debt :warning:
-- [x] :four: 
