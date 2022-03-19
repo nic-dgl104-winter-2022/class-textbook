@@ -72,6 +72,7 @@ Object-oriented programs has four principles which are Inheritance, Encapsulatio
 #### Inheritance
 Defenition: Inheritance is the procedure in which one class inherits the attributes and methods of another class. 
 
+[Inheritance in Java Programming](https://beginnersbook.com/2013/03/inheritance-in-java/)
 Example: 
 ```
 public class dogs {
@@ -84,6 +85,8 @@ public class dogs extends cats{
 ```
 #### Encapsulation
 Defenition: Encapsulation is a method to hide the data in a single entity or unit along with a method to protect information from outside. 
+[Encapsulation in Java](https://www.scientecheasy.com/2020/07/encapsulation-in-java.html/#:~:text=Every%20Java%20class%20is%20an,encapsulates%20several%20combinations%20of%20medicine.)
+
 ```
 public class BankInformation {
     private int accBalance;
@@ -108,16 +111,18 @@ public int getAge(){
         return dogAge;
     }
 ```
+[Difference between Abstraction and Encapsulation in Java](https://www.geeksforgeeks.org/difference-between-abstraction-and-encapsulation-in-java-with-examples/)
+
 #### Polymorphism
 Defenition: Polymorphism means "many forms", and it occurs when we have many classes that are related to each other by inheritance. 
-Example: In our ![first illustration](<img src="pic/oop-car-example.png"/>) the attribute color behaved differently for each instance; for sam's car, it reflected green, for Abe's car, it was yellow, and bills car was blue
+Example: In our car illustration the attribute color behaved differently for each instance; for sam's car, it reflected green, for Abe's car, it was yellow, and bills car was blue
 
 
 
 ## Open–Closed Principle In OOP 
 ### Definition 
 >In object-oriented programming, the open–closed principle states "software entities should be open for extension, but closed for modification"; that is, such an entity can allow its behaviour to be extended without modifying its source code. Open–closed principle is one of the five SOLID principles of object-oriented design.
-
+[Open–closed principle](https://en.wikipedia.org/wiki/Open%E2%80%93closed_principle#:~:text=In%20object%2Doriented%20programming%2C%20the,without%20modifying%20its%20source%20code.)
 
 
 ### Example
@@ -150,16 +155,9 @@ now the classes we made are closed, we don't need to touch them, and if the pet 
 
 
 ## Interface Segregation Principle + examples & writeup    
+
 ### Definition 
 
 ### Example
 
 
-
-## Refrances:
-
-* 
-* [Inheritance in Java Programming](https://beginnersbook.com/2013/03/inheritance-in-java/)
-* [Encapsulation in Java](https://www.scientecheasy.com/2020/07/encapsulation-in-java.html/#:~:text=Every%20Java%20class%20is%20an,encapsulates%20several%20combinations%20of%20medicine.)
-* [Difference between Abstraction and Encapsulation in Java](https://www.geeksforgeeks.org/difference-between-abstraction-and-encapsulation-in-java-with-examples/)
-* [Open–closed principle](https://en.wikipedia.org/wiki/Open%E2%80%93closed_principle#:~:text=In%20object%2Doriented%20programming%2C%20the,without%20modifying%20its%20source%20code.)
