@@ -1,6 +1,8 @@
 # Object-Oriented Programming & Interface Segregation Principle
 ---
 ## Intro
+In this section, first, we will go over OPP paradigms with examples, the four principles of OPP paradigms with examples. Then will go over Open–closed principle and Interface Segregation Principle from the five SOLID principles of object-oriented design with examples. 
+
 
 ## OOP paradigms
 ### Definition 
@@ -156,7 +158,7 @@ Here we grouped variables based on how we will use them; for example, we had tod
 now the classes we made are closed, we don't need to touch them, and if the pet store owner wants to add a new class, we can do that since our code allows us to add new classes "open." 
 
 
-## Interface Segregation Principle + examples & writeup    
+## Interface Segregation Principle     
 
 ### Definition 
 In the field of software engineering, the interface segregation principle states that no code should be forced to depend on methods it does not use. 
