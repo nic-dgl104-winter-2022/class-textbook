@@ -5,7 +5,7 @@ In this section, first, we will go over OPP paradigms with examples, the four pr
 
 
 ## OOP paradigms
-### Definition 
+##### Definition 
 >Object Oriented programming (OOP) is a programming paradigm that relies on the concept of classes and objects. 
 It is used to structure a software program into simple, reusable pieces of code blueprints (usually called classes), 
 which are used to create individual instances of objects. 
@@ -13,7 +13,7 @@ There are many object-oriented programming languages including JavaScript, C++, 
 
 [What is object-oriented programming? OOP explained in depth By Erin Doherty](https://www.educative.io/blog/object-oriented-programming) 
 
-### Example
+##### Example
 
 <img src="pic/oop-car-example.png"/>
 
@@ -23,7 +23,7 @@ Inside Methods, we have functions that are only accessible to car objects;
 for example, the Repaint method will help us change the car color for each instance  we create; 
 the same goes for Tiers upgrade method.
 
-#### Why should you use OOP
+##### Why should you use OOP
 * OOP wil help you simplify your complex structer :relaxed:
 * You can use it across programs! :star2:
 * You can set class specific behaviour through polymorphism :+1:
@@ -72,11 +72,12 @@ In short, OOP will is ideal for complex structures which allow you to reuse your
 Object-oriented programs has four principles which are Inheritance, Encapsulation, Abstraction, and Polymorphism
 
 #### Inheritance
-Defenition: Inheritance is the procedure in which one class inherits the attributes and methods of another class. 
+##### Defenition: 
+Inheritance is the procedure in which one class inherits the attributes and methods of another class. 
 
 [Inheritance in Java Programming](https://beginnersbook.com/2013/03/inheritance-in-java/)
 
-Example: 
+##### Example: 
 
 ```
 public class dogs {
@@ -87,6 +88,10 @@ public class dogs extends cats{
 
 }
 ```
+
+##### Why use Inheritance? 
+
+
 #### Encapsulation
 Defenition: Encapsulation is a method to hide the data in a single entity or unit along with a method to protect information from outside. 
 [Encapsulation in Java](https://www.scientecheasy.com/2020/07/encapsulation-in-java.html/#:~:text=Every%20Java%20class%20is%20an,encapsulates%20several%20combinations%20of%20medicine.)
@@ -99,7 +104,7 @@ public class BankInformation {
 ```
 Example: bank software declarer your balance as a private variable; therefore, it's only available to you when you log in. if they declare it as a public variable, it would be available to everyone, and they fail to protect your privacy. 
 
-
+#### Why use Encapsulation? 
 
 #### Abstraction
 Defenition: Abstraction is the method of hiding the unwanted information.
@@ -116,6 +121,8 @@ public int getAge(){
     }
 ```
 [Difference between Abstraction and Encapsulation in Java](https://www.geeksforgeeks.org/difference-between-abstraction-and-encapsulation-in-java-with-examples/)
+
+#### Why use Abstraction? 
 
 #### Polymorphism
 Defenition: Polymorphism means "many forms", and it occurs when we have many classes that are related to each other by inheritance. 
