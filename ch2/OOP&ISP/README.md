@@ -67,9 +67,10 @@ In short, OOP will is ideal for complex structures which allow you to reuse your
 
 
 ### Principles of OOP
+Object-oriented programs has four principles which are Inheritance, Encapsulation, Abstraction, and Polymorphism
+
 #### Inheritance
-Defenition: child classes inherit data and behaviors from parent class
-Meaning, child classes can inherit properties and behaviours from their parents. Inheritance supports reusability.
+Defenition: Inheritance is the procedure in which one class inherits the attributes and methods of another class. 
 
 Example: 
 ```
@@ -82,15 +83,37 @@ public class dogs extends cats{
 }
 ```
 #### Encapsulation
-Defenition: refers to objects holding all necessary information.
+Defenition: Encapsulation is a method to hide the data in a single entity or unit along with a method to protect information from outside. 
+```
+public class BankInformation {
+    private int accBalance;
+    
+}
+
+```
 Example: bank software declarer your balance as a private variable; therefore, it's only available to you when you log in. if they declare it as a public variable, it would be available to everyone, and they fail to protect your privacy. 
 
 
-#### Abstraction: only exposing high level public methods for accessing an object
 
+#### Abstraction
+Defenition: Abstraction is the method of hiding the unwanted information.
+Example: 
+```
+public class Dog {
+    //Declared private variables 
+    private int dateOfBirth;
+    private int todayDate;
+}
+public int getAge(){
+    //Created get method to access private variables
+        return dogAge;
+    }
+  
 
-#### Polymorphism: many methods can do the same task
-
+```
+#### Polymorphism
+Defenition: Polymorphism means "many forms", and it occurs when we have many classes that are related to each other by inheritance. 
+Example: In our [first illustration](<img src="pic/oop-car-example.png"/>) the attribute color behaved differently for each instance; for sam's car, it reflected green, for Abe's car, it was yellow, and bills car was blue
 
 
 
@@ -108,3 +131,4 @@ Example: bank software declarer your balance as a private variable; therefore, i
 * [What is object-oriented programming? OOP explained in depth By Erin Doherty](https://www.educative.io/blog/object-oriented-programming) 
 * [Inheritance in Java Programming](https://beginnersbook.com/2013/03/inheritance-in-java/)
 * [Encapsulation in Java](https://www.scientecheasy.com/2020/07/encapsulation-in-java.html/#:~:text=Every%20Java%20class%20is%20an,encapsulates%20several%20combinations%20of%20medicine.)
+* [Difference between Abstraction and Encapsulation in Java](https://www.geeksforgeeks.org/difference-between-abstraction-and-encapsulation-in-java-with-examples/)
