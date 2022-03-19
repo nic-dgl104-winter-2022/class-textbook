@@ -73,7 +73,9 @@ Object-oriented programs has four principles which are Inheritance, Encapsulatio
 Defenition: Inheritance is the procedure in which one class inherits the attributes and methods of another class. 
 
 [Inheritance in Java Programming](https://beginnersbook.com/2013/03/inheritance-in-java/)
+
 Example: 
+
 ```
 public class dogs {
 
@@ -157,7 +159,13 @@ now the classes we made are closed, we don't need to touch them, and if the pet 
 ## Interface Segregation Principle + examples & writeup    
 
 ### Definition 
+In the field of software engineering, the interface segregation principle states that no code should be forced to depend on methods it does not use. 
+[Wikipedia](https://en.wikipedia.org/wiki/Interface_segregation_principle)
 
+Its alos one of the five SOLID principles of object-oriented design.
 ### Example
-
-
+<img src="pic/oop-pet-example-2.png"/> 
+If we decided to use the same principle in our pet shop, we would be creating 
+different roles then give all the necessary roles to pet instance.
+Which allow us to add more roles like Purring level since it's cat's thing 
+the dog method will not depend on it. 
