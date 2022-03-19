@@ -30,7 +30,7 @@ when we use OOP, we specify the attribute and method once, and as more dogs chec
 - [x] :one: We crated parent class "Dog class"
 - [x] :two: We creatrd child classes represanting diffrant subcategories "Attributes & Methods"
 - [x] :three: We added unique attributes and behaviors "Name, Birthday, Today's date, Calculate age" 
-- [x] :four: :four: We Createed objects from the child class "Rufus & fluffy information"
+- [x] :four: We Createed objects from the child class "Rufus & fluffy information"
 
 ```
 NON-OOP
@@ -188,10 +188,8 @@ Here we grouped variables based on how we will use them; for example, we had tod
 
 now the classes we made are closed, we don't need to touch them, and if the pet store owner wants to add a new class, we can do that since our code allows us to add new classes "open." 
 #### What's the benifit of Open–Closed Principle?
-- [x] :one:
-- [x] :two:
-- [x] :three:
-- [x] :four:
+- [x] :one: Reduce the impact of any changes to your application code :collision:
+- [x] :two: Add a new extension to your code and avoid changing the old one! :baby_chick:
 
 
 ## Interface Segregation Principle     
