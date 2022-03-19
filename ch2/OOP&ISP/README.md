@@ -23,7 +23,7 @@ Inside Methods, we have functions that are only accessible to car objects;
 for example, the Repaint method will help us change the car color for each instance  we create; 
 the same goes for Tiers upgrade method.
 
-<img src="pic/oop-car-example-2.png"/>
+<img src="pic/oop-pet-example.png"/>
 A real example of how OOP can create an easy program for a pet shop. 
 
 when we use OOP, we specify the attribute and method once, and as more dogs check-in, we fill out their name and age; for today's date and age, data will be pulled from the main class to reflect today's date and age. 
