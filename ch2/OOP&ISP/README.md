@@ -1,4 +1,3 @@
-
 # Object-Oriented Programming & Interface Segregation Principle
 ---
 ## Intro
@@ -9,7 +8,8 @@
 It is used to structure a software program into simple, reusable pieces of code blueprints (usually called classes), 
 which are used to create individual instances of objects. 
 There are many object-oriented programming languages including JavaScript, C++, Java, and Python.
--Erin Doherty 
+
+[What is object-oriented programming? OOP explained in depth By Erin Doherty](https://www.educative.io/blog/object-oriented-programming) 
 
 ### Example
 
@@ -22,7 +22,7 @@ for example, the Repaint method will help us change the car color for each insta
 the same goes for Tiers upgrade method.
 
 #### Why should you use OOP
-* Opp wil help you simplify your complex structer :relaxed:
+* OOP wil help you simplify your complex structer :relaxed:
 * You can use it across programs! :star2:
 * You can set class specific behaviour through polymorphism :+1:
 * It will make debuging a braze :relieved:
@@ -32,14 +32,14 @@ the same goes for Tiers upgrade method.
 <img src="pic/oop-car-example-2.png"/>
 A real example of how OOP can create an easy program for a pet shop. 
 
-when we use OPP, we specify the attribute and method once, and as more dogs check-in, we fill out their name and age; for today's date and age, data will be pulled from the main class to reflect today's date and age. 
+when we use OOP, we specify the attribute and method once, and as more dogs check-in, we fill out their name and age; for today's date and age, data will be pulled from the main class to reflect today's date and age. 
 * :one: We crated parent class "Dog class"
 * :two: We creatrd child classes represanting diffrant subcategories "Attributes & Methods"
 * :three: We added unique attributes and behaviors "Name, Birthday, Today's date, Calculate age" 
 * :four: We Createed objects from the child class "Rufus & fluffy information"
 
 ```
-NON-OPP
+NON-OOP
 //Object of one individual dog
 var rufus = {
     name: "Rufus",
@@ -61,7 +61,7 @@ var fluffy = {
 }
 ```
 
-On the other hand, when we didn't use OPP, we had to create a different variable for each dog then add different specifications for them, meaning whenever new dog check-in, we'll have to fill out today's date again and retype the function to give us their age. 
+On the other hand, when we didn't use OOP, we had to create a different variable for each dog then add different specifications for them, meaning whenever new dog check-in, we'll have to fill out today's date again and retype the function to give us their age. 
 
 In short, OOP will is ideal for complex structures which allow you to reuse your code and avoid repetition, you can a classes that has specific Attributes and Methods that has many instances as you like. 
 
@@ -89,7 +89,6 @@ public class BankInformation {
     private int accBalance;
     
 }
-
 ```
 Example: bank software declarer your balance as a private variable; therefore, it's only available to you when you log in. if they declare it as a public variable, it would be available to everyone, and they fail to protect your privacy. 
 
@@ -108,27 +107,59 @@ public int getAge(){
     //Created get method to access private variables
         return dogAge;
     }
-  
-
 ```
 #### Polymorphism
 Defenition: Polymorphism means "many forms", and it occurs when we have many classes that are related to each other by inheritance. 
-Example: In our [first illustration](<img src="pic/oop-car-example.png"/>) the attribute color behaved differently for each instance; for sam's car, it reflected green, for Abe's car, it was yellow, and bills car was blue
+Example: In our ![first illustration](<img src="pic/oop-car-example.png"/>) the attribute color behaved differently for each instance; for sam's car, it reflected green, for Abe's car, it was yellow, and bills car was blue
 
 
 
-## Open–Closed Principle In OPP + examples & writeup
+## Open–Closed Principle In OOP 
+### Definition 
+>In object-oriented programming, the open–closed principle states "software entities should be open for extension, but closed for modification"; that is, such an entity can allow its behaviour to be extended without modifying its source code. Open–closed principle is one of the five SOLID principles of object-oriented design.
 
+
+
+### Example
+Let's say that the pet store owner now need us to create a class that includes cats 
+that will provide the same information for the dog class (name, birthday, age) 
+and include cat's life stages (Kitten, Junior, Adult, Mature, Senior, Super Senior)
+Easy right? that will require us to make changes in different places MOST IMPORTANTLY we will need to modify the main class. 
+How can we use the open-closed principle then? 
+We can create different classes for each output, for example 
+
+```
+class petName {
+    String pet name;
+}
+
+class petAge{
+    int todayDate;
+    int dateOfBirth;
+    int age
+}
+
+class petLifeStages{
+    String lifeStages
+}
+```
+
+Here we grouped variables based on how we will use them; for example, we had today's date, date of birth, and age in one group. 
+
+now the classes we made are closed, we don't need to touch them, and if the pet store owner wants to add a new class, we can do that since our code allows us to add new classes "open." 
 
 
 ## Interface Segregation Principle + examples & writeup    
+### Definition 
 
+### Example
 
 
 
 ## Refrances:
 
-* [What is object-oriented programming? OOP explained in depth By Erin Doherty](https://www.educative.io/blog/object-oriented-programming) 
+* 
 * [Inheritance in Java Programming](https://beginnersbook.com/2013/03/inheritance-in-java/)
 * [Encapsulation in Java](https://www.scientecheasy.com/2020/07/encapsulation-in-java.html/#:~:text=Every%20Java%20class%20is%20an,encapsulates%20several%20combinations%20of%20medicine.)
 * [Difference between Abstraction and Encapsulation in Java](https://www.geeksforgeeks.org/difference-between-abstraction-and-encapsulation-in-java-with-examples/)
+* [Open–closed principle](https://en.wikipedia.org/wiki/Open%E2%80%93closed_principle#:~:text=In%20object%2Doriented%20programming%2C%20the,without%20modifying%20its%20source%20code.)
