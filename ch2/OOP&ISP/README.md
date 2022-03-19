@@ -1,7 +1,7 @@
 # Object-Oriented Programming & Interface Segregation Principle
 ---
 ## Intro
-In this section, first, we will go over OPP paradigms with examples, the four principles of OPP paradigms with examples. Then will go over Open–closed principle and Interface Segregation Principle from the five SOLID principles of object-oriented design with examples. 
+In this section, first, we will go over OPP paradigms with examples, the four principles of OPP paradigms with examples. Then will go over Open–closed principle, Interface Segregation Principle from the five SOLID principles of object-oriented design with examples and dry principle with example. 
 
 
 ## OOP paradigms
@@ -205,3 +205,10 @@ the dog method will not depend on it.
 * 
 * 
 * 
+
+## Do Not Repeat Yourself Principle
+#### Definition
+
+#### Example
+
+#### Why use dry concept when coding?
