@@ -213,7 +213,30 @@ the dog method will not depend on it.
 
 ## Do Not Repeat Yourself Principle
 #### Definition
+>"Don't repeat yourself" is a principle of software development aimed at reducing repetition of software patterns, replacing it with abstractions or using data normalization to avoid redundancy. 
+[Wikipedia](https://en.wikipedia.org/wiki/Don't_repeat_yourself)
+
+In short, you should avoid copying your code, and if you find yourself doing so take a look back on
+your code structure and see what you can improve following the dry principle 
 
 #### Example
 
+The pet store owner now wants us to have a massage at the bottom of the receipt that says, "Thank you for your visit todayDate." 
+What would our code look like if we didn't follow the dry concept? 
+
+> System.out.print("Thank you for your visit on");
+ System.out.print(todayDate);
+ System.out.println(".");
+
+Here we copied the print statement more than once, adding more workload to maintain the code,
+how can we implement a dry concept for the print statement? 
+
+> System.out.println("Thank you for your visit on" + todayDate + ".");
+
+It's better now, the whole code took only one line, and in case the owner wants to change the wording, we can easily do that 
+
 #### Why use dry concept when coding?
+- [x] :one: Reduce workload by reducing unnecessary code :construction:
+- [x] :two: Maintain and debug your code easily :cake:
+- [x] :three: Avoid technical debt :warning:
+- [x] :four: 
