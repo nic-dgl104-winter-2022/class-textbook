@@ -88,9 +88,10 @@ public class dogs extends cats{
 ```
 
 #### Why use Inheritance? 
-* 
-* 
-* 
+- [x] :one:
+- [x] :two:
+- [x] :three:
+- [x] :four:
 
 ### Encapsulation
 #### Defenition: 
@@ -107,10 +108,10 @@ public class BankInformation {
 bank software declarer your balance as a private variable; therefore, it's only available to you when you log in. if they declare it as a public variable, it would be available to everyone, and they fail to protect your privacy. 
 
 #### Why use Encapsulation? 
-* 
-* 
-* 
-
+- [x] :one:
+- [x] :two:
+- [x] :three:
+- [x] :four:
 
 
 ### Abstraction
@@ -131,9 +132,10 @@ public int getAge(){
 [Difference between Abstraction and Encapsulation in Java](https://www.geeksforgeeks.org/difference-between-abstraction-and-encapsulation-in-java-with-examples/)
 
 #### Why use Abstraction? 
-* 
-* 
-* 
+- [x] :one:
+- [x] :two:
+- [x] :three:
+- [x] :four:
 
 
 ### Polymorphism
@@ -144,9 +146,10 @@ Polymorphism means "many forms", and it occurs when we have many classes that ar
 In our car illustration the attribute color behaved differently for each instance; for sam's car, it reflected green, for Abe's car, it was yellow, and bills car was blue
 
 #### Why use Encapsulation? 
-* 
-* 
-* 
+- [x] :one:
+- [x] :two:
+- [x] :three:
+- [x] :four:
 
 ## Open–Closed Principle In OOP 
 #### Definition 
@@ -182,9 +185,10 @@ Here we grouped variables based on how we will use them; for example, we had tod
 
 now the classes we made are closed, we don't need to touch them, and if the pet store owner wants to add a new class, we can do that since our code allows us to add new classes "open." 
 #### What's the benifit of Open–Closed Principle?
-* 
-* 
-* 
+- [x] :one:
+- [x] :two:
+- [x] :three:
+- [x] :four:
 
 
 ## Interface Segregation Principle     
@@ -202,9 +206,10 @@ Which allow us to add more roles like Purring level since it's cat's thing
 the dog method will not depend on it. 
 
 #### What's the benifit of Interface Segregation Principle?
-* 
-* 
-* 
+- [x] :one:
+- [x] :two:
+- [x] :three:
+- [x] :four:
 
 ## Do Not Repeat Yourself Principle
 #### Definition
