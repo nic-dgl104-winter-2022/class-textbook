@@ -225,8 +225,8 @@ The pet store owner now wants us to have a massage at the bottom of the receipt 
 What would our code look like if we didn't follow the dry concept? 
 
 > System.out.print("Thank you for your visit on");
- System.out.print(todayDate);
- System.out.println(".");
+> System.out.print(todayDate);
+> System.out.println(".");
 
 Here we copied the print statement more than once, adding more workload to maintain the code,
 how can we implement a dry concept for the print statement? 
