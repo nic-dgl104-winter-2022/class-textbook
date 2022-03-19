@@ -27,10 +27,10 @@ the same goes for Tiers upgrade method.
 A real example of how OOP can create an easy program for a pet shop. 
 
 when we use OOP, we specify the attribute and method once, and as more dogs check-in, we fill out their name and age; for today's date and age, data will be pulled from the main class to reflect today's date and age. 
-* :one: We crated parent class "Dog class"
-* :two: We creatrd child classes represanting diffrant subcategories "Attributes & Methods"
-* :three: We added unique attributes and behaviors "Name, Birthday, Today's date, Calculate age" 
-* :four: We Createed objects from the child class "Rufus & fluffy information"
+- [x] :one: We crated parent class "Dog class"
+- [x] :two: We creatrd child classes represanting diffrant subcategories "Attributes & Methods"
+- [x] :three: We added unique attributes and behaviors "Name, Birthday, Today's date, Calculate age" 
+- [x] :four: :four: We Createed objects from the child class "Rufus & fluffy information"
 
 ```
 NON-OOP
@@ -59,11 +59,14 @@ On the other hand, when we didn't use OOP, we had to create a different variable
 
 In short, OOP will is ideal for complex structures which allow you to reuse your code and avoid repetition, you can a classes that has specific Attributes and Methods that has many instances as you like. 
 
-#### Why should you use OOP
-* OOP wil help you simplify your complex structer :relaxed:
-* You can use it across programs! :star2:
-* You can set class specific behaviour through polymorphism :+1:
-* It will make debuging a braze :relieved:
+#### Why you should use OOP
+- [x] :one: OOP wil help you simplify your complex structer :relaxed:
+- [x] :two: You can use it across programs :star2:
+- [x] :three: You can set class specific behaviour through polymorphism :+1:
+- [x] :four: It will make debuging a braze :relieved:
+
+
+
 
 
 ### Principles of OOP
@@ -73,7 +76,7 @@ Object-oriented programs has four principles which are Inheritance, Encapsulatio
 #### Defenition: 
 Inheritance is the procedure in which one class inherits the attributes and methods of another class. 
 
-[Inheritance in Java Programming](https://beginnersbook.com/2013/03/inheritance-in-java/)
+
 
 #### Example: 
 
@@ -87,11 +90,13 @@ public class dogs extends cats{
 }
 ```
 
-#### Why use Inheritance? 
-- [x] :one:
-- [x] :two:
-- [x] :three:
-- [x] :four:
+#### Why you should use Inheritance? 
+- [x] :one: You will be able to re-use your code :rainbow:
+- [x] :two: Your code will be highly readable :book:
+
+
+[Inheritance in Java Programming](https://beginnersbook.com/2013/03/inheritance-in-java/)
+
 
 ### Encapsulation
 #### Defenition: 
@@ -107,11 +112,10 @@ public class BankInformation {
 #### Example: 
 bank software declarer your balance as a private variable; therefore, it's only available to you when you log in. if they declare it as a public variable, it would be available to everyone, and they fail to protect your privacy. 
 
-#### Why use Encapsulation? 
-- [x] :one:
-- [x] :two:
-- [x] :three:
-- [x] :four:
+#### Why you should use Encapsulation? 
+- [x] :one: Help you maintenan your code :coffee:
+- [x] :two: Increases rour code usability :+1:
+- [x] :three: Change your code independently whenever needed :star2:
 
 
 ### Abstraction
@@ -131,11 +135,10 @@ public int getAge(){
 ```
 [Difference between Abstraction and Encapsulation in Java](https://www.geeksforgeeks.org/difference-between-abstraction-and-encapsulation-in-java-with-examples/)
 
-#### Why use Abstraction? 
-- [x] :one:
-- [x] :two:
-- [x] :three:
-- [x] :four:
+#### Why you should use Abstraction? 
+- [x] :one:  Reduce your code complexity :sun_with_face:
+- [x] :two: Increase your application security by providing important details only to users :shipit:
+- [x] :three: Write your code once & avoid repetition :heavy_check_mark:
 
 
 ### Polymorphism
@@ -145,11 +148,11 @@ Polymorphism means "many forms", and it occurs when we have many classes that ar
 #### Example: 
 In our car illustration the attribute color behaved differently for each instance; for sam's car, it reflected green, for Abe's car, it was yellow, and bills car was blue
 
-#### Why use Encapsulation? 
-- [x] :one:
-- [x] :two:
-- [x] :three:
-- [x] :four:
+#### Why you should use polymorphism? 
+- [x] :one: Type your code once and reuse it as much you like :carousel_horse:
+- [x] :two: Makes debug easier :performing_arts:
+- [x] :three: Store multiple data types in single variable :egg:
+
 
 ## Open–Closed Principle In OOP 
 #### Definition 
