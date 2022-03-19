@@ -67,7 +67,7 @@ In short, OOP will is ideal for complex structures which allow you to reuse your
 
 
 #### Summery  
-
+TODO writ summery OOP section
 
 ### Principles of OOP
 Object-oriented programs has four principles which are Inheritance, Encapsulation, Abstraction, and Polymorphism
@@ -192,9 +192,9 @@ now the classes we made are closed, we don't need to touch them, and if the pet 
 - [x] :two: Add a new extension to your code and avoid changing the old one! :baby_chick:
 
 #### Tips to help you follow Open–Closed Principle
-- [x] :one: 
-- [x] :two: 
-- [x] :three: 
+- [x] :one: TODO fill in points
+- [x] :two: TODO fill in points
+- [x] :three: TODO fill in points
 
 ## Interface Segregation Principle     
 
@@ -215,9 +215,9 @@ the dog method will not depend on it.
 - [x] :two: Increase maintainability of your code :part_alternation_mark:
 
 #### Tips to help you follow Interface Segregation Principle 
-- [x] :one: 
-- [x] :two: 
-- [x] :three: 
+- [x] :one: TODO fill in points
+- [x] :two: TODO fill in points
+- [x] :three: TODO fill in points
 
 
 ## Do Not Repeat Yourself Principle
@@ -253,6 +253,6 @@ It's better now, the whole code took only one line, and in case the owner wants 
 - [x] :three: Avoid technical debt :warning:
 
 #### Tips to help you follow DRY principle 
-- [x] :one: 
-- [x] :two: 
-- [x] :three: 
+- [x] :one: TODO fill in points
+- [x] :two: TODO fill in points
+- [x] :three: TODO fill in points
