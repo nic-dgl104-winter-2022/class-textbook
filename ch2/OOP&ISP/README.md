@@ -187,7 +187,7 @@ class petLifeStages{
 Here we grouped variables based on how we will use them; for example, we had today's date, date of birth, and age in one group. 
 
 now the classes we made are closed, we don't need to touch them, and if the pet store owner wants to add a new class, we can do that since our code allows us to add new classes "open." 
-#### What's the benifit of Open–Closed Principle?
+#### What's the benefit of Open–Closed Principle?
 - [x] :one: Reduce the impact of any changes to your application code :collision:
 - [x] :two: Add a new extension to your code and avoid changing the old one! :baby_chick:
 
@@ -206,11 +206,10 @@ different roles then give all the necessary roles to pet instance.
 Which allow us to add more roles like Purring level since it's cat's thing 
 the dog method will not depend on it. 
 
-#### What's the benifit of Interface Segregation Principle?
-- [x] :one:
-- [x] :two:
-- [x] :three:
-- [x] :four:
+#### What's the benefit of Interface Segregation Principle?
+- [x] :one: Increase your code readability :eyeglasses:
+- [x] :two: Increase maintainability of your code :part_alternation_mark:
+
 
 ## Do Not Repeat Yourself Principle
 #### Definition
