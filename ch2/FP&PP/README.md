@@ -173,6 +173,7 @@ const array1 = [1, 30, 4, 21, 100000];
 array1.sort();
 // expected output: Array [1, 100000, 21, 30, 4]
  ```
+ > sort() code by Mozilla Documentation
 
 # Platform Programming
 <p align='center'><img src='https://codeandhack.b-cdn.net/wp-content/uploads/2021/06/Learn-Programming-In-A-Fun-Way-758x398.jpg' width='400'></p>
