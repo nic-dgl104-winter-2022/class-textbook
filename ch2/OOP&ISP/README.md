@@ -66,8 +66,6 @@ In short, OOP will is ideal for complex structures which allow you to reuse your
 - [x] :four: It will make debuging a braze :relieved:
 
 
-#### Summery  
-TODO writ summery OOP section
 
 ### Principles of OOP
 Object-oriented programs has four principles which are Inheritance, Encapsulation, Abstraction, and Polymorphism
@@ -153,6 +151,9 @@ In our car illustration the attribute color behaved differently for each instanc
 - [x] :two: Makes debug easier :performing_arts:
 - [x] :three: Store multiple data types in single variable :egg:
 
+#### Summery  
+- relies on the concept of classes and objects
+- used to structure a software program into simple, reusable pieces of code
 
 ## Open–Closed Principle In OOP 
 #### Definition 
@@ -192,9 +193,8 @@ now the classes we made are closed, we don't need to touch them, and if the pet 
 - [x] :two: Add a new extension to your code and avoid changing the old one! :baby_chick:
 
 #### Tips to help you follow Open–Closed Principle
-- [x] :one: TODO fill in points
-- [x] :two: TODO fill in points
-- [x] :three: TODO fill in points
+- [x] :one: Design your classes so that new functionality can be added as new requirements are generated.
+- [x] :two: Avoid modifying developed class unless your debugging
 
 ## Interface Segregation Principle     
 
@@ -215,9 +215,9 @@ the dog method will not depend on it.
 - [x] :two: Increase maintainability of your code :part_alternation_mark:
 
 #### Tips to help you follow Interface Segregation Principle 
-- [x] :one: TODO fill in points
-- [x] :two: TODO fill in points
-- [x] :three: TODO fill in points
+- [x] :one: Spend some time at the design phase constricting your application 
+- [x] :two: Avoid using one large interface for you application 
+- [x] :three: Brake off application interface into smaller groups
 
 
 ## Do Not Repeat Yourself Principle
@@ -253,6 +253,5 @@ It's better now, the whole code took only one line, and in case the owner wants 
 - [x] :three: Avoid technical debt :warning:
 
 #### Tips to help you follow DRY principle 
-- [x] :one: TODO fill in points
-- [x] :two: TODO fill in points
-- [x] :three: TODO fill in points
+- [x] :one: Avoid writing lengthy codes insted build your code in smaller reusable units
+- [x] :two: Establish you code logic first to help with your code writing processe
