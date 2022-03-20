@@ -79,6 +79,9 @@ const charCodes = map.call('Hello World', (x) => x.charCodeAt(0));
   //we give the reduce method our reducer function and our initial value
   const total = numbers.reduce(reducer, initialValue)
   ```
+  > reduce() code by Paul Ryan
+
+
   This use of reduce() takes an array of arrays, and concatinates all of the indexes of the sub-arrays into a new single array. 
   ```javascript
   function flattenArray(data) {
@@ -95,6 +98,7 @@ const charCodes = map.call('Hello World', (x) => x.charCodeAt(0));
   )
   // flattened is [2, 4, 6, 8, 10, 12]
   ```
+  > reduce() code by Paul Ryan
   Finally, let's do an example where we have some objects with a pair of defined variables, and we want to display the information in a particular way, as shown in the code below:
   ```javascript
   //We have an array of objects that looks like this:
@@ -119,7 +123,9 @@ const charCodes = map.call('Hello World', (x) => x.charCodeAt(0));
     return acc;
   }, {});
   ```
-  
+> reduce() code by Paul Ryan
+
+
  ### flatmap() and flat()
  <p align='center'><img src = 'https://cdn.discordapp.com/attachments/910117718924099594/948956015234256966/unknown.png' width = "400"></p>
 
