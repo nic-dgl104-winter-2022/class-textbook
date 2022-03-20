@@ -34,6 +34,8 @@ const numberArray = [9, 16, 81];
 const numberRoots = numbers.map((num) => Math.sqrt(num));
 // A new array numberRoots with the content of [3, 4, 9] is created.
  ```
+ > .map() code by PalaKollu Sri Manikanta
+ 
   This use of .map() takes an array of objects and modifies them to a new array of objects.
  ```javascript
  const kvArray = [{ key: 1, value: 10 },
@@ -44,6 +46,8 @@ const reformattedArray = kvArray.map(({ key, value}) => ({ [key]: value }));
 
 // A new array reformattedArray with the content of [{1: 10}, {2: 20}, {3: 30}]
  ```
+  > .map() code by PalaKollu Sri Manikanta
+
   This code snippet uses map() on a String to create an array representing the character values ASCII bytes.
  ```javascript
 const map = Array.prototype.map;
@@ -51,6 +55,7 @@ const charCodes = map.call('Hello World', (x) => x.charCodeAt(0));
 
 // charCodes now equals [72, 101, 108, 108, 111, 32, 87, 111, 114, 108, 100]
  ```
+  > .map() code by PalaKollu Sri Manikanta
  
  ### reduce()
  
