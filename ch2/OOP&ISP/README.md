@@ -152,8 +152,13 @@ In our car illustration the attribute color behaved differently for each instanc
 - [x] :three: Store multiple data types in single variable :egg:
 
 #### Summery  
-- relies on the concept of classes and objects
-- used to structure a software program into simple, reusable pieces of code
+- [x] :one: OOP relies on the concept of classes and objects :ok_hand:
+- [x] :two: OOP used to structure a software program into simple, reusable pieces of code :construction_worker:
+- [x] :three: JavaScript, C++, Java, and Python are exmple of OOP :man_technologist:
+- [x] :four: OOP has four principle Inheritance, Encapsulation, Abstraction and, Polymorphism :honeybee:
+
+
+
 
 ## Open–Closed Principle In OOP 
 #### Definition 
@@ -193,8 +198,8 @@ now the classes we made are closed, we don't need to touch them, and if the pet 
 - [x] :two: Add a new extension to your code and avoid changing the old one! :baby_chick:
 
 #### Tips to help you follow Open–Closed Principle
-- [x] :one: Design your classes so that new functionality can be added as new requirements are generated.
-- [x] :two: Avoid modifying developed class unless your debugging
+- [x] :one: Design your classes so that new functionality can be added as new requirements are generated :octocat:
+- [x] :two: Avoid modifying developed class unless your debugging :computer:
 
 ## Interface Segregation Principle     
 
@@ -215,9 +220,9 @@ the dog method will not depend on it.
 - [x] :two: Increase maintainability of your code :part_alternation_mark:
 
 #### Tips to help you follow Interface Segregation Principle 
-- [x] :one: Spend some time at the design phase constricting your application 
-- [x] :two: Avoid using one large interface for you application 
-- [x] :three: Brake off application interface into smaller groups
+- [x] :one: Spend some time at the design phase constricting your application :calling:
+- [x] :two: Avoid using one large interface for you application :page_with_curl:
+- [x] :three: Brake off application interface into smaller groups :cake:
 
 
 ## Do Not Repeat Yourself Principle
@@ -253,5 +258,5 @@ It's better now, the whole code took only one line, and in case the owner wants 
 - [x] :three: Avoid technical debt :warning:
 
 #### Tips to help you follow DRY principle 
-- [x] :one: Avoid writing lengthy codes insted build your code in smaller reusable units
-- [x] :two: Establish you code logic first to help with your code writing processe
+- [x] :one: Avoid writing lengthy codes insted build your code in smaller reusable units :tangerine:
+- [x] :two: Establish you code logic first to help with your code writing processe :construction:
