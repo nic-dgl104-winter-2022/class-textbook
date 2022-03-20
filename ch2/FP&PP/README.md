@@ -141,6 +141,9 @@ const flattened = nested.flat();
 console.log(flattened);
 // ['a', 'b', 'c']
  ```
+ > flatmap() code by Samantha Ming
+
+
  We simply recieve a new array from a nested array that contained two addtional arrays.
  
  Thinking back to the map() method, flatmap() would simply apply both methods onto the given array. However it's important to note that the map() function is done first, and then the flat() method after, contrary to what the name would otherwise suggest. The only thing you should keep in mind as you use flatmap() is that it is only able to flatten arrays that are nested 'one level deep'. Nests of nested arrays would only flatten the array by one level. In this event, you would want to call the methods seperately using flat() and map().
@@ -153,6 +156,7 @@ const result = names.flatMap((name, index) => [name, index]);
 
 // [ 'jane', 1, 'john', 2 ]
 ```
+> flatmap() code by Samantha Ming
  
  ### sort()
  
