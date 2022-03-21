@@ -62,3 +62,12 @@ There are four different style guides to choose from. Let's dive into each one.
  
 ### APA
 “The American Psychological Association style manual is mainly used in academic writing, research, and science writing. APA style is updated infrequently (it’s only on its sixth edition since 1952), has good online availability, and offers a variety of free online tools for students, educators, researchers, and librarians.” https://thescribesource.com/2018/10/a-style-guide-for-every-writer/
+
+
+## Examples Of A Styleguide
+The example of a styleguide that we are going to look at today is from MailChimp. And its talked about on MailChimp website https://styleguide.mailchimp.com/writing-for-translation/, as well as on https://www.grammarly.com/blog/style-guide/
+
+<img src="Mailchimp.png"/>
+
+If you read through this Style Guide from Mailchimp you can see how one is done. They do a great job talking about their Guidelines, like how their tones will be. What words they will use. And how they will talk to their customers.
+
