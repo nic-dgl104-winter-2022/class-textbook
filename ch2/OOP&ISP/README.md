@@ -60,10 +60,10 @@ On the other hand, when we didn't use OOP, we had to create a different variable
 In short, OOP will is ideal for complex structures which allow you to reuse your code and avoid repetition, you can a classes that has specific Attributes and Methods that has many instances as you like. 
 
 #### Why you should use OOP
-- [x] :one: OOP wil help you simplify your complex structer :relaxed:
-- [x] :two: You can use it across programs :star2:
-- [x] :three: You can set class specific behaviour through polymorphism :+1:
-- [x] :four: It will make debuging a braze :relieved:
+- [x] :one: OOP wil help you simplify your complex structer 
+- [x] :two: You can use it across programs 
+- [x] :three: You can set class specific behaviour through polymorphism 
+- [x] :four: It will make debuging a braze 
 
 
 
@@ -89,8 +89,8 @@ public class dogs extends cats{
 ```
 
 #### Why you should use Inheritance? 
-- [x] :one: You will be able to re-use your code :rainbow:
-- [x] :two: Your code will be highly readable :book:
+- [x] :one: You will be able to re-use your code 
+- [x] :two: Your code will be highly readable 
 
 
 [Inheritance in Java Programming](https://beginnersbook.com/2013/03/inheritance-in-java/)
@@ -111,9 +111,9 @@ public class BankInformation {
 bank software declarer your balance as a private variable; therefore, it's only available to you when you log in. if they declare it as a public variable, it would be available to everyone, and they fail to protect your privacy. 
 
 #### Why you should use Encapsulation? 
-- [x] :one: Help you maintenan your code :coffee:
-- [x] :two: Increases rour code usability :+1:
-- [x] :three: Change your code independently whenever needed :star2:
+- [x] :one: Help you maintenan your code 
+- [x] :two: Increases rour code usability
+- [x] :three: Change your code independently whenever needed 
 
 
 ### Abstraction
@@ -134,9 +134,9 @@ public int getAge(){
 [Difference between Abstraction and Encapsulation in Java](https://www.geeksforgeeks.org/difference-between-abstraction-and-encapsulation-in-java-with-examples/)
 
 #### Why you should use Abstraction? 
-- [x] :one:  Reduce your code complexity :sun_with_face:
-- [x] :two: Increase your application security by providing important details only to users :shipit:
-- [x] :three: Write your code once & avoid repetition :heavy_check_mark:
+- [x] :one:  Reduce your code complexity
+- [x] :two: Increase your application security by providing important details only to users 
+- [x] :three: Write your code once & avoid repetition 
 
 
 ### Polymorphism
@@ -147,15 +147,15 @@ Polymorphism means "many forms", and it occurs when we have many classes that ar
 In our car illustration the attribute color behaved differently for each instance; for sam's car, it reflected green, for Abe's car, it was yellow, and bills car was blue
 
 #### Why you should use polymorphism? 
-- [x] :one: Type your code once and reuse it as much you like :carousel_horse:
-- [x] :two: Makes debug easier :performing_arts:
-- [x] :three: Store multiple data types in single variable :egg:
+- [x] :one: Type your code once and reuse it as much you like 
+- [x] :two: Makes debug easier 
+- [x] :three: Store multiple data types in single variable 
 
 #### Summery  
-- [x] :one: OOP relies on the concept of classes and objects :ok_hand:
-- [x] :two: OOP used to structure a software program into simple, reusable pieces of code :construction_worker:
-- [x] :three: JavaScript, C++, Java, and Python are exmple of OOP :man_technologist:
-- [x] :four: OOP has four principle Inheritance, Encapsulation, Abstraction and, Polymorphism :honeybee:
+- [x] :one: OOP relies on the concept of classes and objects 
+- [x] :two: OOP used to structure a software program into simple, reusable pieces of code 
+- [x] :three: JavaScript, C++, Java, and Python are exmple of OOP 
+- [x] :four: OOP has four principle Inheritance, Encapsulation, Abstraction and, Polymorphism 
 
 
 
@@ -194,12 +194,12 @@ Here we grouped variables based on how we will use them; for example, we had tod
 
 now the classes we made are closed, we don't need to touch them, and if the pet store owner wants to add a new class, we can do that since our code allows us to add new classes "open." 
 #### What's the benefit of Open–Closed Principle?
-- [x] :one: Reduce the impact of any changes to your application code :collision:
-- [x] :two: Add a new extension to your code and avoid changing the old one! :baby_chick:
+- [x] :one: Reduce the impact of any changes to your application code 
+- [x] :two: Add a new extension to your code and avoid changing the old one! 
 
 #### Tips to help you follow Open–Closed Principle
-- [x] :one: Design your classes so that new functionality can be added as new requirements are generated :octocat:
-- [x] :two: Avoid modifying developed class unless your debugging :computer:
+- [x] :one: Design your classes so that new functionality can be added as new requirements are generated 
+- [x] :two: Avoid modifying developed class unless your debugging 
 
 ## Interface Segregation Principle     
 
@@ -216,13 +216,13 @@ Which allow us to add more roles like Purring level since it's cat's thing
 the dog method will not depend on it. 
 
 #### What's the benefit of Interface Segregation Principle?
-- [x] :one: Increase your code readability :eyeglasses:
-- [x] :two: Increase maintainability of your code :part_alternation_mark:
+- [x] :one: Increase your code readability
+- [x] :two: Increase maintainability of your code 
 
 #### Tips to help you follow Interface Segregation Principle 
-- [x] :one: Spend some time at the design phase constricting your application :calling:
-- [x] :two: Avoid using one large interface for you application :page_with_curl:
-- [x] :three: Brake off application interface into smaller groups :cake:
+- [x] :one: Spend some time at the design phase constricting your application 
+- [x] :two: Avoid using one large interface for you application 
+- [x] :three: Brake off application interface into smaller groups 
 
 
 ## Do Not Repeat Yourself Principle
@@ -253,10 +253,10 @@ System.out.println("Thank you for your visit on" + todayDate + ".");
 It's better now, the whole code took only one line, and in case the owner wants to change the wording, we can easily do that 
 
 #### Why use dry concept when coding?
-- [x] :one: Reduce workload by reducing unnecessary code :construction:
-- [x] :two: Maintain and debug your code easily :cake:
-- [x] :three: Avoid technical debt :warning:
+- [x] :one: Reduce workload by reducing unnecessary code 
+- [x] :two: Maintain and debug your code easily 
+- [x] :three: Avoid technical debt 
 
 #### Tips to help you follow DRY principle 
-- [x] :one: Avoid writing lengthy codes insted build your code in smaller reusable units :tangerine:
-- [x] :two: Establish you code logic first to help with your code writing processe :construction:
+- [x] :one: Avoid writing lengthy codes insted build your code in smaller reusable units 
+- [x] :two: Establish you code logic first to help with your code writing processe 
