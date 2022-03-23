@@ -36,7 +36,7 @@ samCar.make = "Honda";
 samCar.model = "2020";
 ```
 
-Becuse of  OOP we can expand the Class definition to define class methods, so will add tiers upgrade methoud  
+Becuse of  OOP we can expand the class definition to define class methods, so will add tiers upgrade methoud  
 
 ```
 public class Car {
@@ -69,7 +69,7 @@ System.out.println(samCar.condition); // Winter tires on
 
 
 <img src="pic/oop-pet-example.png"/>
-A real example of how OOP can create an easy program for a pet shop. 
+Anouther example of how OOP can create an easy program is our pet shop. 
 
 when we use OOP, we specify the attribute and method once, and as more dogs check-in, we fill out their name and age; for today's date and age, data will be pulled from the main class to reflect today's date and age. 
 - [x] :one: We crated parent class "Dog class"
@@ -102,7 +102,7 @@ var fluffy = {
 
 On the other hand, when we didn't use OOP, we had to create a different variable for each dog then add different specifications for them, meaning whenever new dog check-in, we'll have to fill out today's date again and retype the function to give us their age. 
 
-In short, OOP will is ideal for complex structures which allow you to reuse your code and avoid repetition, you can a classes that has specific Attributes and Methods that has many instances as you like. 
+In short, OOP is ideal for complex structures which allow you to reuse your code and avoid repetition, you can creat classes that has specific Attributes and Methods that has many instances as you like. 
 
 #### Why you should use OOP
 - [x] :one: OOP wil help you simplify your complex structer 
@@ -124,11 +124,11 @@ Inheritance is the procedure in which one class inherits the attributes and meth
 #### Example: 
 
 ```
-public class dogs {
+public class anmiles {
 
 }
 
-public class dogs extends cats{
+public class anmiles extends cats{
 
 }
 ```
