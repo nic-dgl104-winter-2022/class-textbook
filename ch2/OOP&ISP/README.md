@@ -1,7 +1,7 @@
 # Object-Oriented Programming & Interface Segregation Principle
 ---
 ## Intro
-In this section, first, we will go over OPP paradigms with examples, the four principles of OPP paradigms with examples. Then will go over Open–closed principle, Interface Segregation Principle from the five SOLID principles of object-oriented design with examples and dry principle with example. 
+In this section, first, we will go over OPP paradigms with examples, the four principles of OPP paradigms with examples. Then will go over Interface Segregation Principle from the five SOLID principles of object-oriented design with examples and dry principle with example.
 
 
 ## OOP paradigms
@@ -17,11 +17,56 @@ There are many object-oriented programming languages including JavaScript, C++, 
 
 <img src="pic/oop-car-example.png"/>
 
-As illustrated in the picture, we first have a Car class that contains Attributes and Methods. 
-Inside Attributes, we got color, brand, year make then witing each attribute we have different values. 
-Inside Methods, we have functions that are only accessible to car objects; 
-for example, the Repaint method will help us change the car color for each instance  we create; 
-the same goes for Tiers upgrade method.
+OOP has classes and instances that comes from those classes for example here we have class of car 
+
+```
+public class Car {
+  String color;
+  String model;
+  String make;
+}
+```
+
+Then our car class can have instances like 
+
+```
+Car samCar = new Car();
+samCar.color = "Black";
+samCar.make = "Honda";
+samCar.model = "2020";
+```
+
+Becuse of  OOP we can expand the Class definition to define class methods, so will add tiers upgrade methoud  
+
+```
+public class Car {
+  String color;
+  String make;
+  Int model;
+  String tierUpgrade;
+  void winterReady() {
+    this.condition = "Winter tires on";
+  }
+  void notWinterReady() {
+    this.condition = "Winter tires off";
+  }
+}
+```
+
+Now we can do this 
+
+```
+Car samCar = new Car();
+samCar.color = "Black";
+samCar.make = "Honda";
+samCar.model = "2020";
+
+samCar.notWinterReady();
+System.out.println(samCar.condition); //Winter tires off
+samCar.winterReady();
+System.out.println(samCar.condition); // Winter tires on
+```
+
 
 <img src="pic/oop-pet-example.png"/>
 A real example of how OOP can create an easy program for a pet shop. 
