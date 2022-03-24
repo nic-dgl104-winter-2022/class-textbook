@@ -12,6 +12,7 @@ A list of contributors
 * Destiny Lewis ([destiny-lewis](https://github.com/destiny-lewis))
 * Phat Tran ([ducphattran](https://github.com/ducphattran))
 * Tyson Foster
+* Brian Massick ([BrianMassick](https://github.com/BrianMassick))
 * Ryan Heid ([RyanHeid](https://github.com/RyanHeid))
 * Montana Pistell ([montanarey](https://github.com/montanarey))
 * Isabella Jones ([TentacularScientist](https://github.com/TentacularScientist))
