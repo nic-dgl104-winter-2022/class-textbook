@@ -12,4 +12,4 @@ A list of contributors
 * Destiny Lewis ([destiny-lewis](https://github.com/destiny-lewis))
 * Phat Tran ([ducphattran](https://github.com/ducphattran))
 * Tyson Foster
-* Anna Wilson ([Ann-Will] (https://github.com/Ann-Wil))
+* Anna Wilson [Ann-Wil](https://github.com/Ann-Wil)
