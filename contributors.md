@@ -13,3 +13,8 @@ A list of contributors
 * Phat Tran ([ducphattran](https://github.com/ducphattran))
 * Tyson Foster
 * Montana Pistell ([montanarey](https://github.com/montanarey))
+* Isabella Jones ([TentacularScientist](https://github.com/TentacularScientist))
+* Ryan Stich ([RyanStich] (https://github.com/RyanStich))
+* Brandon Britton ([Ushinattamono](https://github.com/Ushinattamono))
+* Tyler Shorrock ([TylerS-111](https://github.com/Tyler-S111))
+* Anna Wilson [Ann-Wil](https://github.com/Ann-Wil)
