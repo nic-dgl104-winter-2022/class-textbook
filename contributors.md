@@ -11,6 +11,7 @@ A list of contributors
 * Brendan Williamson ([BrendanW10](https://github.com/brendanw10))
 * Destiny Lewis ([destiny-lewis](https://github.com/destiny-lewis))
 * Phat Tran ([ducphattran](https://github.com/ducphattran))
+* Ryan Stich ([RyanStich] (https://github.com/RyanStich))
 * Tyson Foster
 * Brandon Britton ([Ushinattamono](https://github.com/Ushinattamono))
 * Tyler Shorrock ([TylerS-111](https://github.com/Tyler-S111))
