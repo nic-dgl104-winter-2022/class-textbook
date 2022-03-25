@@ -1,3 +1,5 @@
+#High Level Debugging Strategies
+
 Bugs are generally cause by one of a few things: typos / syntax errors, implementation errors (like trying to modify a data structure in a way that doesn’t work, integer overflow, etc), and logic errors. 
 
 The most important thing when debugging is understanding the problem. If you don’t know what is going wrong, trying to find the source of the problem can be incredibly difficult, especially when the source of the bug is an error with the logic used to write the code. Start by comparing what did happen with what was supposed to happen, to try to find potential sources for the bug. If you aren’t sure what the source of the bug is, it can also be very helpful to explain the code and the problem out loud as a way to make you make you think more about the code and the bug, and potentially help find any potential logic errors or forgotten edge cases.
