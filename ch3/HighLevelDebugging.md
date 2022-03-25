@@ -1,4 +1,4 @@
-#High Level Debugging Strategies
+# High Level Debugging Strategies
 
 Bugs are generally cause by one of a few things: typos / syntax errors, implementation errors (like trying to modify a data structure in a way that doesn’t work, integer overflow, etc), and logic errors. 
 
