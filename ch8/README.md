@@ -1,7 +1,7 @@
 # DGL 104 Winter 2022 - Class Textbook
 ## Chapter 8
 
-**MVC** is an architectural pattern and it stands for Model, View, and Controller. It is a pattern to represent information and data to the user. It was used for desktop graphical user interfaces but nowadays is used in designing mobile apps and web apps. Let’s dive into it by first understanding its history.
+**MVC** is a design pattern that stands as Model, View and Controller. This pattern helps to divide an application into three parts user interfaces, data and controlling logic. Let’s try to dive into its first.
 
 ## History:
 
@@ -37,57 +37,36 @@ This cycle keeps rotating until and unless the user closes the app or website. H
 
 ## Model:
 
-It is considered as a low level because it is responsible for data management.
-Handle data logically, therefore it's all about data. Because the model is
-linked to the database, anything you do with data will be represented in the
-model. The model component is where you add or retrieve data.
-
-Because the controller never connects to the database by itself, it reacts to controller
-requests. The model interfaces with the database and then provides the
-required data to the controller. It's important to note that the model never
-directly communicated with the view.
+Model is the heart of your application. Complete work related to data is managed using Model. 
+For example, if we have to collect data of a user which includes his name, date of birth and a profile picture then we will simply create a data class with three variables of name, date of birth and profile picture. It is like being a type of data we can model. Model’s work is to notify View about their current state.
 
 ## View:
 
-The view component is in control of data representation. It creates the user
-interface, or UI, for the user. So, when you think of a view component in a web
-application, only think of the HTML/CSS section. 
-
-The data acquired by the model component is used to generate views, but these data are passed
-through the controller rather than directly to the view, so the view only
-communicates with the controller.
+Views are like user-interface in an application. Like we have cfm/ HTML to render your application. The main work of a View is to observe the model to get data in views but this data is passed through the controller.
 
 ## Controller:
 
-Because the controller is the component that allows the interconnection
-between the views and the model, it is known as the "main man." The
-controller doesn't have to handle data logic; all it has to do is inform the
-model what to do. 
+ The controller prohibits the direct connection between the view and model and its work is to connect both of them. Whenever a user gets to see a view, view alerts controller that it requires data and then controller alerts model to send data to view. Basically, it is like an alarm for model and view.
 
-After getting data from the model, it processes it before
-sending it all to the display and explaining how to represent it to the user.
-Views and models cannot interact directly.
+## Why use MVC ? 
 
-## KeyPoints:
+•	First and the most important advantage of the using MVC or any architectural pattern in your app or website is the organized code.
 
-● The model is concerned with the facts and logic of your system.
+•	MVC is great if you are working on any large-size projects.
 
-● The controller maintains the link between the model and
+•	One more reason to use MVC in your project is that it can be easily modifiable and easy to maintain. 
 
-● the view, while the view only displays data. This 'division' improves
-the user experience and modularity while also making testing easier.
+## Demand & its Future:
 
+From the answers to [this question](https://www.quora.com/Do-most-software-companies-that-use-Microsoft-technologies-use-mostly-ASP-net-MVC-design-patterns) on Quora, MVC’s future is bright and demanding. Most of the top companies like Microsoft, Dell, Go Daddy, Visual Studio, etc. uses MVC design patterns for User interface and models. So, for new developers, MVC is a complete package of new skills and methods. Learning MVC can easily boost a developer’s career. 
+                                         
+## Prerequisites
 
-## Advantages & Disadvantages:
+MVC is an architectural pattern so it can be used in both phone and web applications. Before start learning MVC, you should have a prior understanding of the below points-
 
-Let’s look at some advantages and disadvantages of MVC-
-
-
-| **Advantages**                             | **Disadvantages**                  |
-| ----------------------------------- | ----------------------------------------- |
-| Good for large-size applications and websites.| Not suitable for small applications and websites.
-| Using MVC you can easily modify your application or website. | The cost of frequent updates will increase if you have an application or website which required to be updated almost every week.
-| Supports Test Driven Development, Asynchronous Method Invocation, and multiple views. | Implementation of MVCC is difficult in comparison to its other variants like MVVM. 
+•	Basic knowledge of Coding and language such as C++, Java, Kotlin or Python.
+•	Object-Oriented Programming. 
+•	Understanding of a framework related to web or mobile applications
 
                                          
 ## MVC EXAMPLE:
@@ -235,16 +214,20 @@ With this example, we learned how we can implement MVC architecture in an Androi
 using Kotlin. Below are some recommended posts by which you can understand MVC
 examples more clearly.
 
-## Conclusion:
+## Wrapping up:
 
-So MVC isn't easy to understand; in fact, it's really difficult to understand,
-but it's not impossible to learn, and every developer should keep it in mind
-when designing an application. Keep in mind that MVC is a software
-architecture that breaks down your software into smaller pieces. The model
-is concerned with the facts and logic of your system. The controller maintains
-the link between the model and the view, while the view only displays data.
-This 'division' improves the user experience and modularity while also
-making testing easier.
+So, here’s a shot bullet summary of what we learnt till yet-
+
+•	MVC architecture was first discussed by Trygve Reenskaug.
+
+•	MVC is an architectural pattern that divides an application into three parts 1) Model, 2) View, 3) Controller. 
+
+•	Most of the big companies uses MVC and it offers a huge demand and great future for industry and developers. 
+
+•	MVC is good for large-size projects, easy to maintain, easy to extend and grow.
+
+That is all about MVC. Hope you got most of it. Below are some resources and references.
+
 
 ## Resources :
 
