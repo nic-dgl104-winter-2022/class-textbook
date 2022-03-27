@@ -1,4 +1,5 @@
-# <center> Chapter 8, Architectural Patterns </center>
+# <div align = "center"> Chapter 8, Architectural Patterns </div>
+<br />
 
 ## What are architectural patterns?
 
@@ -17,8 +18,9 @@ What is the first thing you think of when you see the word [architecture](https:
 Think of [abstraction in coding](https://www.educative.io/edpresso/what-is-abstraction-in-programming)<sup>[[5]](#5)</sup>, where we hide unnecessary data to the end-user so they are left with a clean app without worrying about the nuts and bolts. Architectural patterns are an abstraction of all the design patterns of the application, “the abstract blueprint of the city.”
 
 “Ahh, now I get it!” is what I’m hoping you’re saying, but if you’re still unsure, hopefully by the end of this chapter, you can be an expert(...<sub>maybe slightly better than a beginner></sub>…) on architectural patterns!
+<br />
 
-# <center> MV*Frameworks </center>
+# <div align = "center"> MV*Frameworks </div>
 
 In this chapter, we are mainly focusing on the MV* Frameworks. which stands for [“Model-View- (Whatever).”](https://www.techbloginterview.com/what-is-a-mv-framework/)<sup>[[6]](#6)</sup>
 
@@ -36,26 +38,26 @@ Finally, what separates the different MV_patterns. The “Whatever” is the “
 
 <br />
 
-# <center> MVC, MVP, MVVM </center>
+# <div align = "center"> MVC, MVP, MVVM </div>
 
 For this chapter, we will focus on three MV* architectural patterns. 
 
-<center>
+<div align = "center">
 
 MVC       |  MVP     |  MVVM 
 | :-----: | :-----:| :-----:
 Model-View-Controller| Model-View-Presenter| Model-View-ViewModel 
-</center>
+
+</div>
 
 Each section will describle the models in detail, followed by a code example.
 
 
 Once we discuss each pattern, hopefully, you will notice the slight differences between them.
+<br  />
 
-<br />
-
-# <center> MVC </center>
-
+# <div align = "center"> MVC 
+</div>
 **MVC** is an architectural pattern and it stands for Model, View, and Controller. It is a pattern to represent information and data to the user. It was used for desktop graphical user interfaces but nowadays is used in designing mobile apps and web apps. Let’s dive into it by first understanding its history.
 
 ## History
@@ -141,7 +143,7 @@ Let’s look at some advantages and disadvantages of MVC-
 | Using MVC you can easily modify your application or website. | The cost of frequent updates will increase if you have an application or website which required to be updated almost every week.
 | Supports Test Driven Development, Asynchronous Method Invocation, and multiple views. | Implementation of MVCC is difficult in comparison to its other variants like MVVM.
 
-##  <center> MVC EXAMPLE </center>
+##  MVC EXAMPLE
 
 Let’s try to understand the MVC architecture pattern using a very simple android application.
 Here we will be building an app for login or authentication. We will be using Kotlin<sup>[[10]](#10)</sup> but you
@@ -307,8 +309,9 @@ This 'division' improves the user experience and modularity while also
 making testing easier.
 
 Next, is MVP.
+<br />
 
-# <center> MVP </center>
+# <div align = "center"> MVP </div>
 
 
 ## So what is MVP?
@@ -425,13 +428,13 @@ For example we can use the same method for the model and view class without forc
 
 Also, this may be referred to as the “contract” between the View class and the Presenter. As explained in [Introduction to the MVP Design Pattern on Android - Kotlin 1.2, Android 4.4+ - raywenderlich.com](https://www.youtube.com/watch?v=Iue2otccWBk&t=175s)<sup>[[14]](#14)</sup>
 
- <center>
+ <div align = "center">
  
  ![InterfaceImageExample](assets/interfaces.png)
 <br>
 <sup>Image courtesy of [Why are interfaces useful? - Software Engineering Stack Exchange](https://softwareengineering.stackexchange.com/questions/108240/why-are-interfaces-useful#:~:text=246-,so%20in%20this%20example,-%2C%20the%20PowerSocket%20doesn%27t)</sup>
 
-</center>
+</div>
 In our example:
 
 * The view interface will add a new method that we will use, called onButtonClicked()
@@ -498,23 +501,23 @@ public class Application {
 ```
 
 ### Output
-<center>
+<div align = "center">
 
 ![OUTPUTMVP](assets/outputMVP.gif)
 
-</center>
+</div>
 
 As you can see, each time our button is pressed the the text box is updated with the count, which we set up in the presenter.
 
 ## The core of MVP
 
 That’s just one way to approach the MVP pattern, but we have to realize the “core” of the pattern as explained in [“Should I use MVC or MVP in my project? -Medium”](https://medium.com/@m7amdelbana/should-i-use-mvc-or-mvp-in-my-project-1270f2b2f4ed#:~:text=best%20way%20to%20implement%20the%20mvp%20pattern)<sup>[[15]](#15)</sup>.
-<br>
-<center>
+<br/>
+<div align = "center">
 
 ![MVPExample](assets/MVP.png)
 
-</center>
+</div>
 **The Presenter** is the middle man, return our modified data to the view, But unlike the controller, it has control over how the data will be shown or “presented”
 
 **The View** will connect to the presenter with interfaces as we implemented in our example above, and display the UI.
@@ -548,7 +551,7 @@ Code is isolated, making view model changes are easy, as it only affects the bui
 ## Conclusion
 Thank you for reading through this. Hopefully, you understand architectural patterns a bit more and can see their benefits and implement them in your future projects. With that, that wraps up the section on MVP, an overview on MV* patterns and the meaning of architectural patterns. Next, we will discuss another MV* Framework, MVVM.
 
-# <center> MVVM </center>
+# <div align = "center"> MVVM </div>
 <p align="center">
 <img src="assets/unsplash_illustration_image.jpg" width="700">
 </p>
@@ -986,7 +989,7 @@ That's it! Now you can make an app in MVVM pattern! Wasn't it fun? You can impro
 
 <br />
 
-# <center> Final Thoughts </center>
+# <div align = "center"> Final Thoughts </div>
 Woo, finally, you got through this chapter; hopefully, you now have a good grasp on the MV* patterns and architectural patterns in general. Thank you for reading!
 
 <br />
