@@ -14,14 +14,9 @@ There are many object-oriented programming languages including JavaScript, C++, 
 [What is object-oriented programming? OOP explained in depth By Erin Doherty](https://www.educative.io/blog/object-oriented-programming) 
 
 #### Example
-TODO: Retype good & bad code exmple from app project
+TODO: Retype good & bad code exmple
 
 
-TODO: brake exmple into steps 
-- [x] :one: 
-- [x] :two: 
-- [x] :three:  
-- [x] :four: 
 
 
 
@@ -45,7 +40,7 @@ Inheritance is the procedure in which one class inherits the attributes and meth
 
 #### Example: 
 
-TODO: Retype good & bad code exmple from app project
+TODO: Retype good & bad code exmple 
 
 #### Why you should use Inheritance? 
 - [x] :one: You will be able to re-use your code 
@@ -62,7 +57,7 @@ Encapsulation is a method to hide the data in a single entity or unit along with
 
 
 #### Example: 
-TODO: Retype good & bad code exmple from app project
+TODO: Retype good & bad code exmple 
 
 #### Why you should use Encapsulation? 
 - [x] :one: Help you maintenan your code 
@@ -75,7 +70,7 @@ TODO: Retype good & bad code exmple from app project
 Abstraction is the method of hiding the unwanted information.
 #### Example: 
 
-TODO: Retype good & bad code exmple from app project
+TODO: Retype good & bad code exmple 
 
 [Difference between Abstraction and Encapsulation in Java](https://www.geeksforgeeks.org/difference-between-abstraction-and-encapsulation-in-java-with-examples/)
 
@@ -91,7 +86,7 @@ Polymorphism means "many forms", and it occurs when we have many classes that ar
 
 #### Example: 
 
-TODO: Retype good & bad code exmple from app project
+TODO: Retype good & bad code exmple 
 
 
 #### Why you should use polymorphism? 
@@ -115,7 +110,7 @@ In the field of software engineering, the interface segregation principle states
 Its alos one of the five SOLID principles of object-oriented design.
 #### Example
 
-TODO: Retype good & bad code exmple from app project
+TODO: Retype good & bad code exmple 
 
 
 #### What's the benefit of Interface Segregation Principle?
@@ -138,7 +133,7 @@ your code structure and see what you can improve following the dry principle
 
 #### Example
 
-TODO: Retype good & bad code exmple from app project
+TODO: Retype good & bad code exmple 
 
 #### Why use dry concept when coding?
 - [x] :one: Reduce workload by reducing unnecessary code 
