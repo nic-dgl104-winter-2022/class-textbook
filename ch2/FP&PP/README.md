@@ -26,6 +26,7 @@ As noted here, object oriented programming addresses software evolution by creat
  
  ### map()
   <p align='center'><img src = 'https://upload.wikimedia.org/wikipedia/commons/0/06/Mapping-steps-loillibe-new.gif' width = "400"></p>
+  <p align = "center"> Image from <a href="https://en.wikipedia.org/wiki/Map_(higher-order_function)">Wikimedia Images</a></p>
  
  The functional map() method **takes a given array** and modifies the elements within its indexes to **output a new array**. Below are a few examples on applications of the method, albeit rather simple.
  
@@ -61,6 +62,8 @@ const charCodes = map.call('Hello World', (x) => x.charCodeAt(0));
  ### reduce()
  
  <p align='center'><img src = 'https://cdn.discordapp.com/attachments/910117718924099594/948954099339116564/unknown.png' width = "400"></p>
+ <p align = "center"> Image from <a href="https://www.educative.io/edpresso/how-to-use-the-reduce-method-in-python">Educative.io</a></p>
+
  
   The simplist way of thinking of functional method reduce(), adds the sum of all values in an array, but that isn't quite right. What the reducer does is takes two arguements, which can be an object, array, or function, and returns only a single value. The termninology of these arguments are known as the reducer and accumulator; the latter of which is thhe value we end with, and the reducer the action we will perform on the two arguments. Let's take a look at what some reducer examples can perform:
   
@@ -129,7 +132,9 @@ const charCodes = map.call('Hello World', (x) => x.charCodeAt(0));
 
  ### flatmap() and flat()
  <p align='center'><img src = 'https://cdn.discordapp.com/attachments/910117718924099594/948956015234256966/unknown.png' width = "400"></p>
-
+ <p align = "center"> Image from <a href="https://download.eclipse.org/microprofile/microprofile-reactive-streams-operators-1.0/apidocs/org/eclipse/microprofile/reactive/streams/operators/PublisherBuilder.html">Eclipse.org</a></p>
+ 
+ 
  
  The flapmap() method is actually a combination of two other methods-- as the name would imply, flat() and map(). Before touching on flatmap(), we should first cover what flat() itself does.
  
@@ -178,6 +183,8 @@ array1.sort();
 
 # Platform Programming
 <p align='center'><img src='https://codeandhack.b-cdn.net/wp-content/uploads/2021/06/Learn-Programming-In-A-Fun-Way-758x398.jpg' width='400'></p>
+<p align = "center"> Image from <a href="https://inkerrobotics.com/blog/why-a-large-number-of-indian-parents-are-sceptic-about-advertisements-for-coding-courses/">Inkerrobotics</a></p>
+
 Platform programming is known as the 'setting' or environment where developed software is able to run, using the tools meant to support it. These settings can include the operating system of computers, the hardware of electronics, or other software within the architecture, such as a browser running webpages. These different tiers of abstraction are all valid aspects of platform programming as a whole, and so we can say that platform programming is the setting where programs can run.
 
 
@@ -188,6 +195,8 @@ All of the functionality you may expect from developing for a phone may not be p
 ## Cross Platform Development
 
 <p align='center'><img src='https://envisionitagency.com/uploads/2018/04/frameworks.png' width='400'></p>
+<p align = "center"> Image from <a href="https://envisionitagency.com/blog/2018/04/pros-cons-front-end-web-frameworks/">Envision IT Agency</a></p>
+
 
 As its name suggests, cross platform development is the ability to develop code for use onto multiple platforms. Given a variety of platforms for software to be developed on, the platform may need the software to be interpreted differnetly depending on what language the given hardware operates in. The most mainstream example of this may be in videogames, where a title can be developed across multiple platforms, or in phones that run on a particular version of the architecture; most notably Android or iOS.
 
