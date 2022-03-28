@@ -1,5 +1,6 @@
 
 <p align = "center"><img src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/004935cd-848e-4eb4-aefe-252ce0cfc041/fp-preview.png"></p>
+> Image from [SmashingMagazine](https://www.smashingmagazine.com/2014/07/dont-be-scared-of-functional-programming/)
 
 # Functional Programming and Functional Paradigms
 
