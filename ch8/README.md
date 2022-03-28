@@ -84,7 +84,7 @@ According to Matin Fowler 2006 GUI Architectures blog <sup>[[9]](#10)</sup> , MV
   <img width="700" src="https://user-images.githubusercontent.com/61209227/159610172-24ec9d1a-d867-4f41-b328-af83c5001ef4.png" />
 </p>
 
-**1. User View Interaction:** First of all a user will interact with the views present in the app or website. Views are like Textview, EditText, ImageView, etc.
+**1. User View Interaction:** First of all a user will interact with the views present in the app or website. Views are like Textview, EditText, ImageView, etc, which are used to display the text, images to the user. 
 
 **2. View Controller Interaction:** When a view is displayed to the user, it alerts the controller of that particular event.
 
@@ -98,55 +98,37 @@ This cycle keeps rotating until and unless the user closes the app or website. H
 
 ## Model
 
-It is considered as a low level because it is responsible for data management.
-Handle data logically, therefore it's all about data. Because the model is
-linked to the database, anything you do with data will be represented in the
-model. The model component is where you add or retrieve data.
-
-Because the controller never connects to the database by itself, it reacts to controller
-requests. The model interfaces with the database and then provides the
-required data to the controller. It's important to note that the model never
-directly communicated with the view.
+Model is the heart of your application. Complete work related to data is managed using Model. For example, if we have to collect data of a user which includes his name, date of birth and a profile picture then we will simply create a data class with three variables of name, date of birth and profile picture. It is like being a type of data we can model. Model’s work is to notify View about their current state.
 
 ## View
 
-The view component is in control of data representation. It creates the user
-interface, or UI, for the user. So, when you think of a view component in a web
-application, only think of the HTML/CSS section.
-
-The data acquired by the model component is used to generate views, but these data are passed
-through the controller rather than directly to the view, so the view only
-communicates with the controller.
+Views are like user-interface in an application. Like we have cfm/ HTML to render your application. The main work of a View is to observe the model to get data in views but this data is passed through the controller.
 
 ## Controller
 
-Because the controller is the component that allows the interconnection
-between the views and the model, it is known as the "main man." The
-controller doesn't have to handle data logic; all it has to do is inform the
-model what to do.
+ The controller prohibits the direct connection between the view and model and its work is to connect both of them. Whenever a user gets to see a view, view alerts controller that it requires data and then controller alerts model to send data to view. Basically, it is like an alarm for model and view.
 
-After getting data from the model, it processes it before
-sending it all to the display and explaining how to represent it to the user.
-Views and models cannot interact directly.
+## Why use MVC?
 
-## KeyPoints
+● First and the most important advantage of the using MVC or any architectural pattern in your app or website is the organized code.
 
-● The model is concerned with the facts and logic of your system.
+● MVC is great if you are working on any large-size projects.
 
-● The controller maintains the link between the model and
+● One more reason to use MVC in your project is that it can be easily modifiable and easy to maintain. 
 
-● the view, while the view only displays data. This 'division' improves
-the user experience and modularity while also making testing easier.
+## Demand & its Future:
 
-## Advantages & Disadvantages
+From the answers to this question on Quora, MVC’s future is bright and demanding. Most of the top companies like Microsoft, Dell, Go Daddy, Visual Studio, etc. uses MVC design patterns for User interface and models. So, for new developers, MVC is a complete package of new skills and methods. Learning MVC can easily boost a developer’s career. 
 
-Let’s look at some advantages and disadvantages of MVC-
+## Prerequisites:
 
-| **Advantages**                             | **Disadvantages**                  |
-| ----------------------------------- | ----------------------------------------- |
-| Good for large-size applications and websites.| Not suitable for small applications and websites.
-| Using MVC you can easily modify your application or website. | The cost of frequent updates will increase if you have an application or website which required to be updated almost every week.
-| Supports Test Driven Development, Asynchronous Method Invocation, and multiple views. | Implementation of MVCC is difficult in comparison to its other variants like MVVM.
+MVC is an architectural pattern so it can be used in both phone and web applications. Before start learning MVC, you should have a prior understanding of the below points-
+
+• Basic knowledge of Coding and language such as C++, Java, Kotlin or Python.
+• Object-Oriented Programming. 
+• Understanding of a framework related to web or mobile applications. 
+
+
 
 ##  MVC EXAMPLE
 
