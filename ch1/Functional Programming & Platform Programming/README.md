@@ -33,7 +33,10 @@ As noted here, object oriented programming addresses software evolution by creat
  <p align='center'><img src = 'https://upload.wikimedia.org/wikipedia/commons/0/06/Mapping-steps-loillibe-new.gif' width = "400"></p>
   <p align = "center"> Image from <a href="https://en.wikipedia.org/wiki/Map_(higher-order_function)">Wikimedia Images</a></p>
  
- A use of .map() that takes the numberArray and creates a new array of the modified numbers.
+ A use of .map() that takes the numberArray and creates a new array of the modified numbers. In the above image, we can see observe that the initial array **X** is taken as the input, and the map() function looks at each array, adds 1 to the value of that index, and sends the new value to be stored into a new array.
+
+ The following code snippet takes an array of numbers, and outputs their square root.
+
  ```javascript
 const numberArray = [9, 16, 81];
 const numberRoots = numbers.map((num) => Math.sqrt(num));
@@ -85,8 +88,10 @@ According to Mozilla's documentation, _the simplest way of thinking of functiona
 
   <p align='center'><img src = 'https://cdn.discordapp.com/attachments/910117718924099594/948954099339116564/unknown.png' width = "400"></p>
  <p align = "center"> Image from <a href="https://www.educative.io/edpresso/how-to-use-the-reduce-method-in-python">Educative.io</a></p>
+
+ The above image shows reduce() in its most basic form. It takes a function, a variable, and outputs a single value.
   
-  This use of reduce() simply adds and then returns the sum of all the values in the array.
+  The following use of reduce() simply adds and then returns the sum of all the values in the array.
   ```javascript
   //this is our initial value i.e. the starting point
   const initialValue = 0;
