@@ -80,7 +80,7 @@ According to Matin Fowler 2006 GUI Architectures blog <sup>[[9]](#10)</sup> , MV
 ## MVC Architecture
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/61209227/159610172-24ec9d1a-d867-4f41-b328-af83c5001ef4.png" />
+  <img width="700" src="https://user-images.githubusercontent.com/61209227/159610172-24ec9d1a-d867-4f41-b328-af83c5001ef4.png" />
 </p>
 
 **1. User View Interaction:** First of all a user will interact with the views present in the app or website. Views are like Textview, EditText, ImageView, etc.
@@ -171,7 +171,9 @@ To implement MVC architecture in this project we have to create three different 
 Each package will be containing classes and interfaces. To create these package
 folders –
 
-                    Right Click on the project name > New > Package
+```
+Right Click on the project name > New > Package
+```
              
 ### Step 3. – Create interfaces and classes
 
@@ -302,18 +304,10 @@ examples more clearly.
  [The Model View Controller – MVC Architecture and Frameworks Explained.](https://www.freecodecamp.org/news/the-model-view-controller-pattern-mvc-architecture-and-frameworks-explained/)
 
  
-## Conclusion
+## Summary
 
-So MVC isn't easy to understand; in fact, it's really difficult to understand,
-but it's not impossible to learn, and every developer should keep it in mind
-when designing an application. Keep in mind that MVC is a software
-architecture that breaks down your software into smaller pieces. The model
-is concerned with the facts and logic of your system. The controller maintains
-the link between the model and the view, while the view only displays data.
-This 'division' improves the user experience and modularity while also
-making testing easier.
+So MVC isn't easy to understand; in fact, it's really difficult to understand, but it's not impossible to learn, and every developer should keep it in mind when designing an application. The model is concerned with the facts and logic of your system. The controller maintains the link between the model and the view, while the view only displays data. This 'division' improves the user experience and modularity while also making testing easier.
 
-Next, is MVP.
 <br />
 
 # <div align = "center"> MVP </div>
@@ -523,6 +517,7 @@ That’s just one way to approach the MVP pattern, but we have to realize the �
 ![MVPExample](assets/MVP.png)
 
 </div>
+
 **The Presenter** is the middle man, return our modified data to the view, But unlike the controller, it has control over how the data will be shown or “presented”
 
 **The View** will connect to the presenter with interfaces as we implemented in our example above, and display the UI.
@@ -553,8 +548,8 @@ Adaptable | Not suited for small projects
 Code is isolated, making view model changes are easy, as it only affects the building blocks of the UI not how it’s presented. | Which is ironic considering I used a small project as an example, but it is still true. These patterns are mainly used for larger projects as it's complex and for smaller projects [it will be redundant.](https://developpaper.com/mvp-architecture-in-android-development/#:~:text=**-,malpractice,-Redundant%2C%20especially%20small)<sup>[[19]](#19)</sup> Basically, this pattern will be overkill.
 
 
-## Conclusion
-Thank you for reading through this. Hopefully, you understand architectural patterns a bit more and can see their benefits and implement them in your future projects. With that, that wraps up the section on MVP, an overview on MV* patterns and the meaning of architectural patterns. Next, we will discuss another MV* Framework, MVVM.
+## Summary
+Hopefully, you understand architectural patterns a bit more and can see their benefits and implement them in your future projects. With that, that wraps up the section on MVP, an overview on MV* patterns and the meaning of architectural patterns. Next, we will discuss another MV* Framework, MVVM.
 
 # <div align = "center"> MVVM </div>
 
@@ -609,11 +604,6 @@ Model, also known as a DataModel, exposes data. However, there is one intermedia
 - It is a bit complicated to understand how it works and to distinguish it from other patterns.
 - It can be overkill for smaller apps.
 
-## Conclusion
-
-MVVM offers lots of advantages of separation of concerns by leveraging data binding. Also, the Models drive as much business logic as possible and avoid the logic in Views.
-
-Personally, I feel it seems complicated at first. However, once you figure out how MVVM works, you might benefit from it and you will stick to this pattern.
 
 # Crash Course
 
@@ -970,14 +960,18 @@ class MainActivity : AppCompatActivity() {
 }
 ```
 
-## Conclusion
+## Summary
 
-That's it! Now you can make an app in MVVM pattern! Wasn't it fun? You can improve the app and implement a local database with a library Room and SQLite to have a complete code example in MVVM. Once you finish the crash course, it will make more sense than having the pattern theoretically explained.
+Now you can make an app in MVVM pattern. You can improve the app and implement a local database with a library Room and SQLite to have a complete code example in MVVM. Once you finish the crash course, it will make more sense than having the pattern theoretically explained.
+
+MVVM offers lots of advantages of separation of concerns by leveraging data binding. Also, the Models drive as much business logic as possible and avoid the logic in Views.
+
+
 
 <br />
 
 # <div align = "center"> Final Thoughts </div>
-Woo, finally, you got through this chapter; hopefully, you now have a good grasp on the MV* patterns and architectural patterns in general. Thank you for reading!
+Thank you for reading through this. Wasn't it fun? Hopefully, you have a good grasp of the MV* patterns and architectural patterns in general. As a developer, you should keep in mind that  each MV* pattern has pros and cons depending on your application. There is no ‘right’ pattern for any kind of application. We personally feel it seems complicated at first. However, once you figure out differences between MV* patterns, you might benefit from them, and you will stick to this pattern.
 
 <br />
 
