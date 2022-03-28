@@ -62,6 +62,7 @@ Once we discuss each pattern, hopefully, you will notice the slight differences 
 
 # <div align = "center"> MVC 
 </div>
+
 **MVC** is an architectural pattern and it stands for Model, View, and Controller. It is a pattern to represent information and data to the user. It was used for desktop graphical user interfaces but nowadays is used in designing mobile apps and web apps. Let’s dive into it by first understanding its history.
 
 ## History
