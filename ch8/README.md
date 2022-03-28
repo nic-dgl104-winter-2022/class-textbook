@@ -74,9 +74,6 @@ From the book Naked Objects <sup>[[8]](#9)</sup> , the motivation behind MVC was
 
 According to Matin Fowler 2006 GUI Architectures blog <sup>[[9]](#10)</sup> , MVC pattern started giving rise to other architectures like the hierarchical model–view–controller (HMVC), model–view–adapter (MVA), model–view–presenter (MVP), model–view–ViewModel (MVVM), etc.
 
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/61209227/159332175-013dffe1-11ad-4cb8-a5bd-370b0dc16815.png" />
-</p>
 
 ## MVC Architecture
 
