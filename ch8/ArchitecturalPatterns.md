@@ -1,5 +1,9 @@
-# <div align = "center"> Chapter 8, Architectural Patterns </div>
+# <div align = "center"> Chapter 8 - Architectural Patterns </div>
 <br />
+
+<p align="center">
+<img src="assets/unsplash_illustration_image.jpg" width="700">
+</p>
 
 ## What are architectural patterns?
 
@@ -149,12 +153,12 @@ Let’s try to understand the MVC architecture pattern using a very simple andro
 Here we will be building an app for login or authentication. We will be using Kotlin<sup>[[10]](#10)</sup> but you
 can also use Java<sup>[[11]](#11)</sup>.
 
-**Step 1. - Create a new Android Project**
+### Step 1. - Create a new Android Project
 
 Click on your Android Studio icon and create a new project with an empty activity. You can
 name your project anything you like, we named it as MVC Example.
 
-**Step 2. – Create three packages**
+### Step 2. – Create three packages
 
 To implement MVC architecture in this project we have to create three different packages-
 
@@ -169,13 +173,13 @@ folders –
 
                     Right Click on the project name > New > Package
              
-**Step 3. – Create interfaces and classes**
+### Step 3. – Create interfaces and classes
 
 Now, we have to create files and interfaces in the package we created above.
 In Model Package create two files-
 
-**iUser.kt**
-```
+### iUser.kt
+```kotlin
 package com.prabhjot.mvcexample.Model
 interface iUser {
   fun getEmail(): String?
@@ -184,8 +188,9 @@ interface iUser {
 }
 ```
 
-**User.kt**
-```
+### User.kt
+
+```kotlin
 package com.prabhjot.mvcexample.Model
 
 import android.text.TextUtils
@@ -220,8 +225,8 @@ class User(
 ```
 Now, for the controller package, we have to create one interface iLogin, and a class named as Login.
 
-**iLogin.kt**
-```
+### iLogin.kt
+```kotlin
 package com.prabhjot.mvcexample.Controller
 
 interface iLogin {
@@ -229,8 +234,8 @@ interface iLogin {
 }
 ```
 
-**Login.kt**
-```
+### Login.kt
+```kotlin
 package com.prabhjot.mvcexample.Controller
 
 import com.prabhjot.mvcexample.Model.User
@@ -268,8 +273,8 @@ class Login(
 
 We are done with model and controller. Now, its time to design UI using View so that data will be displayed in the views.
 
-**LoginView.kt**
-```
+### LoginView.kt
+```kotlin
 package com.prabhjot.mvcexample.View
 
 interface LoginView {
@@ -278,7 +283,7 @@ interface LoginView {
 }
 ```
 
-**Output –**
+### Output
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/61209227/159333316-b352134f-0978-49d8-8739-4bd50e41c5d1.png" />
@@ -297,7 +302,7 @@ examples more clearly.
  [The Model View Controller – MVC Architecture and Frameworks Explained.](https://www.freecodecamp.org/news/the-model-view-controller-pattern-mvc-architecture-and-frameworks-explained/)
 
  
-## Conclusion:
+## Conclusion
 
 So MVC isn't easy to understand; in fact, it's really difficult to understand,
 but it's not impossible to learn, and every developer should keep it in mind
@@ -552,9 +557,6 @@ Code is isolated, making view model changes are easy, as it only affects the bui
 Thank you for reading through this. Hopefully, you understand architectural patterns a bit more and can see their benefits and implement them in your future projects. With that, that wraps up the section on MVP, an overview on MV* patterns and the meaning of architectural patterns. Next, we will discuss another MV* Framework, MVVM.
 
 # <div align = "center"> MVVM </div>
-<p align="center">
-<img src="assets/unsplash_illustration_image.jpg" width="700">
-</p>
 
 # A detailed exploration of the Model View ViewModel architectural pattern
 
@@ -855,21 +857,6 @@ However, our Repository will be simple and only call ApiClient to fetch the char
 ```kotlin
 class Repository(private val apiService: ApiService) {
 	fun getCharacters(page:String) = apiService.fetchCharacters(page)
-}
-```
-
-Before we create our ViewModel, we should make a screen state that will help with the asynchronous stages of a request. Let's make a sealed class ScreenState.kt.
-
-### ScreenState.kt
-
-```kotlin
-sealed class ScreenState<T>(val data: T? = null, val message: String? = null) {
-
-	class Success<T>(data: T) : ScreenState<T>(data)
-
-	class Loading<T>(data: T? = null) : ScreenState<T>(data)
-
-	class Error<T>(message: String, data: T? = null) : ScreenState<T>(data, message)
 }
 ```
 
