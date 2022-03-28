@@ -6,7 +6,7 @@
 
 ## Intro
 
-Here, I will introduce you to functional programming and some of its paradigms. A new and learning programmer may be relucant to learn a different method to achieve the same result, especially when the functional approach can be a difficult approach to understand. However, Functional Programming and its paradigms are best served when software **evolves** over its lifetime, as it was so eloquently put here on [StackOverflow](https://stackoverflow.com/questions/2078978/functional-programming-vs-object-oriented-programming):
+Here, I will introduce you to functional programming and some of its paradigms. A new and learning programmer may be reluctant to learn a different method to achieve the same result, especially when the functional approach can be a difficult approach to understand. However, Functional Programming and its paradigms are best served when software **evolves** over its lifetime, as it was so eloquently put here on [StackOverflow](https://stackoverflow.com/questions/2078978/functional-programming-vs-object-oriented-programming):
 
 > Object-oriented languages are good when you have a fixed set of operations on things, and as your code evolves, you primarily add new things. This can be accomplished by adding new classes which implement existing methods, and the existing classes are left alone. 
 > 
@@ -14,21 +14,24 @@ Here, I will introduce you to functional programming and some of its paradigms. 
 > 
 > Norman Ramsey
 
-As noted here, object oriented programming addresses software evolution by creating more content to accomplish the task at hand, often by creating new classes which can bloat the software and scales poorly. Functional programming on the other hand would minimize the amount of new code added, solving complex problems in a simpler way with the use of lambda operators, improving modularity, and code maintainabilty by use of nested functions. This isn't to say that OOP and Functional Programming are mutually exclusive; though being able to recognize where a developer is able to use functional programming is beneficial to development as a whole.
+As noted here, object oriented programming addresses software evolution by creating more content to accomplish the task at hand, often by creating new classes which can bloat the software and scales poorly. Functional programming on the other hand would minimize the amount of new code added, solving complex problems in a simpler way with the use of lambda operators, improving modularity, and code maintainability by use of nested functions. This isn't to say that OOP and Functional Programming are mutually exclusive; though being able to recognize where a developer is able to use functional programming is beneficial to development as a whole.
 
 **_What is Functional Programming?_**
  
  Functional programming is best understood as an approach towards coding-- using functions most effectively to create concise and rectifiable code. This is what is meant to be a paradigm, a pattern, model, or methodology for how something is done or accomplished.
+
+ In functional programming, it's important to recall what sets it apart from its object oriented counterpart. As object oriented programming works with mutable objects and variables, one of the goals in the functional programming paradigm is to have all of the variables or objects it works with be immutable-- functional programming does not change the original values of what it works with.
  
  ## Functional Tools
- 
+
   Here, I will cover some methods that are used in functional programming, particularily the most common ones such as **map**, **reduce**, **flatmap**, and **sort**. JavaScript will be the language used in the following examples.
  
  ### map()
-  <p align='center'><img src = 'https://upload.wikimedia.org/wikipedia/commons/0/06/Mapping-steps-loillibe-new.gif' width = "400"></p>
-  <p align = "center"> Image from <a href="https://en.wikipedia.org/wiki/Map_(higher-order_function)">Wikimedia Images</a></p>
- 
+   
  The functional map() method **takes a given array** and modifies the elements within its indexes to **output a new array**. Below are a few examples on applications of the method, albeit rather simple.
+
+ <p align='center'><img src = 'https://upload.wikimedia.org/wikipedia/commons/0/06/Mapping-steps-loillibe-new.gif' width = "400"></p>
+  <p align = "center"> Image from <a href="https://en.wikipedia.org/wiki/Map_(higher-order_function)">Wikimedia Images</a></p>
  
  A use of .map() that takes the numberArray and creates a new array of the modified numbers.
  ```javascript
@@ -58,14 +61,30 @@ const charCodes = map.call('Hello World', (x) => x.charCodeAt(0));
 // charCodes now equals [72, 101, 108, 108, 111, 32, 87, 111, 114, 108, 100]
  ```
   > .map() code by PalaKollu Sri Manikanta
+
+  Where might a programmer want to use map()? There are simple applications as demonstrated above, where the developer may want to evaluate a formula of numbers, reorganize the appearance of an array, or convert a string to ASCII format.
+
+  Let's consider an interaction between a glove-like input device that receives information from five fingers, and sends the information in the form of an array. The map() function may be used to interpret the array into a form that the software may use for other existing functions in its code:
+
+  ```javascript
+  // Presume the input provides a input of 'a#' where 'a' might be the angle and '#' the angle the finger is currently at. We map the array to simply provide the value as angle alone.
+  const gloveInput = [{f:1, a:90},
+                      {f:2, a:90},
+                      {f:3, a:0 },
+                      {f:4, a:0 },
+                      {f:5, a:0 }];
+
+  const interpretedInput = gloveInput.map((f, a)) => ({a});
+  // interpretedInput is an array of [90, 90, 0, 0, 0];
+  ```
+
  
  ### reduce()
  
- <p align='center'><img src = 'https://cdn.discordapp.com/attachments/910117718924099594/948954099339116564/unknown.png' width = "400"></p>
- <p align = "center"> Image from <a href="https://www.educative.io/edpresso/how-to-use-the-reduce-method-in-python">Educative.io</a></p>
+According to Mozilla's documentation, _the simplest way of thinking of functional method reduce(), adds the sum of all values in an array_, but that isn't quite right. What the reducer does is takes two arguments, which can be an object, array, or function, and **returns only a single value**. The terminology of these arguments are known as the reducer and accumulator; the latter of which is the value we end with, and the reducer the action we will perform on the two arguments. Let's take a look at what some reducer examples can perform:
 
- 
-  The simplist way of thinking of functional method reduce(), adds the sum of all values in an array, but that isn't quite right. What the reducer does is takes two arguements, which can be an object, array, or function, and returns only a single value. The termninology of these arguments are known as the reducer and accumulator; the latter of which is thhe value we end with, and the reducer the action we will perform on the two arguments. Let's take a look at what some reducer examples can perform:
+  <p align='center'><img src = 'https://cdn.discordapp.com/attachments/910117718924099594/948954099339116564/unknown.png' width = "400"></p>
+ <p align = "center"> Image from <a href="https://www.educative.io/edpresso/how-to-use-the-reduce-method-in-python">Educative.io</a></p>
   
   This use of reduce() simply adds and then returns the sum of all the values in the array.
   ```javascript
@@ -129,14 +148,15 @@ const charCodes = map.call('Hello World', (x) => x.charCodeAt(0));
   ```
 > reduce() code by Paul Ryan
 
+Where would a developer like to use reduce()? Generally, reduce is a flexible function that can be thought of evaluating two things interacting with each other in a particular way. For example, mixing colours together, comparing the difference between two objects, or finding the result of the composition of two objects.
 
  ### flatmap() and flat()
- <p align='center'><img src = 'https://cdn.discordapp.com/attachments/910117718924099594/948956015234256966/unknown.png' width = "400"></p>
- <p align = "center"> Image from <a href="https://download.eclipse.org/microprofile/microprofile-reactive-streams-operators-1.0/apidocs/org/eclipse/microprofile/reactive/streams/operators/PublisherBuilder.html">Eclipse.org</a></p>
- 
- 
+
  
  The flapmap() method is actually a combination of two other methods-- as the name would imply, flat() and map(). Before touching on flatmap(), we should first cover what flat() itself does.
+
+  <p align='center'><img src = 'https://cdn.discordapp.com/attachments/910117718924099594/948956015234256966/unknown.png' width = "400"></p>
+ <p align = "center"> Image from <a href="https://download.eclipse.org/microprofile/microprofile-reactive-streams-operators-1.0/apidocs/org/eclipse/microprofile/reactive/streams/operators/PublisherBuilder.html">Eclipse.org</a></p>
  
  Like we were able to do with the reduce() method, flat()'s exclusive roll is to create a new array from all of the values of arrays that may be nested within other arrays. In the following example:
  ```javascript
@@ -163,6 +183,10 @@ const result = names.flatMap((name, index) => [name, index]);
 // [ 'jane', 1, 'john', 2 ]
 ```
 > flatmap() code by Samantha Ming
+
+Where might a developer want to use flatmap()? To be perfectly honest, it's difficult to think of an event where you unwillingly come across a deeply nested array you want to reiterate to a flattened one-- and therein lies our answer.
+
+flatmap() may be a useful function for a developer that is entering into an existing project, where the original code was instructed not to be changed, but if the variables exist in such a fashion-- as in a nested array, then flatmap() could be used in such an event where the new developer outputs a new array to suit the results of a new developed feature.
  
  ### sort()
  
