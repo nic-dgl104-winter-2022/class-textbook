@@ -109,7 +109,7 @@ According to Mozilla's documentation, _the simplest way of thinking of functiona
   ```
   > reduce() code by Paul Ryan
 
-  This use of reduce() takes an array of arrays, and concatinates all of the indexes of the sub-arrays into a new single array. 
+  This use of reduce() takes an array of arrays, and concatenates all of the indexes of the sub-arrays into a new single array. 
   ```javascript
   function flattenArray(data) {
     // our initial value this time is a blank array
@@ -174,7 +174,7 @@ console.log(flattened);
  > flatmap() code by Samantha Ming
 
 
- We simply recieve a new array from a nested array that contained two addtional arrays.
+ We simply recieve a new array from a nested array that contained two additional arrays.
  
  Thinking back to the map() method, flatmap() would simply apply both methods onto the given array. However it's important to note that the map() function is done first, and then the flat() method after, contrary to what the name would otherwise suggest. The only thing you should keep in mind as you use flatmap() is that it is only able to flatten arrays that are nested 'one level deep'. Nests of nested arrays would only flatten the array by one level. In this event, you would want to call the methods separately using flat() and map().
 
