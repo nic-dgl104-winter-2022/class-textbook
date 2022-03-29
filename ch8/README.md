@@ -720,14 +720,6 @@ Once we have prepared the XML files, we have to prepare Kotlin files that will h
 ### MainAdapter.kt
 
 ```kotlin
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
-import android.widget.ImageView
-import android.widget.TextView
-import androidx.recyclerview.widget.RecyclerView
-import coil.load
-import coil.transform.CircleCropTransformation
 
 class MainAdapter(val characterList: List<Character>) :
 	RecyclerView.Adapter<MainAdapter.MainViewHolder>() {
@@ -786,13 +778,6 @@ Next, we will make an API service that uses a library Retrofit for requesting th
 ### ApiClient.kt
 
 ```kotlin
-import com.squareup.moshi.Moshi
-import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
-import retrofit2.Call
-import retrofit2.Retrofit
-import retrofit2.converter.moshi.MoshiConverterFactory
-import retrofit2.http.GET
-import retrofit2.http.Query
 
 // object allows us to call ApiClient service without initializing the class
 object ApiClient {
@@ -806,7 +791,6 @@ object ApiClient {
 		Retrofit.Builder().baseUrl(BASE_URL)
 			.addConverterFactory(MoshiConverterFactory.create(moshi)).build()
 	}
-
 	val apiService:ApiService by lazy {
 		retrofit.create(ApiService::class.java)
 	}
@@ -835,12 +819,6 @@ In our ViewModel, we will manage an observable that will notify our Views (in ou
 ### MainViewModel.kt
 
 ```kotlin
-import androidx.lifecycle.LiveData
-import androidx.lifecycle.MutableLiveData
-import androidx.lifecycle.ViewModel
-import retrofit2.Call
-import retrofit2.Callback
-import retrofit2.Response
 
 class MainViewModel(private val repository: Repository = Repository(ApiClient.apiService)) :
 	ViewModel() {
@@ -855,7 +833,6 @@ class MainViewModel(private val repository: Repository = Repository(ApiClient.ap
 	init {
 		fetchCharacter()
 	}
-
 	private fun fetchCharacter() {
 		// we define a call we want to make
 		val client = repository.getCharacters("1")
@@ -867,14 +844,7 @@ class MainViewModel(private val repository: Repository = Repository(ApiClient.ap
 				call: Call<CharacterResponse>,
 				response: Response<CharacterResponse>
 			) {
-				if (response.isSuccessful) {
-					_charactersLiveData.postValue(ScreenState.Success(response.body()?.result))
-				} else {
-					_charactersLiveData.postValue(ScreenState.Error(response.code().toString()))
-				}
-			}
-			override fun onFailure(call: Call<CharacterResponse>, t: Throwable) {
-				_charactersLiveData.postValue(ScreenState.Error(t.message.toString()))
+				_charactersLiveData.postValue(ScreenState.Success(response.body()?.result))
 			}
 		})
 	}
@@ -886,15 +856,6 @@ Finally, we can wire everything up and create our MainActivity, observing LiveDa
 ### MainActivity.kt
 
 ```kotlin
-import androidx.appcompat.app.AppCompatActivity
-import android.os.Bundle
-import android.view.View
-import android.widget.ProgressBar
-import androidx.lifecycle.ViewModelProvider
-import androidx.recyclerview.widget.RecyclerView
-import androidx.recyclerview.widget.StaggeredGridLayoutManager
-import com.google.android.material.snackbar.Snackbar
-
 
 class MainActivity : AppCompatActivity() {
 
@@ -915,27 +876,12 @@ class MainActivity : AppCompatActivity() {
 	private fun processCharactersResponse(state: ScreenState<List<Character>?>) {
 
 		val pb = findViewById<ProgressBar>(R.id.progressBar)
-		when (state) {
-			is ScreenState.Loading -> {
-				pb.visibility = View.VISIBLE
-			}
-			is ScreenState.Success -> {
-				pb.visibility = View.GONE
-				if (state.data != null) {
-					val adapter = MainAdapter(state.data)
-					val recyclerView = findViewById<RecyclerView>(R.id.characterRv)
-					recyclerView?.layoutManager =
-						StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL)
-					recyclerView?.adapter = adapter
-				}
-			}
-			is ScreenState.Error -> {
-				pb.visibility = View.GONE
-				val view = pb.rootView
-				// tells the snack bar where it is
-				Snackbar.make(view, state.message!!, Snackbar.LENGTH_LONG).show()
-			}
-		}
+			if (state.data != null) {
+			val adapter = MainAdapter(state.data)
+			val recyclerView = findViewById<RecyclerView>(R.id.characterRv)
+			recyclerView?.layoutManager =
+				StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL)
+			recyclerView?.adapter = adapter
 	}
 }
 ```
