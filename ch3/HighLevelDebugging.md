@@ -81,11 +81,11 @@ Another option with manual tracing is backtracking: starting from the location o
 
 ### Divide-and-Conquer
 
-For larger programs where you are unsure of the location of the bug, using a divide-and-conquer approach can be helpful. You essentially search for the bug using a binary search technique, using a log or breakpoint roughly halfway through the code to see which half of the code contains the bug, then repeating that process with the section that contains the bug until you have a much more manageable amount of code to work with.
+For larger programs where you are unsure of the location of the bug, using a divide-and-conquer approach can be helpful. How this technique works is you use a debugging tool to set a breakpoint at around the halfway point of the code. At that breakpoint, you then check the variables and behaviours of the code up until that point to see if the bug you are looking for as already occurred. If it has, the bug is somewhere in the first half of the code, and if not, it's in the second half. From there. you repeat the process, using a breakpoint to divide the section of code that you know contains the bug in two and checking which of those halfs contains the bug, until you've narrowed down the location to a small, much more managable section of code to debug. Essentially, it is applying the binary search algorithm to debugging.
 
 ### Test Early, Test Often
 
-Finally, when debugging, it's best to not wait until all of your code is written before you begin. When possible, check for bugs early and often, so as to minimize the amount of code that you have to look through. After all, if everything was working fine the last time you checked, then any bugs that you encounter probably at least involve the code that was written since then.
+Finally, when debugging, it's best to not wait until all of your code is written before you begin. When possible, test check for bugs early and often. By testing often, figuring out what is going wrong is often much easier than if you leave all of your testing until the end. This is because, if everything worked when last tested and now something has gone wrong, you immediately know that it involves the code that was written since the last test.
 
 ## Conclusion
 
