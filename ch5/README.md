@@ -205,7 +205,7 @@ It is some of us experiences as the user’s **expectations versus reality**. Th
 
 * Textbook: Software Testing by Ron Patton – Effects of Time and Cost Illustration
 
-* [PitSolutions](https://www.pitsolutions.ch/blog/defect-clustering-and-pesticide-paradox/)] – Unclustered Vs Clustered Defects
+* [PitSolutions](https://www.pitsolutions.ch/blog/defect-clustering-and-pesticide-paradox/) – Unclustered Vs Clustered Defects
 
 * [Maria Killam](https://mariakillam.com/the-8020-rule-also-applies-to-the-most-popular-paint-colours/) – Pareto Principle
 
@@ -213,7 +213,7 @@ It is some of us experiences as the user’s **expectations versus reality**. Th
 
 * [Ruwanthi Ranasinghe](https://medium.com/@ruwanthiranasinghe1996/7-principles-of-software-testing-25ba867f75ea/) – Absence of Errors Fallacy Illustration 1
 
-* [Imobiliare.ro](https://labs.imobiliare.ro/post/135630464550/seven-testing-principales)] – Absence of Errors Fallacy Illustration 2
+* [Imobiliare.ro](https://labs.imobiliare.ro/post/135630464550/seven-testing-principales) – Absence of Errors Fallacy Illustration 2
 
 <br>
 
