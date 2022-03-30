@@ -4,23 +4,23 @@
 
 <br>
 
-### **Table of Contents**
-* [Introduction](\ch5\README.md###INTRODUCTION)
-* [Testing Principles]()
-    1.	[Testing Shows the Presence of Defects, Not Their Absence]()
-    2.	[Exhaustive Testing is Impossible]()
-    3.	[Early Testing Saves Time and Money]()
-    4.	[Defects Cluster Together]()
-    5.	[Beware the Pesticide Paradox]()
-    6.	[Testing is Context Dependent]()
-    7.	[Absence of Errors Fallacy]()
-* [How To Decide What To Test And When]()
-* [References]()
+### Table of Contents
+* [Introduction](https://github.com/nic-dgl104-winter-2022/class-textbook/blob/main/ch5/README.md#introduction)
+* [Testing Principles](https://github.com/nic-dgl104-winter-2022/class-textbook/blob/main/ch5/README.md#testing-principles)
+    1. [Testing Shows the Presence of Defects, Not Their Absence](https://github.com/nic-dgl104-winter-2022/class-textbook/blob/main/ch5/README.md#1-testing-shows-the-presence-of-defects-not-their-absence)
+    2. [Exhaustive Testing is Impossible](https://github.com/nic-dgl104-winter-2022/class-textbook/blob/main/ch5/README.md#2-exhaustive-testing-is-impossible)
+    3. [Early Testing Saves Time and Money](https://github.com/nic-dgl104-winter-2022/class-textbook/blob/main/ch5/README.md#3-early-testing-saves-time-and-money)
+    4. [Defects Cluster Together](https://github.com/nic-dgl104-winter-2022/class-textbook/blob/main/ch5/README.md#4-defects-cluster-together)
+    5. [Beware the Pesticide Paradox](https://github.com/nic-dgl104-winter-2022/class-textbook/blob/main/ch5/README.md#5-beware-the-pesticide-paradox)
+    6. [Testing is Context Dependent](https://github.com/nic-dgl104-winter-2022/class-textbook/blob/main/ch5/README.md#6-testing-is-context-dependent)
+    7. [Absence of Errors Fallacy](https://github.com/nic-dgl104-winter-2022/class-textbook/blob/main/ch5/README.md#7-absence-of-errors-fallacy)
+* [How To Decide What To Test And When](https://github.com/nic-dgl104-winter-2022/class-textbook/blob/main/ch5/README.md#how-to-decide-what-to-test-and-when)
+* [References](https://github.com/nic-dgl104-winter-2022/class-textbook/blob/main/ch5/README.md#references)
 
 #
 <br> 
 
-### **INTRODUCTION**
+### INTRODUCTION
 
 ![[Fighting Defect Illustration](https://contemporarystaffing.com/manual-tester-insights/)](testingImages/fightingDefect.png/)
 
@@ -30,7 +30,7 @@ We also demonstrate and helps you decide on which stage of development we are go
 
 <br> 
 
-#### **What is Software Testing?**
+#### What is Software Testing?
 
 According to [Wikipedia](https://en.wikipedia.org/wiki/Software_testing) “Software testing is the act of examining the artifacts and the behavior of the software under test by validation and verification. Software testing can also provide an objective, independent view of the software to allow the business to appreciate and understand the risks of software implementation.”
 
@@ -40,7 +40,7 @@ For conducting software testing, we are not only evaluating and checking the app
 
 <br> <br>
 
-### **TESTING PRINCIPLES**
+### TESTING PRINCIPLES
 
 Software testing is a vital part for application’s success, and it is a complicated process to perform. It is helpful to have a reference and guidelines to follow and understand the ISTQB, who list seven fundamental principles of testing:
 
@@ -50,7 +50,7 @@ Software testing is a vital part for application’s success, and it is a compli
 
 <br>
 
-#### **1. Testing Shows the Presence of Defects, Not Their Absence**
+#### 1. Testing Shows the Presence of Defects, Not Their Absence
 
 No one can say that their product or application is defect free. We conduct software testing to discover flaws and issues before launching it to the market. Testing helps us to reduce the hidden defects and possible crushed, but then again identifying and resolving these issues is not a totally guarantee that the application is defect free. Instead, it will add confidence and certainty that the application is working, functioning smoothly and on how it builds.
 
@@ -64,13 +64,13 @@ Do you think that these large companies that have lots of resources make enough 
 
 <br>
 
-#### **2. Exhaustive Testing is Impossible**
+#### 2. Exhaustive Testing is Impossible
 
 Testing everything is not possible, but instead established the priorities and focus on these for testing. In other words, testing all possible scenarios or possibilities is not feasible because of huge number of it.
 
 [Test Automation Resources](https://testautomationresources.com/software-testing-basics/exhaustive-testing-fundamentals/) provides example of exhaustive testing:
 
-![[Exhausive Testing Example](https://testautomationresources.com/software-testing-basics/exhaustive-testing-fundamentals/)](testingImages/exhausiveTestingExample.png/)
+![[Exhausive Testing Example](https://testautomationresources.com/software-testing-basics/exhaustive-testing-fundamentals/)](testingImages/exhausiveTestingExample.PNG/)
 
 ```
 The IE Tools > Advanced Options window
@@ -79,14 +79,16 @@ The IE Tools > Advanced Options window
 1 condition with 3 options
 1 condition with 4 options
 2^53 = 9,007,199,254,740,992
-       x                   12
+       x    12
        = 108,086,391,056,891,904 possible combinations of conditions 
 ```
 
 ```
 At one second per test execution:
 
-108,086,391,056,891,904 / 360 = 300,239,975,158,033.067 hours (12,509,998,964,918.04 days or 34,273,969,766.9 years) to test all possible combinations.
+108,086,391,056,891,904 / 360 = 300,239,975,158,033.067 hours 
+(12,509,998,964,918.04 days or 34,273,969,766.9 years) 
+to test all possible combinations.
 ```
 
 Instead of testing everything, I’ve researched for alternatives or strategies to include for effective testing. Here’s the strategies for exhaustive testing by [Test Automation Resources](https://testautomationresources.com/software-testing-basics/exhaustive-testing-fundamentals/) , check the link for detailed information:
@@ -100,7 +102,7 @@ Furthermore, we can prioritize or focus testing based on the results of risks as
 
 <br>
 
-#### **3.	Early Testing Saves Time and Money**
+#### 3. Early Testing Saves Time and Money
 
 In any kind of development, early detection saves time, effort, and cost. As ISTQB states that “to find defects early, both static and dynamic test activities should be started as early as possible in the software development lifecycle.”
 
@@ -116,7 +118,7 @@ The sayings “prevention is better that cure” may apply in early software tes
 
 <br>
 
-#### **4.	Defects Cluster Together**
+#### 4. Defects Cluster Together
 
 From evaluating different articles and concepts of “defect cluster”, in terms of testing, this only means that the distribution of defects is not even across the application but instead can be detected in a particular section or module that affects the whole application especially for large systems.
 
@@ -132,7 +134,7 @@ To this concept, we can apply the “Pareto Principle” also known as 80-20 rul
 
 <br>
 
-#### **5.	Beware the Pesticide Paradox**
+#### 5. Beware the Pesticide Paradox
 
 This only means that if we repeat same tests all over again, it will no longer find new defects. For us to detect new defects, we must update existing test, data and make new test. 
 
@@ -144,7 +146,7 @@ To prevent this pesticide paradox, we have to create new set of test cases to ex
 
 <br>
 
-### **6.	Testing is Context Dependent**
+### 6. Testing is Context Dependent
 
 All the testing will first define the context of the application and from this context we can provide on which testing methods, types and approach should be performed and applied.
 
@@ -159,13 +161,14 @@ In design principles content is the king while in software testing, the context 
 
 <br>
 
-### **7.	Absence of Errors Fallacy**
+### 7. Absence of Errors Fallacy
 
 The results of testing, for doesn’t finding any flaws or the application without defects is never proves that absence of issues, maybe the users have. In this principle, it is all about the application’s usability, it doesn’t matter how many defects has been detected and fixed, the matter is if the application meets the user’s expectations and requirements. It is important principle to consider for ensuring the quality of the application.
 
 Here are some illustrations that shows the principle of “Absence of Errors Fallacy”:
 
 *Illustration 1:*
+
 ![[Absence of Errors Fallacy Illustration 1](https://medium.com/@ruwanthiranasinghe1996/7-principles-of-software-testing-25ba867f75ea/)](testingImages/errorFallacy.png/)
 
 *Illustration 2:*
@@ -177,12 +180,12 @@ It is some of us experiences as the user’s **expectations versus reality**. Th
 <br> <br>
 
 
-### **HOW TO DECIDE WHAT TO TEST AND WHEN**
+### HOW TO DECIDE WHAT TO TEST AND WHEN
 
 
 <br> <br>
 
-### **REFERENCES**
+### REFERENCES
 
 **Testing Principles:**
 
@@ -215,4 +218,3 @@ It is some of us experiences as the user’s **expectations versus reality**. Th
 <br>
 
 **How To Decide What To Test And When:**
-
