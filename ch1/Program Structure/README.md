@@ -39,7 +39,7 @@ What are the qualities of bad code Programmers might say that bad code has no do
 
 ## How Do We Make Code More Readable?
 Well encapsulated code tends to be more readable. According to Wikipedia: “Encapsulation is used to hide the values or state of a structured data object inside a class, preventing unauthorized parties’ direct access to them. But why would we hide data? And for what purpose? Hiding data provides a way to protect it from the outside world. If you make your instance variable public, then anyone can change it’s state. But if you make your instance variable private/protected then you are restricting outside entities from making changes to it. Names also matter. Putting careful thought into variable and method names can pay significant dividends. A well-named variable can make the code much more intuitive, whereas a poorly named variable can lead to head shakes and confusion. Consistency in style also improves code readability. Functions and classes can also be easily distinguished from one another. They should consist of descriptive titles that are delimited by using conventions.  Some types of variable naming conventions are as follows:
-__ Multiword Delimited__ – Use to separate multiple words in a variable name without white space.
+__Multiword Delimited__– Use to separate multiple words in a variable name without white space.
 __Hungarian Notation__ – This convention describes the purpose or type of the variable in the first part of the variable name, and then uses a descriptor to indicate the variable’s function. In Hungarian notation, the camelCase notation is used to delimit the words.  
 
 ## Comments and Document
