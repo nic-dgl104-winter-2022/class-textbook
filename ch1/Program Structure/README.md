@@ -7,7 +7,7 @@ A C program is a group of different sections, that are used for different purpos
 ### Documentation Section 
 The documentation section is generally the description of the program
 ``/* This program calculates celcius to farenehit_
-Author: Kevin Lucas _ Date: Novemner 27, 2017 
+Author: Kevin Lucas_ Date: Novemner 27, 2017 
 */``
 
 ## Basic Structure of a Python Program
