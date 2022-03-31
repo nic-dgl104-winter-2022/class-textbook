@@ -19,4 +19,4 @@ A function is a code that has  a name, and it can be reused (executed again) by 
 A group of statements which are part of another statement, or a function are called block, code-block, or suite in Python. Indentation is used to show blocks in Python. Four spaces together mark the next indent level.
 
 ## Basic Structure of a Java Program
-** Project ** package ``package helloworld;``
+__Project package__ ``package helloworld;``
