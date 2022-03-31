@@ -9,7 +9,7 @@ The documentation section is generally the description of the program
 ``/* This program calculates celcius to farenehit
 Author: Kevin Lucas
 Date: Novemner 27, 2017
-*/
+*/``
 
 ## Basic Structure of a Python Program
 ### Expressions
