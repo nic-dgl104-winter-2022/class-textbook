@@ -48,6 +48,8 @@ According to <a href="https://refactoring.guru/design-patterns/catalog">Refactor
 <br>
 
 ## 3. Facade
+<p align="center"> <img src="../assets/facade-structure.png" > </p>
+
 <p align="justify">
 To have a clear picture of implementing design patterns in software development, this section will describe one of the common <i>Structural patterns</i>: <b>Facade</b>.
 </p>
@@ -66,6 +68,12 @@ When the system integrates with other third-party libraries or frameworks, you n
 <p align="justify">
 The solution is to create a class that includes all the features that we need from the library. That class needs to grab everything that it needs from the third-party library to develop simplified versions of them. Then, if we need to change the feature, all we need to do is rewrite the Facade class instead of changing all the calls of third-party’s functions.
 </p>
+
+### **Implementation**
+1.	Check if you could create a simpler version of it. If possible, define a **Facade** class that contains all the features you need from the library.
+2.	The **Facade** class has a responsibility to initialize the third-party library and only needs to make changes here when you want to change the library's configuration.
+3.	Make sure the subsystem code only communicates with your **Facade** class when it uses the feature of the third-party library.
+4.	If the code becomes long and complicated, break it down into small classes.
 
 ### **Example (with Javascript)**
 #### Scenario
@@ -200,7 +208,7 @@ class Table {
 }
 ```
 
-<p align="center">
+<p align="justify">
 The purpose of wrapping within a class is to make it easier to maintain. Moreover, if the code requires more functions for creating a header or styling the cell, the time spent altering this class's implementation will not take long. All you do is call extra methods instead of refactoring the process.
 </p>
 
@@ -224,9 +232,12 @@ table.createHeader("Table header")
  ```
 
 ### Conclusion
+
 <p align="justify">
 After the above steps, you might realize that the Facade is similar to refactoring code. The Facade pattern intends to simplify the complex process, library, or framework. Thus, it requires a refactoring step to simplify your process and make them easy to use the function. Furthermore, in a real-life project, you integrate with other third-party APIs and might only use some of the features. This is where Facade comes in and helps you to wrap any necessary features and make them easier for anyone who might not get in deep into their documentation.
 </p>
+
+<p align="center"> <img src="../assets/facade-structure.png" > </p>
 
 <br>
 
