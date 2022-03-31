@@ -6,8 +6,7 @@ Structured programming is one of the several different ways in which a programmi
 A C program is a group of different sections, that are used for different purposes.
 ### Documentation Section 
 The documentation section is generally the description of the program
-``/* This program calculates celcius to farenehit_
-Author: Kevin Lucas_ Date: Novemner 27, 2017 
+``/* This program calculates celcius to farenehit <br /> Author: Kevin Lucas <br /> Date: Novemner 27, 2017  
 */``
 
 ## Basic Structure of a Python Program
