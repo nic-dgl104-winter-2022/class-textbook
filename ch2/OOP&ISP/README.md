@@ -109,7 +109,7 @@ public Car(int speed,String color,String model) {
 }
 public void carDetails() {
 	super.printdetails();
-         }}
+}}
 ```
 
 First, we used encapsulation to protect the data so the user can’t access them directly when we declared our value as private, 
@@ -161,8 +161,7 @@ public void chooseColor(String color) {
 	//overloading
 public void chooseColor(String color, String color2) {
 	System.out.println("Cat first chosen colors is: "+color);
-	System.out.println("Cat second chosen colors is: "+color2);
-		
+	System.out.println("Cat second chosen colors is: "+color2);	
 }
 }
 
@@ -203,16 +202,16 @@ public interface Polygon {
 	//default method
 	default void getSameColor(){
 	System.out.println("Polygon color is red and I will get color of polygon");
-	}}
+}}
 
 public class Rectangle implements Polygon {
 	private String color;
 	public Rectangle(String color) {
 	this.color=color;
-	}
+}
 	public String getColor() {
 	return this.color;
-	}
+}
 }
 ```
 Here we defined one method, "Rectangle class" then, inside the class, we made the body of this abstract method.
