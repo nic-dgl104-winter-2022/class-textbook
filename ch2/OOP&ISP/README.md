@@ -40,7 +40,7 @@ Inheritance is the procedure in which one class inherits the attributes and meth
 
 #### Example: 
 
-TODO: Retype good & bad code exmple 
+TODO: Retype good & bad code exmple(explain below encapsulation example) 
 
 #### Why you should use Inheritance? 
 - [x] :one: You will be able to re-use your code 
@@ -56,8 +56,6 @@ Encapsulation is a method to hide the data in a single entity or unit along with
 [Encapsulation in Java](https://www.scientecheasy.com/2020/07/encapsulation-in-java.html/#:~:text=Every%20Java%20class%20is%20an,encapsulates%20several%20combinations%20of%20medicine.)
 
 
-#### Example: 
-TODO: Retype good & bad code exmple 
 
 #### Why you should use Encapsulation? 
 - [x] :one: Help you maintenan your code 
@@ -65,12 +63,57 @@ TODO: Retype good & bad code exmple
 - [x] :three: Change your code independently whenever needed 
 
 
+#### Example(Inheritance+Encapsulation): 
+
+TODO: Retype good & bad code exmple 
+
+Vehicle is parent class and Car class(subclass) will extend the Vehicle class and this will show the inheritance and we declare data members private this shows encapsulation that user can’t access them directly(for this we make setters/getters).
+
+public class Vehicle {
+private String color, model;  //encapsulation
+
+//parameterized constructor
+public Vehicle(String color,String model) {
+		this.color=color;
+		this.model=model;
+	}
+	public String getColor() {
+		return color;
+	}
+	public void setColor(String color) {
+		this.color = color;
+	}
+	public String getModel() {
+		return model;
+	}
+	public void setModel(String model) {
+		this.model = model;
+}
+	public void printdetails() {
+		System.out.println("Color: "+this.color+"\n"+"Model: "+this.model);
+	}
+}}
+
+//parameterized constructor
+public class Car extends Vehicle {
+	
+	public Car(int speed,String color,String model) {
+		super(color,model);
+	}
+	
+	public void carDetails() {
+		super.printdetails();
+	
+         }}
+
+
+
 ### Abstraction
 #### Defenition: 
 Abstraction is the method of hiding the unwanted information.
 #### Example: 
 
-TODO: Retype good & bad code exmple 
+TODO: Retype good & bad code exmple(explain below with polomorphism example) 
 
 [Difference between Abstraction and Encapsulation in Java](https://www.geeksforgeeks.org/difference-between-abstraction-and-encapsulation-in-java-with-examples/)
 
@@ -84,10 +127,6 @@ TODO: Retype good & bad code exmple
 #### Defenition: 
 Polymorphism means "many forms", and it occurs when we have many classes that are related to each other by inheritance. 
 
-#### Example: 
-
-TODO: Retype good & bad code exmple 
-
 
 #### Why you should use polymorphism? 
 - [x] :one: Type your code once and reuse it as much you like 
@@ -100,6 +139,33 @@ TODO: Retype good & bad code exmple
 - [x] :three: JavaScript, C++, Java, and Python are exmple of OOP 
 - [x] :four: OOP has four principle Inheritance, Encapsulation, Abstraction and, Polymorphism 
 
+#### Example(Abstraction+Polymorphism): 
+
+TODO: Retype good & bad code exmple 
+
+Animal Class is a abstract class and we define one abstract method and Cat(class) extends the Animal(class) and override the method and in Cat(class) we make same name method two methods which shows the method overloading that’s how we achieve the above concepts.
+
+public abstract class Animal {
+	
+	public abstract void chooseColor(String color);
+	
+}}
+public class Cat extends Animal{
+	
+	@override
+	public void chooseColor(String color) {
+		System.out.println("Cat chosen color: "+color);
+		
+	}
+	//overloading
+	public void chooseColor(String color, String color2) {
+		System.out.println("Cat first chosen colors is: "+color);
+		System.out.println("Cat second chosen colors is: "+color2);
+		
+	}
+}
+
+
 
 ## Interface Segregation Principle     
 
@@ -111,6 +177,27 @@ Its alos one of the five SOLID principles of object-oriented design.
 #### Example
 
 TODO: Retype good & bad code exmple 
+
+Interface Polygon define one method which is implemented on Rectangle class and in Rectangle(class) we make a body of this abstract method. 
+
+public interface Polygon {
+	
+	abstract String getColor();
+	
+	//default method
+	default void getSameColor(){
+		System.out.println("Polygon color is red and I will get color of polygon");
+	}}
+
+public class Rectangle implements Polygon {
+	private String color;
+	public Rectangle(String color) {
+		this.color=color;
+	}
+	public String getColor() {
+		return this.color;
+	}
+}
 
 
 #### What's the benefit of Interface Segregation Principle?
