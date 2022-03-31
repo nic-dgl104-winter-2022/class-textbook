@@ -148,6 +148,7 @@ Polymorphism means "many forms", and it occurs when we have many classes that ar
 
 #### Example (Abstraction + Polymorphism): 
 
+```
 public abstract class Animal {
 	
 	public abstract void chooseColor(String color);
@@ -167,6 +168,8 @@ public class Cat extends Animal{
 		
 	}
 }
+
+```
 
 To put abstraction polymorphism into code, we crated animal class which we defined as an abstract method
 after that extended the cat class to Animal class 
