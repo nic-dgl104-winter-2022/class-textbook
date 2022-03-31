@@ -20,3 +20,4 @@ A group of statements which are part of another statement, or a function are cal
 
 ## Basic Structure of a Java Program
 __Project package__ ``package helloworld;``
+Package is a folder of classes and related files for your project.  ``helloworld`` is the name of the package. 
