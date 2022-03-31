@@ -71,3 +71,14 @@ The example of a styleguide that we are going to look at today is from MailChimp
 
 If you read through this Style Guide from Mailchimp you can see how one is done. They do a great job talking about their Guidelines, like how their tones will be. What words they will use. And how they will talk to their customers.
 
+
+## References
+
+- Shrm. Www.shrm.org. https://www.shrm.org/resourcesandtools/tools-and-samples/hr-qa/pages/isthereadifferencebetweenacompany%E2%80%99smission
+
+- Style Guide: What is it and Why is it Important? | Launch Marketing. (2019, April 8). Launch Marketing. https://www.launch-marketing.com/style-guide-important-brand-identity/
+
+- How to Create a Style Guide for Your Business. (2020, September 17). What a Style Guide Is, and How to Create One for Your Business | Grammarly. https://www.grammarly.com/blog/style-guide/
+
+- List of style guides. (2022, February 19). Wikipedia. https://en.wikipedia.org/wiki/List_of_style_guides#:~:text=A%20style%20guide%2C%20or%20style
+
