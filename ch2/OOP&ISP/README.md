@@ -13,13 +13,10 @@ There are many object-oriented programming languages including JavaScript, C++, 
 
 [What is object-oriented programming? OOP explained in depth By Erin Doherty](https://www.educative.io/blog/object-oriented-programming) 
 
-
-
+#### Example
 <img src="pic/oop-car-example.png"/>
 
-#### Example
 ```
-Class Example
 
 {
 
@@ -34,7 +31,14 @@ Properties,
 */
 
 }
+
 ```
+
+To ensure your code follows opp, you need to use composition over inheritance to create loosely coupled classes, 
+you should also use object and interface to create multiple inheritances to save you time, 
+Try to avoid using inheritance only in your code to avoid difficulties when you change your class; remember that in inheritance, whenever you make changes to the main class, other classes follow 
+
+<img src="pic/oop-pet-example.png"/>
 
 In short, OOP is ideal for complex structures which allow you to reuse your code and avoid repetition, you can creat classes that has specific Attributes and Methods that has many instances as you like. 
 
@@ -52,16 +56,9 @@ Object-oriented programs has four principles which are Inheritance, Encapsulatio
 #### Defenition: 
 Inheritance is the procedure in which one class inherits the attributes and methods of another class. 
 
-
-
-#### Example: 
-
-TODO: Retype good & bad code exmple(explain below encapsulation example) 
-
 #### Why you should use Inheritance? 
 - [x] :one: You will be able to re-use your code 
 - [x] :two: Your code will be highly readable 
-
 
 [Inheritance in Java Programming](https://beginnersbook.com/2013/03/inheritance-in-java/)
 
@@ -71,24 +68,19 @@ TODO: Retype good & bad code exmple(explain below encapsulation example)
 Encapsulation is a method to hide the data in a single entity or unit along with a method to protect information from outside. 
 [Encapsulation in Java](https://www.scientecheasy.com/2020/07/encapsulation-in-java.html/#:~:text=Every%20Java%20class%20is%20an,encapsulates%20several%20combinations%20of%20medicine.)
 
-
-
 #### Why you should use Encapsulation? 
 - [x] :one: Help you maintenan your code 
 - [x] :two: Increases rour code usability
 - [x] :three: Change your code independently whenever needed 
 
 
-#### Example(Inheritance+Encapsulation): 
+#### Example (Inheritance + Encapsulation): 
 
-TODO: Retype good & bad code exmple 
-
-Vehicle is parent class and Car class(subclass) will extend the Vehicle class and this will show the inheritance and we declare data members private this shows encapsulation that user can’t access them directly(for this we make setters/getters).
+Now let's see how both inheritance and encapsulation will translate in our code example. 
 
 public class Vehicle {
-private String color, model;  //encapsulation
+private String color, model;  
 
-//parameterized constructor
 public Vehicle(String color,String model) {
 		this.color=color;
 		this.model=model;
@@ -110,8 +102,7 @@ public Vehicle(String color,String model) {
 	}
 }}
 
-//parameterized constructor
-public class Car extends Vehicle {
+public class Car extends Vehicle { 
 	
 	public Car(int speed,String color,String model) {
 		super(color,model);
@@ -122,14 +113,14 @@ public class Car extends Vehicle {
 	
          }}
 
+First, we used encapsulation to protect the data so the user can’t access them directly when we declared our value as privet, 
+then we crated car class which  inheritance from our main class "Vehicle."
+
 
 
 ### Abstraction
 #### Defenition: 
-Abstraction is the method of hiding the unwanted information.
-#### Example: 
-
-TODO: Retype good & bad code exmple(explain below with polomorphism example) 
+Abstraction is the method of hiding the unwanted information. 
 
 [Difference between Abstraction and Encapsulation in Java](https://www.geeksforgeeks.org/difference-between-abstraction-and-encapsulation-in-java-with-examples/)
 
@@ -155,11 +146,7 @@ Polymorphism means "many forms", and it occurs when we have many classes that ar
 - [x] :three: JavaScript, C++, Java, and Python are exmple of OOP 
 - [x] :four: OOP has four principle Inheritance, Encapsulation, Abstraction and, Polymorphism 
 
-#### Example(Abstraction+Polymorphism): 
-
-TODO: Retype good & bad code exmple 
-
-Animal Class is a abstract class and we define one abstract method and Cat(class) extends the Animal(class) and override the method and in Cat(class) we make same name method two methods which shows the method overloading that’s how we achieve the above concepts.
+#### Example (Abstraction + Polymorphism): 
 
 public abstract class Animal {
 	
@@ -181,6 +168,10 @@ public class Cat extends Animal{
 	}
 }
 
+To put abstraction polymorphism into code, we crated animal class which we defined as an abstract method
+after that extended the cat class to Animal class 
+then we override the method, and in Cat class, so the same method chooseColor now gives us two methods  
+
 
 
 ## Interface Segregation Principle     
@@ -190,11 +181,20 @@ In the field of software engineering, the interface segregation principle states
 [Wikipedia](https://en.wikipedia.org/wiki/Interface_segregation_principle)
 
 Its alos one of the five SOLID principles of object-oriented design.
+
+
+#### What's the benefit of Interface Segregation Principle?
+- [x] :one: Increase your code readability
+- [x] :two: Increase maintainability of your code 
+
+#### Tips to help you follow Interface Segregation Principle 
+- [x] :one: Spend some time at the design phase constricting your application 
+- [x] :two: Avoid using one large interface for you application 
+- [x] :three: Brake off application interface into smaller groups 
+
+
 #### Example
 
-TODO: Retype good & bad code exmple 
-
-Interface Polygon define one method which is implemented on Rectangle class and in Rectangle(class) we make a body of this abstract method. 
 
 public interface Polygon {
 	
@@ -215,15 +215,7 @@ public class Rectangle implements Polygon {
 	}
 }
 
-
-#### What's the benefit of Interface Segregation Principle?
-- [x] :one: Increase your code readability
-- [x] :two: Increase maintainability of your code 
-
-#### Tips to help you follow Interface Segregation Principle 
-- [x] :one: Spend some time at the design phase constricting your application 
-- [x] :two: Avoid using one large interface for you application 
-- [x] :three: Brake off application interface into smaller groups 
+Here we defined one method, "Rectangle class" then, inside the class, we made the body of this abstract method.
 
 
 ## Do Not Repeat Yourself Principle
@@ -237,6 +229,7 @@ your code structure and see what you can improve following the dry principle
 #### Example
 
 A good example of dry concept is what we used in the "inheritance" example earlier to avoid repetition, which will essentially make debugging easier 
+
 
 #### Why use dry concept when coding?
 - [x] :one: Reduce workload by reducing unnecessary code 
