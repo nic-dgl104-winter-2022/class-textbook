@@ -2,17 +2,52 @@
 ## Chapter 6
 Welcome to chapter 6! This chapter is all about User Interface and Functional Requirements. A quick summary of this section, it's essentially how designers and developers work together and what tools they may use to do so. Below, you'll find our Table of Contents, and then we'll jump right into our chapter!
 
-### TOC
-- [How to Assess a User Interface from a Developer's Perspective](#how-to-assess-a-user-interface-from-a-developers-perspective).
+### Table of Contents
+- [How to Assess a User Interface from a Developer's Perspective (Shay)](#how-to-assess-a-user-interface-from-a-developers-perspective-shay).
   - [Introduction](#introduction)
+  - [User Interface](#user-interface)
+  - [Working Together](#working-together)
+  - [Better Communication](#better-communication)
+  - [References](#references)
+- [How to Assess a User Interface from a Developer's Perspective (Trevor)](#how-to-assess-a-user-interface-from-a-developers-perspective-trevor).
+  - [Introduction](#introduction-1)
   - [Design Systems](#design-systems)
   - [Team Oriented Thinking](#team-oriented-thinking)
   - [Promoting Communication](#promoting-communication)
   - [Summary](#summary)
   - [Links and Tools](#links-and-tools)
-- Functional requirements and user stories
+- [The Language of Technical Requirements](#the-language-of-technical-requirements)
 
-# How to Assess a User Interface from a Developer's Perspective
+# How to Assess a User Interface from a Developer's Perspective (Shay)
+
+## What are the biggest challenges with communication developers encounter during communication with designers?
+
+### Introduction
+While looking at the user interface developers may overlook some components, by doing this it can lead to communication issues between developers and designers. So, in this section the challenges faced during communication will be examined in more depth, to find ways these issues can be avoided from the start. 
+
+### User Interface
+[User interface](https://www.techtarget.com/searchapparchitecture/definition/user-interface-UI) plays a huge role in digital development no matter the product.  Since user interface is how the user can interact with the application or website mainly focusing on looks or style. For example, the homepage of a website having the app bar along the top to make it easy to browse the site while also being intuitive. This means the user interface design is the first way the application or website makes an impression on the user.  So being able to have a cohesive, easily operable and aesthetic user interface is of huge importance. 
+
+### Working Together
+This means keeping both developers and designers on the same page is the best way to keep a consistent design across all elements of the application. Although sometimes achieving that is more difficult than it sounds. As mentioned by Kathryn Grayson Nanz in [Design Systems for Developers](https://www.telerik.com/blogs/design-systems-developers), many developers tend to tune out when design elements are brought up in conversation. Which can lead to details being missed during [communication]( https://developer.apple.com/videos/play/wwdc2017/809/) and will lead to more things needing to be fixed later rather than being done from the start. Another [source](https://opensenselabs.com/blog/articles/communication-designer-developer) of challenges is that although both teams are working on the same project, they each approach the challenge with different mindsets leading to each team having different priorities. Lastly differences in time estimation may pop up, leaving either team frustrated with each other when deadlines were missed if they didn’t leave enough time for the other team.
+
+### Better Communication
+A simple way to prevent the challenges from the start is for developers to ask plenty of questions when you receive references from the designer so that developers have a clear picture in mind of their intended design. Another common problem is physical barriers, since some companies tend to view each team as fully separate designers and developers might not actually see each other often. Where as, if they worked closer in harmony it would be much easier to just go discuss with the other team. Although the new issue since this article was written is many companies have decided to let employees work from home since the climate of today’s world. This means most communication is most likely done over emails or applications such as slack making it harder to fully understand designers’ intention. So possibly a solution to this is to have short video conferences more frequently to help the product be more cohesive when finished. Another unique approach that has been mentioned is having each team learn a bit of the other’s job so the gap between each team is smaller meaning there is mutual understanding on both ends of the project. Lastly when doing important beginning meeting to discuss time frames instead of doing them separately, have both teams do it at the same time so they know exactly what to expect and can offer input if needed. 
+
+There’s also many technologies and different resources that can lay things out more clearly for each team so there’s even less opportunity for communication error. These will be introduced in the next section.
+
+### References
+Churchville, F. (2021, September 15). User Interface (UI). SearchApp Architecture. Retrieved from https://www.techtarget.com/searchapparchitecture/definition/user-interface-UI 
+
+Nanz, K. G. (2022, February 7). Design Systems for Developers. Telerik Blogs. Retrieved from https://www.telerik.com/blogs/design-systems-developers
+
+Inc., A. (2017). Communication Between Designers and Engineers - WWDC17. Apple Developer. Retrieved from https://developer.apple.com/videos/play/wwdc2017/809/
+
+Rawat, S. (2020, August 27). The case for communication between designer and developer. Opensense labs, Drupal Development company. Retrieved from https://opensenselabs.com/blog/articles/communication-designer-developer
+
+
+# How to Assess a User Interface from a Developer's Perspective (Trevor)
+
 Quick note about this section, any hyperlinked text you see, will be summarized at the end. So don't feel like you need to interrupt your reading!
 ## What are Some Tools/Strategies Designers and Developers can Use to Work Better Together? 
 
@@ -39,9 +74,11 @@ Now, to provide a summary of what tools are useful for such a thing. Below we’
 - [Microsoft Teams](https://www.microsoft.com/microsoft-teams/group-chat-software). Similar to the two above, it’s a sort of all in one tool for text chats, voice calls or video calls. Free to use, as long as you keep the meetings to an hour or less, then it’s roughly $4-5 (USD-CAD) per month per user.
 - [Kathryn Grayson Nanz’s](https://www.telerik.com/blogs/design-systems-developers) post for Progress Telerik “Design Systems for Developers.” Outlines what a design system is, and why they are useful to design and development teams.
 - [Fabricio Teixeira’s](https://xd.adobe.com/ideas/perspectives/leadership-insights/principles-designer-developer-collaboration/) post for Adobe, “5 principles for Better Designer-Developer Collaboration.” This post, as the name suggests, is 5 relatively simple ways to improve collaboration between team members.
-- [James Cartwright’s](https://xd.adobe.com/ideas/perspectives/leadership-insights/fostering-designer-developer-collaboration/) post also for Adobe, “What Does it Actually Take for Designers and Engineers to Work Together in Perfect Harmony?” Again, as the title suggests, this post is about how designers and developers (engineers) can better work together. The post also further proposes the idea that it’s not an “us vs them” working enviornment.
+- [James Cartwright’s](https://xd.adobe.com/ideas/perspectives/leadership-insights/fostering-designer-developer-collaboration/) post also for Adobe, “What Does it Actually Take for Designers and Engineers to Work Together in Perfect Harmony?” Again, as the title suggests, this post is about how designers and developers (engineers) can better work together. The post also further proposes the idea that it’s not an “us vs them” working environment.
 - [Sean LeSeur’s](https://slickplan.com/blog/designers-developers-working-together) post for Slickplan, “Designers and Developers Working Together (7 Collaboration Tips).” Another post outlining how to set clearer expectations, and how to go about promoting open communication between designers and developers.
 - [DesignCourse’s](https://youtu.be/wc5krC28ynQ) YouTube video, “What is a Design System? Design Systems 101 for Designers.” Gary Simon (the host) explains what a design system is, and also provides some examples, including taking a look at Google’s design system, [Material.io](https://material.io/)
 - [Jonathan Saring’s](https://blog.bitsrc.io/15-designer-and-developer-collaboration-tools-for-2021-8fae54ac2298) post for Bits and Pieces, “17 Designer Developer Collaboration and Handoff Tools For 2021.” This post goes over many different tools (too many to link here without it looking awful) that can be helpful when designing, or when handing a design off to a developer.
 - [Rachel Andrew’s](https://www.smashingmagazine.com/2018/04/working-together-designers-developers/) article for smashing magazine titled, “Working Together: How Designers And Developers Can Communicate To Create Better Projects.” This article goes over some tips and ideas on what they consider to be ideal conditions for team work. Including simple (yet important!) ideas such as having a feedback period between sides, so one side doesn’t just throw a file to the other and then move on to their next project.
 - [MediaValet’s](https://www.mediavalet.com/blog/getting-designers-and-developers-working-together/) article titled, “How to Get Your Designers and Developers Working Together.” Again goes over the same base ideas that the others posts go over. However, this post outlines what each “side” of a designer-developer team does, as well as how they got about it. For example, they say the designer side uses tools such as the Adobe suite and Sketch to do their work, while the developer side will create the product using HTML, CSS and Java etc. It’s a short 5 minute read.
+
+# The Language of Technical Requirements
