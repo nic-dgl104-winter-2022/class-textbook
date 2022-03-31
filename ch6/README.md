@@ -17,6 +17,10 @@ Welcome to chapter 6! This chapter is all about User Interface and Functional Re
   - [Summary](#summary)
   - [Links and Tools](#links-and-tools)
 - [The Language of Technical Requirements](#the-language-of-technical-requirements)
+  - [Introduction](#introduction-2)
+  - [Technical Requirements](technical-requirements)
+  - [Formal Approaches](formal-approaches)
+  - [Informal Approaches](informal-approaches)
 
 # How to Assess a User Interface from a Developer's Perspective (Shay)
 
@@ -82,3 +86,13 @@ Now, to provide a summary of what tools are useful for such a thing. Below we’
 - [MediaValet’s](https://www.mediavalet.com/blog/getting-designers-and-developers-working-together/) article titled, “How to Get Your Designers and Developers Working Together.” Again goes over the same base ideas that the others posts go over. However, this post outlines what each “side” of a designer-developer team does, as well as how they got about it. For example, they say the designer side uses tools such as the Adobe suite and Sketch to do their work, while the developer side will create the product using HTML, CSS and Java etc. It’s a short 5 minute read.
 
 # The Language of Technical Requirements
+
+## How does communication benefit both development requirements and the design of an application?
+
+### Introduction
+
+### Technical Requirements 
+
+### Formal Approaches 
+
+### Informal Approaches 
