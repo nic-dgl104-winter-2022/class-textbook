@@ -11,4 +11,14 @@ A list of contributors
 * Brendan Williamson ([BrendanW10](https://github.com/brendanw10))
 * Destiny Lewis ([destiny-lewis](https://github.com/destiny-lewis))
 * Phat Tran ([ducphattran](https://github.com/ducphattran))
+* Tyler Shorrock ([TylerS-111](https://github.com/Tyler-S111))
 * Tyson Foster
+* Brian Massick ([BrianMassick](https://github.com/BrianMassick))
+* Ryan Heid ([RyanHeid](https://github.com/RyanHeid))
+* Montana Pistell ([montanarey](https://github.com/montanarey))
+* Isabella Jones ([TentacularScientist](https://github.com/TentacularScientist))
+* Ryan Stich ([RyanStich] (https://github.com/RyanStich))
+* Brandon Britton ([Ushinattamono](https://github.com/Ushinattamono))
+* Tyler Shorrock ([TylerS-111](https://github.com/Tyler-S111))
+* Anna Wilson [Ann-Wil](https://github.com/Ann-Wil)
+
