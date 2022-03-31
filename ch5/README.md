@@ -22,7 +22,7 @@
 
 ### INTRODUCTION
 
-![[Fighting Defect Illustration](https://contemporarystaffing.com/manual-tester-insights/)](testingImages/fightingDefect.png/)
+![[Testing Illustration](https://contemporarystaffing.com/manual-tester-insights/)](testingImages/testing.png/)
 
 This chapter covers the seven testing principles provided by *ISTQB (International Software Testing Qualifications Board)*, its importance to a smooth functionality and reliability of the applications/ products and for meeting the user/ client’s expectations and requirement. 
 
@@ -34,7 +34,7 @@ We also demonstrate and helps you decide on which stage of development we are go
 
 According to [Wikipedia](https://en.wikipedia.org/wiki/Software_testing) “Software testing is the act of examining the artifacts and the behavior of the software under test by validation and verification. Software testing can also provide an objective, independent view of the software to allow the business to appreciate and understand the risks of software implementation.”
 
-![[Testing Illustration](https://contemporarystaffing.com/manual-tester-insights/)](testingImages/testing.png/)
+![[Fighting Defect Illustration](https://contemporarystaffing.com/manual-tester-insights/)](testingImages/fightingDefect.png/)
 
 For conducting software testing, we are not only evaluating and checking the application’s functions and reliabilities of what application intended to do, but also it will prevent possible bugs, we can determine the improvements that we can implement, and it helps to reduce development costs.
 
