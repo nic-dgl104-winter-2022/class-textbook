@@ -14,11 +14,23 @@ There are many object-oriented programming languages including JavaScript, C++, 
 [What is object-oriented programming? OOP explained in depth By Erin Doherty](https://www.educative.io/blog/object-oriented-programming) 
 
 #### Example
-TODO: Retype good & bad code exmple
+```
+Class Example
 
+{
 
+/* fields/data menbers,
 
+Variables,
 
+Methods,
+
+Properties,
+
+*/
+
+}
+```
 
 In short, OOP is ideal for complex structures which allow you to reuse your code and avoid repetition, you can creat classes that has specific Attributes and Methods that has many instances as you like. 
 
@@ -220,7 +232,7 @@ your code structure and see what you can improve following the dry principle
 
 #### Example
 
-TODO: Retype good & bad code exmple 
+A good example of dry concept is what we used in the "inheritance" example earlier to avoid repetition, which will essentially make debugging easier 
 
 #### Why use dry concept when coding?
 - [x] :one: Reduce workload by reducing unnecessary code 
