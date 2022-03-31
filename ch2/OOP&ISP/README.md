@@ -78,6 +78,7 @@ Encapsulation is a method to hide the data in a single entity or unit along with
 
 Now let's see how both inheritance and encapsulation will translate in our code example. 
 
+```
 public class Vehicle {
 private String color, model;  
 
@@ -112,6 +113,8 @@ public class Car extends Vehicle {
 		super.printdetails();
 	
          }}
+
+```
 
 First, we used encapsulation to protect the data so the user can’t access them directly when we declared our value as privet, 
 then we crated car class which  inheritance from our main class "Vehicle."
@@ -198,7 +201,7 @@ Its alos one of the five SOLID principles of object-oriented design.
 
 #### Example
 
-
+```
 public interface Polygon {
 	
 	abstract String getColor();
@@ -217,7 +220,7 @@ public class Rectangle implements Polygon {
 		return this.color;
 	}
 }
-
+```
 Here we defined one method, "Rectangle class" then, inside the class, we made the body of this abstract method.
 
 
