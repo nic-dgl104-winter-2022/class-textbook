@@ -10,3 +10,12 @@ An expression is any legal combination of symbols that represents a value. An ex
 A Statement is a programming instruction that does something, i.e. some action takes place. A statement executes and may or may not result in a value. 
 
 ### Comments
+Comments are the additional readable information to clarify the source code. Comments in python are the non-executable statements in which begin with a hash symbol (#) and generally ends with the end of the line. 
+
+### Function
+A function is a code that has  a name, and it can be reused (executed again) by specifying its name in the program, where needed. A function begins with a ‘def’ statement.
+
+### Blocks and indentation
+A group of statements which are part of another statement, or a function are called block, code-block, or suite in Python. Indentation is used to show blocks in Python. Four spaces together mark the next indent level.
+
+##Basic Structure of a Java Program
