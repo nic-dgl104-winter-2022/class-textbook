@@ -38,8 +38,6 @@ According to <a href="https://refactoring.guru/design-patterns/catalog">Refactor
 </p>
 
 <br>
-<hr>
-<br>
 
 ## 2. Why we need them?
 <p align="justify">
@@ -47,8 +45,6 @@ According to <a href="https://refactoring.guru/design-patterns/catalog">Refactor
     therefore, instead of reinventing the wheel, we should implement design patterns to solve the same problem. Moreover, it is good to learn some design patterns to enhance your problem-solving skills. However, exploiting them will make everything more complicated and unnecessary. Design patterns do not solve all problems in software design, and the workflow will become complex and lengthy if developers implement them without consideration. On the other hand, software engineers use them as terms in communication to describe the ideas or solutions they mention.
 </p>
 
-<br>
-<hr>
 <br>
 
 ## 3. Facade
@@ -232,8 +228,6 @@ table.createHeader("Table header")
 After the above steps, you might realize that the Facade is similar to refactoring code. The Facade pattern intends to simplify the complex process, library, or framework. Thus, it requires a refactoring step to simplify your process and make them easy to use the function. Furthermore, in a real-life project, you integrate with other third-party APIs and might only use some of the features. This is where Facade comes in and helps you to wrap any necessary features and make them easier for anyone who might not get in deep into their documentation.
 </p>
 
-<br>
-<hr>
 <br>
 
 ### References
