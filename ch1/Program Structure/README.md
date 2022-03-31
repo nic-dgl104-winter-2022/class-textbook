@@ -4,7 +4,7 @@ Structured programming is one of the several different ways in which a programmi
 
 ## Basic Structure of a C Program
 A C program is a group of different sections, that are used for different purposes.
-__Documentation Section__
+### Documentation Section 
 The documentation section is generally the description of the program
 ``/* This program calculates celcius to farenehit
 Author: Kevin Lucas
