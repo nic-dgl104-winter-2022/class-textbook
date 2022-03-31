@@ -13,6 +13,10 @@ There are many object-oriented programming languages including JavaScript, C++, 
 
 [What is object-oriented programming? OOP explained in depth By Erin Doherty](https://www.educative.io/blog/object-oriented-programming) 
 
+
+
+<img src="pic/oop-car-example.png"/>
+
 #### Example
 ```
 Class Example
