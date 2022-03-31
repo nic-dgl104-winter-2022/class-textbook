@@ -17,7 +17,7 @@ There are many object-oriented programming languages including JavaScript, C++, 
 <img src="pic/oop-car-example.png"/>
 
 ```
-
+Java
 {
 
 /* fields/data menbers,
@@ -79,6 +79,8 @@ Encapsulation is a method to hide the data in a single entity or unit along with
 Now let's see how both inheritance and encapsulation will translate in our code example. 
 
 ```
+Java
+
 public class Vehicle {
 private String color, model;  
 
@@ -152,6 +154,8 @@ Polymorphism means "many forms", and it occurs when we have many classes that ar
 #### Example (Abstraction + Polymorphism): 
 
 ```
+Java
+
 public abstract class Animal {
 	
 	public abstract void chooseColor(String color);
@@ -202,6 +206,8 @@ Its alos one of the five SOLID principles of object-oriented design.
 #### Example
 
 ```
+Java
+
 public interface Polygon {
 	
 	abstract String getColor();
