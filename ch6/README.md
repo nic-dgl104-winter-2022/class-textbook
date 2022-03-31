@@ -3,7 +3,13 @@
 Welcome to chapter 6! This chapter is all about User Interface and Functional Requirements. A quick summary of this section, it's essentially how designers and developers work together and what tools they may use to do so. Below, you'll find our Table of Contents, and then we'll jump right into our chapter!
 
 ### TOC
-- How to assess a user interface from a developer's perspective.
+- [How to Assess a User Interface from a Developer's Perspective](#how-to-assess-a-user-interface-from-a-developers-perspective).
+  - [Introduction](#introduction)
+  - [Design Systems](#design-systems)
+  - [Team Oriented Thinking](#team-oriented-thinking)
+  - [Promoting Communication](#promoting-communication)
+  - [Summary](#summary)
+  - [Links and Tools](#links-and-tools)
 - Functional requirements and user stories
 
 # How to Assess a User Interface from a Developer's Perspective
