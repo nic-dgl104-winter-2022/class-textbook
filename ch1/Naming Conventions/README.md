@@ -77,4 +77,13 @@ It is important to follow the rules listed above. But following these cases will
 - mixedCase (AKA lower camelCase) - is where every word EXCEPT the first word starts with a capital letter. The first words start with a lower case.
 <img src="Images/lowercamel.png"/>
 
+## References
+- File Naming Conventions. Datamanagement.hms.harvard.edu. https://datamanagement.hms.harvard.edu/collect/file-naming-convention
+
+- Why we should follow the naming conventions in Java? Www.tutorialspoint.com. https://www.tutorialspoint.com/why-we-should-follow-the-naming-conventions-in-java
+
+- A Quick Guide to Using Naming Conventions in Java. ThoughtCo. Retrieved March 31, 2022, from https://www.thoughtco.com/using-java-naming-conventions-2034199#:~:text=By%20using%20standard%20Java%20naming
+
+- Java Naming Conventions - Javatpoint. (2011). Www.javatpoint.com. https://www.javatpoint.com/java-naming-conventions
+
 
