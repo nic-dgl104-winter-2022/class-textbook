@@ -182,56 +182,19 @@ It is some of us experiences as the user’s **expectations versus reality**. Th
 
 ### HOW TO DECIDE WHAT TO TEST AND WHEN
 
-
-<br> <br>
-
-### REFERENCES
-
-**Testing Principles:**
-
-* [Wikipedia](https://en.wikipedia.org/wiki/Software_testing) – What is Software Testing
-
-* [Javatpoint](https://www.javatpoint.com/software-testing-principles), 
-[GeeksforGeeks](https://www.geeksforgeeks.org/software-engineering-seven-principles-of-software-testing/), 
-[Linkedin](https://www.linkedin.com/learning/istqb-foundation-exam-prep) – Testing Principles
-
-* [Test Rail - Blog](https://blog.gurock.com/defect-clusters-in-software-testing/) – Fighting Defect Illustration 
-
-* [Contemporary Staffing Solutions](https://contemporarystaffing.com/manual-tester-insights/) – Testing Illustration 
-
-* [Javatpoint](https://www.javatpoint.com/software-testing-principles) – 7 Testing Principles
-
-* [Test Automation Resources](https://testautomationresources.com/software-testing-basics/exhaustive-testing-fundamentals/) – Exhausive Testing Example
-
-* Textbook: Software Testing by Ron Patton – Effects of Time and Cost Illustration
-
-* [PitSolutions](https://www.pitsolutions.ch/blog/defect-clustering-and-pesticide-paradox/) – Unclustered Vs Clustered Defects
-
-* [Maria Killam](https://mariakillam.com/the-8020-rule-also-applies-to-the-most-popular-paint-colours/) – Pareto Principle
-
-* [Online Education](http://internet-tutors.org/2015/11/pesticide-paradox/) – Pesticide Paradox Illustration
-
-* [Ruwanthi Ranasinghe](https://medium.com/@ruwanthiranasinghe1996/7-principles-of-software-testing-25ba867f75ea/) – Absence of Errors Fallacy Illustration 1
-
-* [Imobiliare.ro](https://labs.imobiliare.ro/post/135630464550/seven-testing-principales) – Absence of Errors Fallacy Illustration 2
-
-<br>
-
-**How To Decide What To Test And When:**
-
 In this unit we will be exploring the topic of how to decide what to test and when. This topic is heavily swayed by how large the budget is and how much time the developer(s) has to get everything finished. There are also a multitude of things to consider prior to testing and you should always consider everything testing related before even starting the project. Also always remember to think about both the hardware and software when testing. When something is going wrong on a particular user’s device they most likely will not be blaming their device so it's important to try to accommodate for as many scenarios as possible.
 
 <br>
 
-### When To Start Testing
+### 1. When To Start Testing
 
 When it comes to testing, a good strategy is to test often and test as early as possible in your development. However there are a lot of questions about what exactly you should be testing because if you test everything constantly you may run into budget issues either in terms of cost or time. So then it begs the question of when I should be testing.
 
-## Test Often, Test Early
+#### Test Often, Test Early
 
 Test often, test early is a saying you will hear from almost anyone talking about good testing practices. Testing should be starting right at the beginning of the application design process, even before any coding has started. In some cases, you may even want to build your tests before anything else.
 
-## Test-First Programming
+#### Test-First Programming
 
 Test-first programming is a technique where you design automatic tests before writing any code. This technique can feel strange at first although it enhances your ability and speed at catching bugs.
 
@@ -239,7 +202,7 @@ Essentially the technique involves creating a production test for an output you 
 
 <br>
 
-### What Should I Test?
+### 2. What Should I Test?
 
 I will once again mutter the motto of “test often, test early”. This is because frankly it is the best way to prevent as many bugs in your app’s as possible. So then should you be testing everything? Well the answer to that is if possible yes, however, sometimes it is hard to just think about how you have to test everything. So we will go a bit more step by step and highlight some areas that should be prioritised.
 
@@ -293,11 +256,13 @@ Now, let's go over a bit more in depth on testing best practises to determine wh
 
 * Automate testing. Automating your tests is another important thing to keep in mind. It increases your productivity and can actually save on a lot of money overall.
 
-### Testing With An Emulator VS A Real Device
+<br>
+
+### 3. Testing With An Emulator VS A Real Device
 
 When deciding between an emulator or a real device you must first ask yourself what your budget is like. Testing on real devices can become fairly expensive however it is almost necessary to do so if you are wanting to publish a globally accepted app. Let's first look at some of the pros and cons of testing on an emulator vs real devices.
 
-# Real Device
+Real Device
 
 Pros:
 * Accurate when testing user interactions
@@ -311,7 +276,7 @@ Cons:
 
 As you can see, testing with real devices has tons of positive effects when testing. I will elaborate some more on what this all means. When testing user interactions you can reliably test actions such as pinching, zooming, and scrolling. Overall performance is another thing that testing with real devices offers as crucial results.
 
-# Emulator
+Emulator
 
 Pros:
 * Free
@@ -326,4 +291,41 @@ Cons:
 Emulators are best suited for debugging and cross-platform testing. Any other kind of test has way too many variables going in to trust the results.
 
 Now that we have gone over some of the pros and cons for real devices and emulators you can kind of see how important it will be to test using real devices. However most if not all of your debugging should be done on an emulator as they are usually suited for that.
+
+
+<br> <br>
+
+### REFERENCES
+
+**Testing Principles:**
+
+* [Wikipedia](https://en.wikipedia.org/wiki/Software_testing) – What is Software Testing
+
+* [Javatpoint](https://www.javatpoint.com/software-testing-principles), 
+[GeeksforGeeks](https://www.geeksforgeeks.org/software-engineering-seven-principles-of-software-testing/), 
+[Linkedin](https://www.linkedin.com/learning/istqb-foundation-exam-prep) – Testing Principles
+
+* [Test Rail - Blog](https://blog.gurock.com/defect-clusters-in-software-testing/) – Fighting Defect Illustration 
+
+* [Contemporary Staffing Solutions](https://contemporarystaffing.com/manual-tester-insights/) – Testing Illustration 
+
+* [Javatpoint](https://www.javatpoint.com/software-testing-principles) – 7 Testing Principles
+
+* [Test Automation Resources](https://testautomationresources.com/software-testing-basics/exhaustive-testing-fundamentals/) – Exhausive Testing Example
+
+* Textbook: Software Testing by Ron Patton – Effects of Time and Cost Illustration
+
+* [PitSolutions](https://www.pitsolutions.ch/blog/defect-clustering-and-pesticide-paradox/) – Unclustered Vs Clustered Defects
+
+* [Maria Killam](https://mariakillam.com/the-8020-rule-also-applies-to-the-most-popular-paint-colours/) – Pareto Principle
+
+* [Online Education](http://internet-tutors.org/2015/11/pesticide-paradox/) – Pesticide Paradox Illustration
+
+* [Ruwanthi Ranasinghe](https://medium.com/@ruwanthiranasinghe1996/7-principles-of-software-testing-25ba867f75ea/) – Absence of Errors Fallacy Illustration 1
+
+* [Imobiliare.ro](https://labs.imobiliare.ro/post/135630464550/seven-testing-principales) – Absence of Errors Fallacy Illustration 2
+
+<br>
+
+**How To Decide What To Test And When:**
 
