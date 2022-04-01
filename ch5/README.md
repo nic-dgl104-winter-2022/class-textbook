@@ -15,6 +15,9 @@
     6. [Testing is Context Dependent](https://github.com/nic-dgl104-winter-2022/class-textbook/blob/main/ch5/README.md#6-testing-is-context-dependent)
     7. [Absence of Errors Fallacy](https://github.com/nic-dgl104-winter-2022/class-textbook/blob/main/ch5/README.md#7-absence-of-errors-fallacy)
 * [How To Decide What To Test And When](https://github.com/nic-dgl104-winter-2022/class-textbook/blob/main/ch5/README.md#how-to-decide-what-to-test-and-when)
+    1. [When To Start Testing](https://github.com/nic-dgl104-winter-2022/class-textbook/blob/main/ch5/README.md#1-when-to-start-testing)
+    2. [What Should I Test](https://github.com/nic-dgl104-winter-2022/class-textbook/blob/main/ch5/README.md#2-what-should-i-test)
+    3. [Testing With An Emulator VS A Real Device](https://github.com/nic-dgl104-winter-2022/class-textbook/blob/main/ch5/README.md#3-testing-with-an-emulator-vs-a-real-device)
 * [References](https://github.com/nic-dgl104-winter-2022/class-textbook/blob/main/ch5/README.md#references)
 
 #
@@ -202,11 +205,11 @@ Essentially the technique involves creating a production test for an output you 
 
 <br>
 
-### 2. What Should I Test?
+### 2. What Should I Test
 
 I will once again mutter the motto of “test often, test early”. This is because frankly it is the best way to prevent as many bugs in your app’s as possible. So then should you be testing everything? Well the answer to that is if possible yes, however, sometimes it is hard to just think about how you have to test everything. So we will go a bit more step by step and highlight some areas that should be prioritised.
 
-Let's talk about residual defect rates per kloc (1 thousand lines of code). According to https://ocw.mit.edu/ans7870/6/6.005/s16/classes/03-testing/index.html the following are typical rates for released products:
+Let's talk about residual defect rates per kloc (1 thousand lines of code). According to [mit.edu](https://ocw.mit.edu/ans7870/6/6.005/s16/classes/03-testing/index.html) the following are typical rates for released products:
 
 * 1-10 defects/kloc: Typical industry standard
 
