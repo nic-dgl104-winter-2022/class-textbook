@@ -1,11 +1,12 @@
-
 <p align = "center"><img src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/004935cd-848e-4eb4-aefe-252ce0cfc041/fp-preview.png"></p>
+<p align = "center"> Image from <a href="https://www.smashingmagazine.com/2014/07/dont-be-scared-of-functional-programming/">Smashing Magazine</a></p>
+
 
 # Functional Programming and Functional Paradigms
 
 ## Intro
 
-Here, I will introduce you to functional programming and some of its paradigms. A new and learning programmer may be relucant to learn a different method to achieve the same result, especially when the functional approach can be a difficult approach to understand. However, Functional Programming and its paradigms are best served when software **evolves** over its lifetime, as it was so eloquently put here on [StackOverflow](https://stackoverflow.com/questions/2078978/functional-programming-vs-object-oriented-programming):
+Here, I will introduce you to functional programming and some of its paradigms. A new and learning programmer may be reluctant to learn a different method to achieve the same result, especially when the functional approach can be a difficult approach to understand. However, Functional Programming and its paradigms are best served when software **evolves** over its lifetime, as it was so eloquently put here on [StackOverflow](https://stackoverflow.com/questions/2078978/functional-programming-vs-object-oriented-programming):
 
 > Object-oriented languages are good when you have a fixed set of operations on things, and as your code evolves, you primarily add new things. This can be accomplished by adding new classes which implement existing methods, and the existing classes are left alone. 
 > 
@@ -13,7 +14,7 @@ Here, I will introduce you to functional programming and some of its paradigms. 
 > 
 > Norman Ramsey
 
-As noted here, object oriented programming addresses software evolution by creating more content to accomplish the task at hand, often by creating new classes which can bloat the software and scales poorly. Functional programming on the other hand would minimize the amount of new code added, solving complex problems in a simpler way with the use of lambda operators, improving modularity, and code maintainabilty by use of nested functions. This isn't to say that OOP and Functional Programming are mutually exclusive; though being able to recognize where a developer is able to use functional programming is beneficial to development as a whole.
+As noted here, object oriented programming addresses software evolution by creating more content to accomplish the task at hand, often by creating new classes which can bloat the software and scales poorly. Functional programming on the other hand would minimize the amount of new code added, solving complex problems in a simpler way with the use of lambda operators, improving modularity, and code maintainability by use of nested functions. This isn't to say that OOP and Functional Programming are mutually exclusive; though being able to recognize where a developer is able to use functional programming is beneficial to development as a whole.
 
 **_What is Functional Programming?_**
  
@@ -21,10 +22,11 @@ As noted here, object oriented programming addresses software evolution by creat
  
  ## Functional Tools
  
-  Here, I will cover some methods that are used in functional programming, particularily the most common ones such as **map**, **reduce**, **flatmap**, and **sort**. JavaScript will be the language used in the following examples.
+  Here, I will cover some methods that are used in functional programming, particularly the most common ones such as **map**, **reduce**, **flatmap**, and **sort**. JavaScript will be the language used in the following examples.
  
  ### map()
   <p align='center'><img src = 'https://upload.wikimedia.org/wikipedia/commons/0/06/Mapping-steps-loillibe-new.gif' width = "400"></p>
+  <p align = "center"> Image from <a href="https://en.wikipedia.org/wiki/Map_(higher-order_function)">Wikimedia Images</a></p>
  
  The functional map() method **takes a given array** and modifies the elements within its indexes to **output a new array**. Below are a few examples on applications of the method, albeit rather simple.
  
@@ -60,8 +62,10 @@ const charCodes = map.call('Hello World', (x) => x.charCodeAt(0));
  ### reduce()
  
  <p align='center'><img src = 'https://cdn.discordapp.com/attachments/910117718924099594/948954099339116564/unknown.png' width = "400"></p>
+ <p align = "center"> Image from <a href="https://www.educative.io/edpresso/how-to-use-the-reduce-method-in-python">Educative.io</a></p>
+
  
-  The simplist way of thinking of functional method reduce(), adds the sum of all values in an array, but that isn't quite right. What the reducer does is takes two arguements, which can be an object, array, or function, and returns only a single value. The termninology of these arguments are known as the reducer and accumulator; the latter of which is thhe value we end with, and the reducer the action we will perform on the two arguments. Let's take a look at what some reducer examples can perform:
+  The simplest way of thinking of functional method reduce(), adds the sum of all values in an array, but that isn't quite right. What the reducer does is takes two arguments, which can be an object, array, or function, and returns only a single value. The terminology of these arguments are known as the reducer and accumulator; the latter of which is the value we end with, and the reducer the action we will perform on the two arguments. Let's take a look at what some reducer examples can perform:
   
   This use of reduce() simply adds and then returns the sum of all the values in the array.
   ```javascript
@@ -82,7 +86,7 @@ const charCodes = map.call('Hello World', (x) => x.charCodeAt(0));
   > reduce() code by Paul Ryan
 
 
-  This use of reduce() takes an array of arrays, and concatinates all of the indexes of the sub-arrays into a new single array. 
+  This use of reduce() takes an array of arrays, and concatenates all of the indexes of the sub-arrays into a new single array. 
   ```javascript
   function flattenArray(data) {
     // our initial value this time is a blank array
@@ -128,9 +132,11 @@ const charCodes = map.call('Hello World', (x) => x.charCodeAt(0));
 
  ### flatmap() and flat()
  <p align='center'><img src = 'https://cdn.discordapp.com/attachments/910117718924099594/948956015234256966/unknown.png' width = "400"></p>
-
+ <p align = "center"> Image from <a href="https://download.eclipse.org/microprofile/microprofile-reactive-streams-operators-1.0/apidocs/org/eclipse/microprofile/reactive/streams/operators/PublisherBuilder.html">Eclipse.org</a></p>
  
- The flapmap() method is actually a combination of two other methods-- as the name would imply, flat() and map(). Before touching on flatmap(), we should first cover what flat() itself does.
+ 
+ 
+ The flatmap() method is actually a combination of two other methods-- as the name would imply, flat() and map(). Before touching on flatmap(), we should first cover what flat() itself does.
  
  Like we were able to do with the reduce() method, flat()'s exclusive roll is to create a new array from all of the values of arrays that may be nested within other arrays. In the following example:
  ```javascript
@@ -144,9 +150,9 @@ console.log(flattened);
  > flatmap() code by Samantha Ming
 
 
- We simply recieve a new array from a nested array that contained two addtional arrays.
+ We simply receive a new array from a nested array that contained two additional arrays.
  
- Thinking back to the map() method, flatmap() would simply apply both methods onto the given array. However it's important to note that the map() function is done first, and then the flat() method after, contrary to what the name would otherwise suggest. The only thing you should keep in mind as you use flatmap() is that it is only able to flatten arrays that are nested 'one level deep'. Nests of nested arrays would only flatten the array by one level. In this event, you would want to call the methods seperately using flat() and map().
+ Thinking back to the map() method, flatmap() would simply apply both methods onto the given array. However it's important to note that the map() function is done first, and then the flat() method after, contrary to what the name would otherwise suggest. The only thing you should keep in mind as you use flatmap() is that it is only able to flatten arrays that are nested 'one level deep'. Nests of nested arrays would only flatten the array by one level. In this event, you would want to call the methods separately using flat() and map().
 
 An example of flatmap()
 ```javascript
@@ -177,18 +183,22 @@ array1.sort();
 
 # Platform Programming
 <p align='center'><img src='https://codeandhack.b-cdn.net/wp-content/uploads/2021/06/Learn-Programming-In-A-Fun-Way-758x398.jpg' width='400'></p>
+<p align = "center"> Image from <a href="https://inkerrobotics.com/blog/why-a-large-number-of-indian-parents-are-sceptic-about-advertisements-for-coding-courses/">Inkerrobotics</a></p>
+
 Platform programming is known as the 'setting' or environment where developed software is able to run, using the tools meant to support it. These settings can include the operating system of computers, the hardware of electronics, or other software within the architecture, such as a browser running webpages. These different tiers of abstraction are all valid aspects of platform programming as a whole, and so we can say that platform programming is the setting where programs can run.
 
 
-No matter what the platform is, a good developer should be able to produce code for a platform given that the necessary knowledge resources are provided for it. A quote that I particularily like is, "A good artist should be familiar with a variety of mediums, and should still produce great work if they were working with crayons or paints". This came from a comparison of modeling software, but the same applies to programming; while platforms have tools others may not, a good programmer would meet these challenges and still be able to produce software that accomplishes the task at hand.
+No matter what the platform is, a good developer should be able to produce code for a platform given that the necessary knowledge resources are provided for it. A quote that I particularly like is, "A good artist should be familiar with a variety of mediums, and should still produce great work if they were working with crayons or paints". This came from a comparison of modeling software, but the same applies to programming; while platforms have tools others may not, a good programmer would meet these challenges and still be able to produce software that accomplishes the task at hand.
 
-All of the functionality you may expect from developing for a phone may not be present the same way it would be for developing a car's android interface, even if they have similiar architecture. At the same time, there may be features invovled in the car's platform that may not be present in others, which would assist the development process otherwise.
+All of the functionality you may expect from developing for a phone may not be present the same way it would be for developing a car's android interface, even if they have similar architecture. At the same time, there may be features involved in the car's platform that may not be present in others, which would assist the development process otherwise.
 
 ## Cross Platform Development
 
 <p align='center'><img src='https://envisionitagency.com/uploads/2018/04/frameworks.png' width='400'></p>
+<p align = "center"> Image from <a href="https://envisionitagency.com/blog/2018/04/pros-cons-front-end-web-frameworks/">Envision IT Agency</a></p>
 
-As its name suggests, cross platform development is the ability to develop code for use onto multiple platforms. Given a variety of platforms for software to be developed on, the platform may need the software to be interpreted differnetly depending on what language the given hardware operates in. The most mainstream example of this may be in videogames, where a title can be developed across multiple platforms, or in phones that run on a particular version of the architecture; most notably Android or iOS.
+
+As its name suggests, cross platform development is the ability to develop code for use onto multiple platforms. Given a variety of platforms for software to be developed on, the platform may need the software to be interpreted differently depending on what language the given hardware operates in. The most mainstream example of this may be in videogames, where a title can be developed across multiple platforms, or in phones that run on a particular version of the architecture; most notably Android or iOS.
 
 When in cross-platform development, having a framework that is able to build for different platforms is an essential tool. In the case of app development for phones, some frameworks may include Xamarin, React Native, and Flutter to name a few. A framework would be able to create the appropriate interpretation or 'build' of the software that is being developed so it can run on the platform the team or individual is working on.
 
