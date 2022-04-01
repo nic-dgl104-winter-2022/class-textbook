@@ -198,7 +198,7 @@ In Kotlin we can define a singleton with the object keyword but what if we want 
 
 We can also implement companion objects in classes in Kotlin, these are initialized when their containing class is initialized and will function as a single object which is accessable across all instance of it's containing class.
 
-For example, if we had a stock trading program and we wanted that program to buy stocks based on 1 of 3 strategies.  but we want to use the same wallet details so each strategy is connected to the same wallet account that holds our money.
+For example, if we had a stock trading program and we wanted that program to buy stocks based on 1 of 3 strategies.  but we want to use the same wallet details so each strategy is connected to the same wallet account that holds our money. 
 
 ```
 class StockTradingStrategy(private val strategy: TradingStrategy) {
@@ -211,6 +211,8 @@ class StockTradingStrategy(private val strategy: TradingStrategy) {
         // wallet data
     }
 }
+```
 
+This way our wallet will be the same wallet accessed across all instances preventing duplicate entries from accessing our wallet object which could be catastrophic if we were actually deploying such a program.
 
 
