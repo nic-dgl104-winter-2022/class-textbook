@@ -208,22 +208,24 @@ I will once again mutter the motto of “test often, test early”. This is beca
 
 Let's talk about residual defect rates per kloc (1 thousand lines of code). According to https://ocw.mit.edu/ans7870/6/6.005/s16/classes/03-testing/index.html the following are typical rates for released products:
 
-1-10 defects/kloc: Typical industry standard
-0.1-1 defects/kloc: High-quality
-0.01-0.1 defects/kloc: The best, safety critical
+* 1-10 defects/kloc: Typical industry standard
+
+* 0.1-1 defects/kloc: High-quality
+
+* 0.01-0.1 defects/kloc: The best, safety critical
 
 So as you can see, the rates in which defects occur are low. Obviously as developers we would all like our projects to have no issues whatsoever although, this is just not possible. So there are bound to be problems, but where are these problems showing up?
 
 When it comes to what to look for in terms of issues, it is important to take note of what bugs are caused by. So let's look at what are some common causes of bugs according to bitbar.com:
 
-* 33% of issues are caused by the hardware:
+#### 33% of issues are caused by the hardware:
 * 10% - Display
 * 10% - Memory
 * 7% - Sensors
 * 4% - Chipset
 * 2% - Other Hardware
 
-* 67% of issues are caused by software
+#### 67% of issues are caused by software
 * 32% Platform
 * 29% OEM Customizations
 * 6% Other Software
@@ -262,7 +264,7 @@ Now, let's go over a bit more in depth on testing best practises to determine wh
 
 When deciding between an emulator or a real device you must first ask yourself what your budget is like. Testing on real devices can become fairly expensive however it is almost necessary to do so if you are wanting to publish a globally accepted app. Let's first look at some of the pros and cons of testing on an emulator vs real devices.
 
-Real Device
+#### Real Device
 
 Pros:
 * Accurate when testing user interactions
@@ -276,7 +278,7 @@ Cons:
 
 As you can see, testing with real devices has tons of positive effects when testing. I will elaborate some more on what this all means. When testing user interactions you can reliably test actions such as pinching, zooming, and scrolling. Overall performance is another thing that testing with real devices offers as crucial results.
 
-Emulator
+#### Emulator
 
 Pros:
 * Free
