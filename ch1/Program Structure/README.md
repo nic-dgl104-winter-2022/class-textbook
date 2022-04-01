@@ -55,3 +55,5 @@ Most programming languages use specific structures to organize their code. These
 * Encyclopedia.com - Program Structure https://www.encyclopedia.com/computing/dictionaries-thesauruses-pictures-and-press-releases/program-structure
 * InfoQ Readable Code - Why, How and When You Should Write It https://www.encyclopedia.com/computing/dictionaries-thesauruses-pictures-and-press-releases/program-structure
 * GeeksforFeeks - Coding Standards and Guidelines https://www.geeksforgeeks.org/coding-standards-and-guidelines/
+* python-guide.org - Structuring your project https://docs.python-guide.org/writing/structure/
+* javapoint.com - Structure of a Java Program https://www.javatpoint.com/structure-of-java-program
