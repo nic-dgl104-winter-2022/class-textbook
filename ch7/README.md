@@ -397,7 +397,7 @@ class FighterJet() {
 With our classes created, we can now run this and create ourselves a fighter jet armed with a PewPewNerfGun, but we are not injecting dependencies yet. Instead we're creating our PewPewNerfGun object within our fighter jet class. Below is an example using <a href="https://developer.android.com/training/kotlinplayground?gclid=CjwKCAjwopWSBhB6EiwAjxmqDewmVKfVfbMKoZfeFZSn202J1QvNZZUJlPagp-zSGN7OjCtGLXfunBoCBsAQAvD_BwE&gclsrc=aw.ds">Kotlin Playground</a>
 </p>
 
-![example without dependency injection](without_dependency_injection.png)
+![example without dependency injection](./assets/without_dependency_injection.png)
 <br>
 
 This works of course, but the problem here is we can only make fighter jets armed with a `PewPewNerfGun()`. What if we are really in a pickle and require some heat seeking nerf missiles instead? First we'll need to create the new weapon as follows.
@@ -423,7 +423,7 @@ class FighterJetWithMissiles() {
 
 So if we want 2 fighter jets with 2 different weapons, this is what we get.
 
-![adding a second fighter jet without dependency injection](without_dependency_injection_2.png)
+![adding a second fighter jet without dependency injection](./assets/without_dependency_injection_2.png)
 
 This obviously isn't ideal because if we were really going to have a nerf air force we would want to be able to use many different nerf weapons without creating a whole new fighter jet each time. And we can solve this problem by changing our FighterJet class to accept it's weapon dependency from outside of the class through it's constructor as follows.
 
@@ -448,7 +448,7 @@ fun main() {
 
 Now lets run our code again and see what happens.
 
-![Error](constructor_dependency_injection_3.png)
+![Error](./assets/constructor_dependency_injection_3.png)
 
 We pass our objects in through the constructor but we get an error message because the constructor is looking for our WeaponSystem type. To solve this we will create an interface for our weapon systems as seen in the example below.
 
@@ -476,7 +476,7 @@ class HeatSeekingNerfMissiles : WeaponSystem {
 
 Our complete code now looks like this when run through [Kotlin Playground](https://developer.android.com/training/kotlinplayground?gclid=CjwKCAjwopWSBhB6EiwAjxmqDewmVKfVfbMKoZfeFZSn202J1QvNZZUJlPagp-zSGN7OjCtGLXfunBoCBsAQAvD_BwE&gclsrc=aw.ds).
 
-![Complete](interface.png)
+![Complete](./assets/interface.png)
 
 We can now create as many different `WeaponSystem` objects we want and arm our toy fighter jets with them without building a new fighter jet each time. Our WeaponSystems and FighterJets are decoupled.
 
@@ -586,4 +586,21 @@ This way our wallet will be the same wallet accessed across all instances preven
 Design patterns are concepts of solutions that solve recurring problems in software development. You can implement them with different programming languages or even different platforms. Design patterns are meant to solve the problem in a context. If you exploit them without consideration, you might turn them into anti-patterns and make your solution risky. Since the design patterns address the concurrent problems of the programming language C++, modern languages take advantage of them and improve their drawbacks. Thus, you might have been familiar with some of them. You do not have to acknowledge all design patterns; instead, try to pick up which you find the most familiar.</p>
 
 <br>
+
 <!-- REFERENCES -->
+# <div align = "center">References</div>
+<ul>
+    <li><a href="https://en.wikipedia.org/wiki/Anti-pattern">Anti-patterns (Wikipedia)</a></li>
+    <li><a href="https://sourcemaking.com/antipatterns">Anti-patterns - (Sourcemaking)</a></li>
+    <li><a href="https://www.freecodecamp.org/news/antipatterns-to-avoid-in-code/#:~:text=In%20software%2C%20anti%2Dpattern%20is,back%20and%20fix%20properly%20later">Anti-patterns You Should Avoid in Your Code (Freecodecamp)</a></li>
+    <li><a href="https://en.wikipedia.org/wiki/Design_Patterns">Design Patterns  (Wikipedia)</a></li>
+    <li><a href="https://refactoring.guru/design-patterns">Design Patterns (Refactoring)</a></li>
+    <li><a href="https://sourcemaking.com/design_patterns">Design Patterns (Sourcemaking)</a></li>
+    <li><a href="https://youtu.be/IKD2-MAkXyQ">Dependency Injection - Anthony Ferrara (YouTube)</a></li>
+    <li><a href="https://developer.android.com/training/dependency-injection">Dependency Injection – (Android Developers)</a></li>
+    <li><a href="https://en.wikipedia.org/wiki/Dependency_injection">Dependency Injection – (Wikipedia)</a></li>
+    <li><a href="https://www.youtube.com/watch?v=ucZnYS7LmGU">DIY Dependency Injection with Kotlin – Sam Edwards (YouTube)</a>
+    </li>
+    <li><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_table_intro">Table's template code (W3schools)</a></li>
+    <li><a href="https://sahandsaba.com/nine-anti-patterns-every-programmer-should-be-aware-of-with-examples.html#management-by-numbers">9 Anti-Patterns Every Programmer Should Be Aware Of  (Sahandsaba)</a></li>
+</ul>
