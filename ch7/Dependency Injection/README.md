@@ -1,4 +1,9 @@
-# Dependency Injection
+
+# Design Patterns and Android Development
+No matter what platform your programming for there will be common development problems that design patterns can help you solve, and mobile development is no different. Below we will discuess 2 such design patters common in mobile app development.
+
+1. Dependency Injection Pattern
+2. Singleton Pattern
 
 ## What is Dependency Injection?
 Dependency injection is a design pattern, more particularly it is of the creational design pattern type and  Android’s recommended app architecture and it’s just what it sounds like, the injection of a dependency into a class. 
