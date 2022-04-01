@@ -51,3 +51,7 @@ Formatting and indentation are a necessity when it comes to organizing code. Cod
 ## Code Organization
 Most programming languages use specific structures to organize their code. These are called procedures, functions, or methods. Code organization is used to make sure that people can understand the code well enough that they will be able to maintain and evolve the code with a degree of efficiency and confidence. Code can be organized by encapsulating everything within one directory. This makes it easier to find things or makes sharing your code with others on your team an easy process. Programmers also separate the data from the code by using separate subdirectories. 
 
+# References
+* Encyclopedia.com - Program Structure https://www.encyclopedia.com/computing/dictionaries-thesauruses-pictures-and-press-releases/program-structure
+* InfoQ Readable Code - Why, How and When You Should Write It https://www.encyclopedia.com/computing/dictionaries-thesauruses-pictures-and-press-releases/program-structure
+* GeeksforFeeks - Coding Standards and Guidelines https://www.geeksforgeeks.org/coding-standards-and-guidelines/
