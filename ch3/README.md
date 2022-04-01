@@ -5,4 +5,6 @@ to be some errors, or bugs as they're known. Debugging is all about finding and 
 can help with the process of debugging. Finally, we'll look at some tools that can be useful in the debugging process.
 
 ### TOC
+
 2. [High Level Debugging Strategies](HighLevelDebugging.md)
+3. [Typical Debugging Tools](TypicalDebuggingTools.md)
