@@ -241,7 +241,7 @@ After the above steps, you might realize that the Facade is similar to refactori
 
 <br>
 
-### References
+## References
 <ul>
     <li><a href="https://en.wikipedia.org/wiki/Design_Patterns">Wikipedia</a></li>
     <li><a href="https://refactoring.guru/design-patterns">Refactoring Guru</a></li>
