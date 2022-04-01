@@ -15,7 +15,7 @@ There are 3 principals I came across that are not all necessarily related to dep
 3.	The Separation of Concerns Principle: states that each class should have a single defined responsibility. In practice this leads to the creation of more, smaller classes that need to be connected together to fulfill each other’s dependencies.
 
 ## Dependency injection and mobile devices
-There are 2 major ways of implementing dependency injection and I will attempt to provide examples to illustrate both..
+There are 2 major ways of implementing dependency injection and I will attempt to provide examples to illustrate both.
 1.	Constructor Injection: This type of dependency injection happens during your class instantiation; dependencies are initialized then passed as objects through your class constructor. 
 2.	Field Injection (or Setter Injection):  This type of dependency injection happens after your class instantiation; dependencies are initialized and passed to the instantiated object’s setter method.
 
@@ -46,20 +46,20 @@ With our classes created, we can now run this and create ourselves a fighter jet
 
 ![example without dependency injection](without_dependency_injection.png)
 
-This works of course, but the problem here is we can only make fighter jets armed with a `PewPewNerfGun()`. What if we are really in a pickle and require some heat seeking nerf missles instead? First we'll need to create the new weapon as follows.
+This works of course, but the problem here is we can only make fighter jets armed with a `PewPewNerfGun()`. What if we are really in a pickle and require some heat seeking nerf missiles instead? First we'll need to create the new weapon as follows.
 
 ```
-class HeatSeakingNerfMissiles {
+class HeatSeekingNerfMissiles {
     fun fire() {
-        print("Heat Seaking Nerf missiles launched!")
+        print("Heat Seeking Nerf missiles launched!")
     }
 }
 ```
 
-Great! But there in order to make a Fighter jet using the nerf missles instead of the nerf gun we would have to create a new fighter class to make use of the new weapon system like so. 
+Great! But there in order to make a Fighter jet using the nerf missiles instead of the nerf gun we would have to create a new fighter class to make use of the new weapon system like so. 
 ```
 class FighterJetWithMissiles() {
-    private val mainWeapon = HeatSeakingNerfMissiles()
+    private val mainWeapon = HeatSeekingNerfMissiles()
 
     fun fire() {
         mainWeapon.fire()
@@ -71,7 +71,7 @@ So if we want 2 fighter jets with 2 different weapons, this is what we get.
 
 ![adding a second fighter jet without dependency injection](without_dependency_injection_2.png)
 
-This obviously isn't ideal because if we were really going to have a nerf airforce we would want to be able to use many different nerf weapons without creating a whole new fighter jet each time. And we can solve this problem by changing our FighterJet class to accept it's weapon dependency from outside of the class through it's constructor as follows.
+This obviously isn't ideal because if we were really going to have a nerf air force we would want to be able to use many different nerf weapons without creating a whole new fighter jet each time. And we can solve this problem by changing our FighterJet class to accept it's weapon dependency from outside of the class through it's constructor as follows.
 
 ```
 class FighterJet(private val mainWeapon: WeaponSystem) {
@@ -127,7 +127,7 @@ Our complete code now looks like this when run through [Kotlin Playground](https
 We can now create as many different `WeaponSystem` objects we want and arm our toy fighter jets with them without building a new fighter jet each time. Our WeaponSystems and FighterJets are decoupled.
 
 ## Field Injection (or Setter Injection) Example
-Next we'll walk through modifying the our construction injection code to use field injection instead. Field injection in relevent when building modile apps because sometimes you will not have access to a class constructor to pass dependencies through. Activities and Fragments are examples of this, they are instantiated by the system and do not provide easy access to their constructors to pass our dependencies through.
+Next we'll walk through modifying the our construction injection code to use field injection instead. Field injection in relevant when building mobile apps because sometimes you will not have access to a class constructor to pass dependencies through. Activities and Fragments are examples of this, they are instantiated by the system and do not provide easy access to their constructors to pass our dependencies through.
 
 Let's start by modifying our FighterJet class by removing the constructor dependency injection, and we will declare a lateinit var on our mainWeapon, it has to be var because we're not instantiating it right away and it needs to be allowed to update after our class has been created. We'll also change our main function to reflect the change.
 
@@ -163,7 +163,7 @@ If we call this using [Kotlin Playground](https://developer.android.com/training
 
 The singleton design pattern is known for 2 major properties.
 1. The singleton instance may only have a single instance at any given time.
-2. The singleton instance is globally accessable.
+2. The singleton instance is globally accessible.
 
 The singleton design pattern is not unique to android development, but Kotlin does provide a relatively simple process very similiar to implementing a class file using the keyword `object`. 
 
