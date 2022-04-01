@@ -44,7 +44,7 @@ class FighterJet() {
 
 With our classes created, we can now run this and create ourselves a fighter jet armed with a PewPewNerfGun, but we are not injecting dependencies yet. Instead we're creating our PewPewNerfGun object within our fighter jet class. Below is an example using [Kotlin Playground](https://developer.android.com/training/kotlinplayground?gclid=CjwKCAjwopWSBhB6EiwAjxmqDewmVKfVfbMKoZfeFZSn202J1QvNZZUJlPagp-zSGN7OjCtGLXfunBoCBsAQAvD_BwE&gclsrc=aw.ds).
 
-![example without dependency injection](/without_dependency_injection.png)
+![example without dependency injection](without_dependency_injection.png)
 
 This works of course, but the problem here is we can only make fighter jets armed with a `PewPewNerfGun()`. What if we are really in a pickle and require some heat seeking nerf missles instead? First we'll need to create the new weapon as follows.
 
@@ -94,7 +94,7 @@ fun main() {
 
 Now lets run our code again and see what happens.
 
-![Error](/constructor_dependency_injection_3.png)
+![Error](constructor_dependency_injection_3.png)
 
 We pass our objects in through the constructor but we get an error message because the constructor is looking for our WeaponSystem type. To solve this we will create an interface for our weapon systems as seen in the example below.
 
@@ -122,7 +122,7 @@ class HeatSeekingNerfMissiles : WeaponSystem {
 
 Our complete code now looks like this when run through [Kotlin Playground](https://developer.android.com/training/kotlinplayground?gclid=CjwKCAjwopWSBhB6EiwAjxmqDewmVKfVfbMKoZfeFZSn202J1QvNZZUJlPagp-zSGN7OjCtGLXfunBoCBsAQAvD_BwE&gclsrc=aw.ds).
 
-![Complete](/interface.png)
+![Complete](interface.png)
 
 We can now create as many different `WeaponSystem` objects we want and arm our toy fighter jets with them without building a new fighter jet each time. Our WeaponSystems and FighterJets are decoupled.
 
@@ -155,7 +155,7 @@ fun main() {
 If we call this using [Kotlin Playground](https://developer.android.com/training/kotlinplayground?gclid=CjwKCAjwopWSBhB6EiwAjxmqDewmVKfVfbMKoZfeFZSn202J1QvNZZUJlPagp-zSGN7OjCtGLXfunBoCBsAQAvD_BwE&gclsrc=aw.ds).
 
 
-![Field Injection](/field_injection.png)
+![Field Injection](field_injection.png)
 
 
 
