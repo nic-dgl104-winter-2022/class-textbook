@@ -356,16 +356,16 @@ By de-coupling our dependencies and using dependency injection, we are actually 
 </p>
 
 There are 3 principals I came across that are not all necessarily related to dependency injection, but certainly resonate with it in practice.
-1.	The Dependency Inversion Principle: states that code should depend upon abstractions. Dependency Inversion principle is concerned with “decoupling dependencies” between code through shared abstractions.
-2.	The Inversion of Control Principle: states that generic code should control the execution of specific code. Inversion of control is used to increase the modularity of the program by having a generic framework handle the dispatch of events and more complex code / specialized code handling the event said events.
-3.	The Separation of Concerns Principle: states that each class should have a single defined responsibility. In practice this leads to the creation of more, smaller classes that need to be connected together to fulfill each other’s dependencies.
+1.	**The Dependency Inversion Principle**: states that code should depend upon abstractions. Dependency Inversion principle is concerned with “decoupling dependencies” between code through shared abstractions.
+2.	**The Inversion of Control Principle**: states that generic code should control the execution of specific code. Inversion of control is used to increase the modularity of the program by having a generic framework handle the dispatch of events and more complex code / specialized code handling the event said events.
+3.	**The Separation of Concerns Principle**: states that each class should have a single defined responsibility. In practice this leads to the creation of more, smaller classes that need to be connected together to fulfill each other’s dependencies.
 
 <br>
 
 ## Dependency injection and mobile devices
 There are 2 major ways of implementing dependency injection and I will attempt to provide examples to illustrate both.
-1.	Constructor Injection: This type of dependency injection happens during your class instantiation; dependencies are initialized then passed as objects through your class constructor. 
-2.	Field Injection (or Setter Injection):  This type of dependency injection happens after your class instantiation; dependencies are initialized and passed to the instantiated object’s setter method.
+1.	**Constructor Injection**: This type of dependency injection happens during your class instantiation; dependencies are initialized then passed as objects through your class constructor. 
+2.	**Field Injection (or Setter Injection)**:  This type of dependency injection happens after your class instantiation; dependencies are initialized and passed to the instantiated object’s setter method.
 
 <br>
 
@@ -394,7 +394,7 @@ class FighterJet() {
 ```
 
 <p align="justify">
-With our classes created, we can now run this and create ourselves a fighter jet armed with a PewPewNerfGun, but we are not injecting dependencies yet. Instead we're creating our PewPewNerfGun object within our fighter jet class. Below is an example using <a href="https://developer.android.com/training/kotlinplayground?gclid=CjwKCAjwopWSBhB6EiwAjxmqDewmVKfVfbMKoZfeFZSn202J1QvNZZUJlPagp-zSGN7OjCtGLXfunBoCBsAQAvD_BwE&gclsrc=aw.ds">Kotlin Playground</a>
+With our classes created, we can now run this and create ourselves a fighter jet armed with a <b>PewPewNerfGun</b>, but we are not injecting dependencies yet. Instead we're creating our <b>PewPewNerfGun</b> object within our fighter jet class. Below is an example using <a href="https://developer.android.com/training/kotlinplayground?gclid=CjwKCAjwopWSBhB6EiwAjxmqDewmVKfVfbMKoZfeFZSn202J1QvNZZUJlPagp-zSGN7OjCtGLXfunBoCBsAQAvD_BwE&gclsrc=aw.ds">Kotlin Playground</a>
 </p>
 
 ![example without dependency injection](./assets/without_dependency_injection.png)
@@ -425,7 +425,7 @@ So if we want 2 fighter jets with 2 different weapons, this is what we get.
 
 ![adding a second fighter jet without dependency injection](./assets/without_dependency_injection_2.png)
 
-This obviously isn't ideal because if we were really going to have a nerf air force we would want to be able to use many different nerf weapons without creating a whole new fighter jet each time. And we can solve this problem by changing our FighterJet class to accept it's weapon dependency from outside of the class through it's constructor as follows.
+This obviously isn't ideal because if we were really going to have a nerf air force we would want to be able to use many different nerf weapons without creating a whole new fighter jet each time. And we can solve this problem by changing our <b>FighterJet</b> class to accept it's weapon dependency from outside of the class through it's constructor as follows.
 
 ```
 class FighterJet(private val mainWeapon: WeaponSystem) {
@@ -450,7 +450,7 @@ Now lets run our code again and see what happens.
 
 ![Error](./assets/constructor_dependency_injection_3.png)
 
-We pass our objects in through the constructor but we get an error message because the constructor is looking for our WeaponSystem type. To solve this we will create an interface for our weapon systems as seen in the example below.
+We pass our objects in through the constructor but we get an error message because the constructor is looking for our <b>WeaponSystem</b> type. To solve this we will create an interface for our weapon systems as seen in the example below.
 
 ```
 interface WeaponSystem {
@@ -478,7 +478,7 @@ Our complete code now looks like this when run through [Kotlin Playground](https
 
 ![Complete](./assets/interface.png)
 
-We can now create as many different `WeaponSystem` objects we want and arm our toy fighter jets with them without building a new fighter jet each time. Our WeaponSystems and FighterJets are decoupled.
+We can now create as many different `WeaponSystem` objects we want and arm our toy fighter jets with them without building a new fighter jet each time. Our <b>WeaponSystems</b> and <b>FighterJets</b> are decoupled.
 
 <br>
 
@@ -487,7 +487,7 @@ We can now create as many different `WeaponSystem` objects we want and arm our t
 Next we'll walk through modifying the our construction injection code to use field injection instead. Field injection in relevant when building mobile apps because sometimes you will not have access to a class constructor to pass dependencies through. Activities and Fragments are examples of this, they are instantiated by the system and do not provide easy access to their constructors to pass our dependencies through.
 </p>
 <p align="justify">
-Let's start by modifying our FighterJet class by removing the constructor dependency injection, and we will declare a lateinit var on our mainWeapon, it has to be var because we're not instantiating it right away and it needs to be allowed to update after our class has been created. We'll also change our main function to reflect the change.
+Let's start by modifying our <b>FighterJet</b> class by removing the constructor dependency injection, and we will declare a <i>lateinit var</i> on our <b>mainWeapon</b>, it has to be var because we're not instantiating it right away and it needs to be allowed to update after our class has been created. We'll also change our main function to reflect the change.
 </p>
 
 ```
@@ -524,7 +524,7 @@ The singleton design pattern is known for 2 major properties.
 1. The singleton instance may only have a single instance at any given time.
 2. The singleton instance is globally accessible.
 
-The singleton design pattern is not unique to android development, but Kotlin does provide a relatively simple process very similiar to implementing a class file using the keyword `object`. 
+The singleton design pattern is not unique to android development, but ***Kotlin*** does provide a relatively simple process very similar to implementing a class file using the keyword `object`. 
 
 Consider the following example.
 
@@ -555,10 +555,10 @@ This Singleton's name is: Mr.Singleton
 
 ## Companion objects
 <p align="justify">
-In Kotlin we can define a singleton with the object keyword but what if we want to access to our singleton class and have the object data available across each instance of a class?</p>
+In <i>Kotlin</i> we can define a singleton with the object keyword but what if we want to access to our singleton class and have the object data available across each instance of a class?</p>
 
 <p align="justify">
-We can also implement companion objects in classes in Kotlin, these are initialized when their containing class is initialized and will function as a single object which is accessible across all instance of it's containing class.</p>
+We can also implement companion objects in classes in <i>Kotlin</i>, these are initialized when their containing class is initialized and will function as a single object which is accessible across all instance of it's containing class.</p>
 
 <p align="justify">
 For example, if we had a stock trading program and we wanted that program to buy stocks based on 1 of 3 strategies.  but we want to use the same wallet details so each strategy is connected to the same wallet account that holds our money. </p>
