@@ -69,7 +69,7 @@ class FighterJetWithMissiles() {
 
 So if we want 2 fighter jets with 2 different weapons, this is what we get.
 
-![adding a second fighter jet without dependency injection](/without_dependency_injection_2.png)
+![adding a second fighter jet without dependency injection](without_dependency_injection_2.png)
 
 This obviously isn't ideal because if we were really going to have a nerf airforce we would want to be able to use many different nerf weapons without creating a whole new fighter jet each time. And we can solve this problem by changing our FighterJet class to accept it's weapon dependency from outside of the class through it's constructor as follows.
 
