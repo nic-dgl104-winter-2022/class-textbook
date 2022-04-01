@@ -331,3 +331,14 @@ Now that we have gone over some of the pros and cons for real devices and emulat
 
 **How To Decide What To Test And When:**
 
+* [BitBar](https://bitbar.com/blog/10-best-practices-for-mobile-app-testing/) – 10 Best Practices for Mobile App Testing
+
+* [BrowserStack](https://www.browserstack.com/guide/testing-on-emulators-simulators-real-devices-comparison) – Testing on Emulators vs Simulators vs Real Devices
+
+* [Qualitest](https://qualitestgroup.com/insights/white-paper/mobile-emulators-vs-real-devices/) – Mobile Emulators vs Real Devices
+
+* [Digital](https://digital.ai/glossary/test-driven-development) – Test Driven Development
+
+* [OutSource2India](https://www.outsource2india.com/software/mobile-applications/articles/mobile-application-testing-best-practices.asp) – 12 BEST PRACTICES FOR MOBILE APPLICATION TESTING
+
+* [mit.edu](https://ocw.mit.edu/ans7870/6/6.005/s16/classes/03-testing/index.html) – Testing
