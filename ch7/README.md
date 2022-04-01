@@ -75,8 +75,6 @@ In 1994, "The Gang Of Four" published the book Design Patterns: Elements of Reus
 3.	Make sure the subsystem code only communicates with your **Facade** class when it uses the feature of the third-party library.
 4.	If the code becomes long and complicated, break it down into small classes.
 
-<br>
-
 ## **Example (with Javascript)**
 ### ***Scenario***
 
@@ -120,7 +118,7 @@ addNewRow()
 ```
 <br>
 
-## ***Problem #1***
+## ***Problem 1***
 <p align="justify">Obviously, the code is long and a little complex. It requires extra steps before a new row is created:</p>
 
 <ul>
@@ -135,7 +133,6 @@ addNewRow()
 </p>
 
 ```javascript
-
 function createCell(text) {
     const tdElement = document.createElement("td")
     const textNode = document.createTextNode(text)
@@ -166,7 +163,7 @@ tbodyElement.appendChild(row)
 ```
 <br>
 
-## ***Problem #2***
+## ***Problem 2***
 <p align="justify">
     During the refactoring process, I focus only on the reusability of creating cells and adding rows. Thus, I split the previous code and put it into two different functions. As a result, it seems more reusable and flexible than the last code. However, the code will be easier to maintain and more clarified if wrapped within a class. 
 </p>
@@ -207,6 +204,7 @@ class Table {
     }
 }
 ```
+<br>
 
 <p align="justify">
     The purpose of wrapping within a class is to make it easier to maintain. Moreover, if the code requires more functions for creating a header or styling the cell, the time spent altering this class's implementation will not take long. All you do is call extra methods instead of refactoring the process.
@@ -222,6 +220,7 @@ const table = new Table(document.getElementsByTagName("table")[0])
 // Add rows to table
 rows.forEach((row) => table.addRow(row))
 ```
+<br>
 
 <p align="justify">
     As you can see, the implementation of the <b>Table</b> class. It only takes one line to call the function <i>addRow</i>. Imagine if we need to add more functions to create a  header and footer. All we have to do is to call another function from the <b>table</b> variable.
@@ -580,4 +579,11 @@ class StockTradingStrategy(private val strategy: TradingStrategy) {
 This way our wallet will be the same wallet accessed across all instances preventing duplicate entries from accessing our wallet object which could be catastrophic if we were actually deploying such a program.</p>
 
 
+# <div align = "center">Summary</div>
+<br>
+
+<p align="justify">
+Design patterns are concepts of solutions that solve recurring problems in software development. You can implement them with different programming languages or even different platforms. Design patterns are meant to solve the problem in a context. If you exploit them without consideration, you might turn them into anti-patterns and make your solution risky. Since the design patterns address the concurrent problems of the programming language C++, modern languages take advantage of them and improve their drawbacks. Thus, you might have been familiar with some of them. You do not have to acknowledge all design patterns; instead, try to pick up which you find the most familiar.</p>
+
+<br>
 <!-- REFERENCES -->
