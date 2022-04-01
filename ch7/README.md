@@ -583,7 +583,7 @@ This way our wallet will be the same wallet accessed across all instances preven
 <br>
 
 <p align="justify">
-Design patterns are concepts of solutions that solve recurring problems in software development. You can implement them with different programming languages or even different platforms. Design patterns are meant to solve the problem in a context. If you exploit them without consideration, you might turn them into anti-patterns and make your solution risky. Since the design patterns address the concurrent problems of the programming language C++, modern languages take advantage of them and improve their drawbacks. Thus, you might have been familiar with some of them. You do not have to acknowledge all design patterns; instead, try to pick up which you find the most familiar.</p>
+Design patterns are concepts of solutions that solve commonly recurring issues in software development. You can implement them with different programming languages or even different platforms. The purpose of design patterns is to solve the problem within a context. If you exploit them without consideration, you might turn them into anti-patterns and make your solution risky. Since the design patterns address the concurrent problems of the programming language C++, modern languages take advantage of it and implement them with a different mechanism. Thus, you might have been familiar with some of the patterns. You do not have to acknowledge all design patterns; instead, try to pick up which you find the most familiar.</p>
 
 <br>
 
