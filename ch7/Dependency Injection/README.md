@@ -216,7 +216,12 @@ class StockTradingStrategy(private val strategy: TradingStrategy) {
 This way our wallet will be the same wallet accessed across all instances preventing duplicate entries from accessing our wallet object which could be catastrophic if we were actually deploying such a program.
 
 The following material was reference while writing.
+
 Source 1: [Dependency Injection - Anthony Ferrara (YouTube)](https://youtu.be/IKD2-MAkXyQ)
+
 Source 2: [Dependency Injection – (Android Developers)](https://developer.android.com/training/dependency-injection)
+
 Source 3: [Dependency Injection – (Wikipedia)](https://en.wikipedia.org/wiki/Dependency_injection)
+
 Source 4: [DIY Dependency Injection with Kotlin – Sam Edwards (YouTube)](https://www.youtube.com/watch?v=ucZnYS7LmGU)
+
