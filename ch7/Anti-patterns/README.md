@@ -64,8 +64,8 @@ There is no "best" technology in this industry, and every technology is born to 
 
 ## References
 <ul>
-    <li><a href="https://en.wikipedia.org/wiki/Anti-pattern">Wikipedia</a></li>
-    <li><a href="https://sourcemaking.com/antipatterns">Source Making</a></li>
-    <li><a href="https://sahandsaba.com/nine-anti-patterns-every-programmer-should-be-aware-of-with-examples.html#management-by-numbers">Sahandsaba</a></li>
-    <li><a href="https://www.freecodecamp.org/news/antipatterns-to-avoid-in-code/#:~:text=In%20software%2C%20anti%2Dpattern%20is,back%20and%20fix%20properly%20later">Freecodecamp</a></li>
+    <li><a href="https://en.wikipedia.org/wiki/Anti-pattern">Anti-pattern - Wikipedia</a></li>
+    <li><a href="https://sourcemaking.com/antipatterns">Anti-pattern - Source Making</a></li>
+    <li><a href="https://sahandsaba.com/nine-anti-patterns-every-programmer-should-be-aware-of-with-examples.html#management-by-numbers">9 Anti-Patterns Every Programmer Should Be Aware Of - Sahandsaba</a></li>
+    <li><a href="https://www.freecodecamp.org/news/antipatterns-to-avoid-in-code/#:~:text=In%20software%2C%20anti%2Dpattern%20is,back%20and%20fix%20properly%20later">Anti-patterns You Should Avoid in Your Code - Freecodecamp</a></li>
 </ul>

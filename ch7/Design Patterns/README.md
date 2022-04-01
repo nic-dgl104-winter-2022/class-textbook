@@ -243,8 +243,8 @@ After the above steps, you might realize that the Facade is similar to refactori
 
 ## References
 <ul>
-    <li><a href="https://en.wikipedia.org/wiki/Design_Patterns">Wikipedia</a></li>
-    <li><a href="https://refactoring.guru/design-patterns">Refactoring Guru</a></li>
-    <li><a href="https://sourcemaking.com/design_patterns">Source Making</a></li>
+    <li><a href="https://en.wikipedia.org/wiki/Design_Patterns">Design Patterns - Wikipedia</a></li>
+    <li><a href="https://refactoring.guru/design-patterns">Design Patterns - Refactoring Guru</a></li>
+    <li><a href="https://sourcemaking.com/design_patterns">Design Patterns - Source Making</a></li>
     <li><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_table_intro">Table's template code of W3schools</a></li>
 </ul>
