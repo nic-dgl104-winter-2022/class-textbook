@@ -16,29 +16,73 @@ There are many object-oriented programming languages, including JavaScript, C++,
 #### Example
 <img src="pic/oop-car-example.png"/>
 
+
+Here I'll explain the OOP concept through inheritance. 
+This code saves our time and allows you to reuse your code and avoid reputation,
+we extended the Car class attributes/methods that we need for SamsCar, AbesCar, BilsCar classes 
+
+
 ```
-java
+Java
 
-{
-
-/* fields/data menbers,
-
-Variables,
-
-Methods,
-
-Properties,
-
-*/
+public class Car {
+	
+	private String color,brand,yearMake;
+	
+	public Car(String color,String brand,String yearMake) {
+		
+		this.color=color;
+		this.brand=brand;
+		this.yearMake=yearMake;
+	}
+	public void repaint() {
+		
+	}
+	public void Tiersupgrade() {
+		
+	}
 
 }
 
+public class SamsCar extends Car {
+	
+	public SamsCar(String color,String brand,String yearMake) {
+		super(color,brand,yearMake);
+	}
+	public void update() {
+		super.Tiersupgrade();
+	}
+}
+
+public class AbesCar extends Car {
+	
+	public AbesCar(String color,String brand,String yearMake) {
+		super(color,brand,yearMake);
+	}
+	public void update() {
+		super.Tiersupgrade();
+	}
+
+}
+public class BilsCar extends Car {
+	
+	public BilsCar(String color,String brand,String yearMake) {
+		super(color,brand,yearMake);
+	}
+	public void update() {
+		super.Tiersupgrade();
+	}
+}
 ```
+
+
+What happens if we don't use OOP? 
+We will have to declare all the three attributes again and again in the classes, which is a bad practice.
+
 
 To ensure your code follows opp, you need to use composition over Inheritance to create loosely coupled classes. You should also use objects and interface to create multiple inheritances to save time. Try to avoid using Inheritance only in your code to avoid difficulties when you change your class; remember that in Inheritance, whenever you make changes to the main class, other classes follow.
 
 
-<img src="pic/oop-pet-example.png"/>
 
 In short, OOP is ideal for complex structures which allow you to reuse your code and avoid repetition. You can create classes with specific attributes and methods that have as many instances as you like. 
 
