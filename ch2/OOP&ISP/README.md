@@ -1,4 +1,4 @@
-# Object-Oriented Programming & Interface Segregation Principle
+# Object-Oriented Programming, Principles of OPP & Interface Segregation Principle
 ---
 ## Intro
 In this section, first, we will go over OPP paradigms with examples, the four principles of OPP paradigms with examples. Then will go over Interface Segregation Principle from the five SOLID principles of object-oriented design with examples and the DRY principle with examples.
