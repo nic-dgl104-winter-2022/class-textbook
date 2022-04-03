@@ -164,7 +164,8 @@ then we crated car class which  inheritance from our main class "Vehicle."
 
 ### Abstraction
 #### Defenition: 
-Abstraction is the method of hiding unwanted information
+Encapsulation is defined as the wrapping up of data under a single unit. It is the mechanism that binds together code and the data it manipulates.
+This we can protect the date from outside manipulation 
 
 [Difference between Abstraction and Encapsulation in Java](https://www.geeksforgeeks.org/difference-between-abstraction-and-encapsulation-in-java-with-examples/)
 
@@ -259,8 +260,106 @@ public class Rectangle implements Polygon {
 }
 }
 ```
-Here we defined one method, "Rectangle class" then, inside the class, we made the body of this abstract method.
+Here we defined one method "Rectangle class" then, inside the class, we made the body of this abstract method, and we ended up with two classes, each has their independent methods 
 
+let's see anouther exmple for Payment interface used by an implementation BankPayment in [Interface Segregation Principle in Java](https://www.baeldung.com/java-interface-segregation)
+
+<img src="pic/interface-segregation-principle-ex-1.png"/>
+
+Notice in the class diagram, and referring to the interfaces in the earlier section, that the status() and getPayments() methods are required in both the implementations. On the other hand, initiatePayments() is only required in BankPayment, and the initiateLoanSettlement() and initiateRePayment() methods are only for the LoanPayment.
+
+With that sorted, let's break up the interfaces and apply the Interface Segregation Principle. Thus, we now have a common interface:
+
+
+```
+Java
+
+public interface Payment {
+    Object status();
+    List<Object> getPayments();
+}
+```
+
+And two more interfaces for the two types of payments:
+
+```
+Java
+public interface Bank extends Payment {
+    void initiatePayments();
+}
+```
+
+```
+Java
+public interface Loan extends Payment {
+    void intiateLoanSettlement();
+    void initiateRePayment();
+}
+```
+And the respective implementations, starting with BankPayment:
+
+```
+Java
+public class BankPayment implements Bank {
+
+    @Override
+    public void initiatePayments() {
+        // ...
+    }
+
+    @Override
+    public Object status() {
+        // ...
+    }
+
+    @Override
+    public List<Object> getPayments() {
+        // ...
+    }
+}
+
+```
+And finally, our revised LoanPayment implementation:
+
+```
+Java
+
+
+public class LoanPayment implements Loan {
+
+    @Override
+    public void intiateLoanSettlement() {
+        // ...
+    }
+
+    @Override
+    public void initiateRePayment() {
+        // ...
+    }
+
+    @Override
+    public Object status() {
+        // ...
+    }
+
+    @Override
+    public List<Object> getPayments() {
+        // ...
+    }
+}
+```
+Now, let's review the new class diagram:
+
+
+<img src="pic/interface-segregation-principle-ex-2.png"/>
+
+As we can see, the interfaces don't violate the principle. The implementations don't have to provide empty methods. This keeps the code clean and reduces the chance of bugs.
+
+
+
+Now, let's review the new class diagram:
+
+As we can see, the interfaces don't violate the principle. The implementations don't have to provide empty methods. This keeps the code clean and reduces the chance of bugs.
 
 ## Do Not Repeat Yourself Principle
 #### Definition
