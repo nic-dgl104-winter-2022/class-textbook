@@ -39,7 +39,17 @@ There are several best practices to keep in mind when working with version contr
 Make sure to commit your changes often, and early if appropriate. Keep your commits small and limited to specific groupings of changes relating to a single task. However, don’t commit changes that are unfinished, as they could break the project.
 
 ### Commit Messages
-Write clear, short, and relevant commit messages to accompany your commits. Some organizations have a specific commit message style they want their programmers to adhere to, so find out what your organization prefers and stick to that.
+Write clear, short, and relevant commit messages to accompany your commits. Some organizations have a specific commit message style they want their programmers to adhere to, so find out what your organization prefers and stick to that. The following are examples of good and bad commit messages:
+
+Good Commit Messages:
+`Add background photos to home page`
+`Insert missing href link into header`
+`Update contact us page colours`
+
+Bad Commit Messages:
+`Fix app bug`
+`Solved the problem`
+`I fixed the issue`
 
 ### Testing
 Test your code before you commit! Especially when working in a team, a few lines or broken code can cause big problems for other team members. Make sure to never share untested code with other developers.
