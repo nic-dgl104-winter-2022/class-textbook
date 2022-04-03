@@ -19,6 +19,6 @@
 
 <br>
 
-You've found Chapter 1 of our textbook on App Development! Here, you can learn about crucial topics in development, such as [Style Guides](/ch1/Style%20Guide/README.md), [Naming Conventions](/ch1/Naming%20Conventions/README.md), and [Documentation](/ch1/Documentation/README.md). You'll also find sections talking about [Version Control and GitHub](/ch1/Version%20Control/README.md), and [Program Structure](/ch1/Program%20Structure/README.md). 
+Welcome to Chapter 1! Here, you can learn about crucial foundational topics in app development, such as [Style Guides](/ch1/Style%20Guide/README.md), [Naming Conventions](/ch1/Naming%20Conventions/README.md), and [Documentation](/ch1/Documentation/README.md). You'll also find sections about [Version Control](/ch1/Version%20Control/README.md) and [Program Structure](/ch1/Program%20Structure/README.md). 
 
-After making it through the content in this chapter, you will have a great foundation to start your journey into App Development, and you'll be prepared to build on that foundation while tackling more difficult topics in [Chapter 2](/ch2/README.md). Good luck, and have fun!
+After finishing the content in this chapter, you can expect to have a great foundation to start your journey into App Development. You'll also be prepared to build on that foundation while tackling more difficult topics in [Chapter 2](/ch2/README.md) and beyond. Good luck, and have fun!
