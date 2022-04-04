@@ -4,26 +4,38 @@
 ### TOC
 
 Chapter 4
-
-So, what is refactoring?  
+<h2>What is refactoring?</h2> 
 Simply refactoring is the process of restructuring the code, making it small, and improving it without altering the outcome of the program. If the outcome of the program is the same then why do you have to have a headache about refactoring if it does not have anything about the program. Yes, it does not have anything to do with the output of the program however refactoring is necessary for everyone to be a better developer. Why?  The main goal of refactoring is to make code easier to understand and maintain in the future and avoid technical debt. Sometimes if you write a code for your project or something and you just give poor variables names, bloated classes, functions, and your code is messy then when you come to look at the code later you will be just lost in your own code. Clean code is easier to understand and if you are working in a group that will be easier for yourself and your colleague too. Similarly clean and less code will have fewer bugs and less maintenance tends to pass the tests.
 
-Technical Depth
+<h2>Technical Depth</h2>
 Suppose you wanna buy something but you don’t have money at all and you end up taking a loan from the bank. So now you will be able to purchase with that money but you have to pay the interest and principal back and sometimes you can end up paying more than you are able to and place you in a really bad situation. The exact same thing can happen with your code. You write a code without testing and refactoring and keep on adding new features but at some point it can put you in a situation where it slows your project as you need to test and force you to rewrite code at all.
-Clean code and Dirty code
+
+<h2>Clean code and Dirty code</h2>
+
 Clean code is easier to get and understand.
+
 You can see the differences in the examples below 
+
 if(!foo){
-    foo = 'apple';                  bar(foo || 'apple', kip);
+    foo = 'apple';         bar(foo || 'apple', kip);
   }
   bar(foo, kip);
  
 
-const SALARY = 150000000,      const SALARY = 15e7,
-TAX = 15000000;                  TAX = 15e6;
+    
+TAX = 15000000; <br>
+const SALARY = 150000000,
+
+<br>
+
+The above code can be written as
+
+<br>
+TAX = 15e6; <br>
+const SALARY = 15e7,
  
 
- 
+
 let words = [];
  
 function setWords(...theWords) {
@@ -101,14 +113,24 @@ function showWords (e) {
 }
 
 
-When To Refactor?
+<h2>When To Refactor?</h2>
 Whenever adding new features you should refactor and make sure your existing code and design are good so that it will be easy for writing new code. If you have to deal with somebody else dirty code first try to refactor it so that clean code is easier to get for you. If you have to fix bugs first try to make your code clean by refactoring so the bugs will appear themselves.
 
-Refactoring Principles
+<h2>Refactoring Principles</h2>
 Key things you could focus on while refactoring 
 Removing the duplication as it will make your code smaller by making different functions and strings. Give the proper names to the functions and variables as it will be more specific to understanding the code. Try to make your code small as it will help you to better understand, test and maintenance. Always keep testing frequently as you refactor so that no bugs are introduced and the outcome of the program is not altered.
 
-Refactoring Examples
+<h2>Refactoring Examples</h2>
+
+![image](https://user-images.githubusercontent.com/90713152/161491787-61a3f756-531f-4dde-8ab6-ec0cad42b81c.png)
+
+
+The above code can be refactored as-
+
+
+![image](https://user-images.githubusercontent.com/90713152/161491899-17e7ca58-352f-4adc-808a-1994a1dff721.png)
+
+
 
 
 
@@ -119,12 +141,12 @@ Refactoring Examples
    
                                
 If (isSpecialDeal()) {                                                        If (isSpecialDeal()) {      
-   total = price * 1 ;      total = price * 1;    
-   send();    }
-}            else {
-else {       total = price * 1.5;
-   total = price * 1.5;    }
-   send();    send();
+   total = price * 1 ;                                                           total = price * 1;    
+   send();                                                                     }
+}                                                                             else {
+else {                                                                            total = price * 1.5;
+   total = price * 1.5;                                                        }                                                      
+   send();                                                                    send();
 }
  
 Try to give specific names to your functions, methods, variables related to its purpose
@@ -187,7 +209,7 @@ Now that you’re familiarized with some of the best practices in refactoring, a
 
 
 
-Common Code Issues - Ryan Stich
+<h2>Common Code Issues - Ryan Stich</h2>
 
 Now that you’ve got some insight regarding issues that can occur as a programmer, it’s time to dive into the most common code issues that we as developers can encounter while on the job. As you’ve learned previously through the study of debugging and introduction to refactoring, you’re probably familiar with how these issues can start, and snowball over time. When it comes to refactoring we often are not aiming to fix mistakes, that comes in the debugging process. The majority of code issues usually stem from things such as incorrect variables names, poor code structure, and of course undocumented code.
 
@@ -250,7 +272,7 @@ Given those three sections, if you had chosen anything outside of code block #2,
 We all desire to write the perfect code that follows all best practices and of course, is bug-free, but the reality of the engineering code is that just simply isn't possible as human error will forever be unavoidable. But one thing that can assist us in our process, especially when we’re working in teams can be design patterns. Design patterns enable us to implement tried and true solutions to common problems that other developers have faced and overcome. Implementing well-documented solutions, allows us to inch our code closer to that perfect code we’re all aiming for. This is something you’ll learn more about in chapter 7. So until then, we’ll just be focusing on the next section which is a step-by-step guide on how to refactor. 
 
 
-Code Review
+<>h2Code Review</h2>
 
 As part of the refactoring process, code review is an essential part of software
 development. When refactoring, you do not want to accidentally change the function of
