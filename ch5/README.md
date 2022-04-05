@@ -7,6 +7,7 @@
 ### Table of Contents
 * [Introduction](https://github.com/nic-dgl104-winter-2022/class-textbook/blob/main/ch5/README.md#introduction)
 * [Testing Principles](https://github.com/nic-dgl104-winter-2022/class-textbook/blob/main/ch5/README.md#testing-principles)
+by Ma. Katrina P. Magsakay
     1. [Testing Shows the Presence of Defects, Not Their Absence](https://github.com/nic-dgl104-winter-2022/class-textbook/blob/main/ch5/README.md#1-testing-shows-the-presence-of-defects-not-their-absence)
     2. [Exhaustive Testing is Impossible](https://github.com/nic-dgl104-winter-2022/class-textbook/blob/main/ch5/README.md#2-exhaustive-testing-is-impossible)
     3. [Early Testing Saves Time and Money](https://github.com/nic-dgl104-winter-2022/class-textbook/blob/main/ch5/README.md#3-early-testing-saves-time-and-money)
@@ -15,6 +16,7 @@
     6. [Testing is Context Dependent](https://github.com/nic-dgl104-winter-2022/class-textbook/blob/main/ch5/README.md#6-testing-is-context-dependent)
     7. [Absence of Errors Fallacy](https://github.com/nic-dgl104-winter-2022/class-textbook/blob/main/ch5/README.md#7-absence-of-errors-fallacy)
 * [How To Decide What To Test And When](https://github.com/nic-dgl104-winter-2022/class-textbook/blob/main/ch5/README.md#how-to-decide-what-to-test-and-when)
+by Brian Massick
     1. [When To Start Testing](https://github.com/nic-dgl104-winter-2022/class-textbook/blob/main/ch5/README.md#1-when-to-start-testing)
     2. [What Should I Test](https://github.com/nic-dgl104-winter-2022/class-textbook/blob/main/ch5/README.md#2-what-should-i-test)
     3. [Testing With An Emulator VS A Real Device](https://github.com/nic-dgl104-winter-2022/class-textbook/blob/main/ch5/README.md#3-testing-with-an-emulator-vs-a-real-device)
