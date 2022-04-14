@@ -8,7 +8,7 @@ Platform programming is known as the 'setting' or environment where developed so
 
 No matter what the platform is, a good developer should be able to produce code for a platform given that the necessary knowledge resources are provided for it. A quote that I particularly like is, "A good artist should be familiar with a variety of mediums, and should still produce great work if they were working with crayons or paints". This came from a comparison of modeling software, but the same applies to programming; while platforms have tools others may not, a good programmer would meet these challenges and still be able to produce software that accomplishes the task at hand.
 
-All of the functionality you may expect from developing for a phone may not be present the same way it would be for developing a car's android interface, even if they have similar architecture. At the same time, there may be features involved in the car's platform that may not be present in others, which would assist the development process otherwise.
+All of the functionality you may expect from developing for a phone may not be present the same way it would be for developing a car's Android interface, even if they have similar architecture. At the same time, there may be features involved in the car's platform that may not be present in others, which would assist the development process otherwise.
 
 ## Cross Platform Development
 
