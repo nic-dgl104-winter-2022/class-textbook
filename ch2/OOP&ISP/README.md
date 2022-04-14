@@ -1,76 +1,62 @@
 # Object-Oriented Programming, Principles of OPP & Interface Segregation Principle
 ---
 ## Intro
-In this section, first, we will go over OPP paradigms with examples, the four principles of OPP paradigms with examples. Then will go over Interface Segregation Principle from the five SOLID principles of object-oriented design with examples and the DRY principle with examples.
+In this section, first, we will go over Object-Oriented Programming (OPP) paradigms with examples, the four principles of OPP paradigms with examples. Then will go over Interface Segregation Principle from the five SOLID principles of object-oriented design with examples and the DRY principle with examples.
 
 
 ## OOP paradigms
-#### Definition 
+### Definition 
 >Object Oriented programming (OOP) is a programming paradigm that relies on the concept of classes and objects. 
 It is used to structure a software program into simple, reusable pieces of code blueprints (usually called classes), 
 which are used to create individual instances of objects. 
-There are many object-oriented programming languages, including JavaScript, C++, Java, and Python.
+There are many object-oriented programming languages, including JavaScript, C++, Java, and Python ([What is object-oriented programming? OOP explained in-depth By Erin Doherty](https://www.educative.io/blog/object-oriented-programming)).
 
-[What is object-oriented programming? OOP explained in-depth By Erin Doherty](https://www.educative.io/blog/object-oriented-programming) 
-
-#### Example
+### Example
 <img src="pic/oop-car-example.png"/>
 
-
 Here I'll explain the OOP concept through inheritance. 
-This code saves our time and allows you to reuse your code and avoid reputation,
+This code saves our time and allows you to reuse your code and avoid repetition,
 we extended the Car class attributes/methods that we need for SamsCar, AbesCar, BilsCar classes 
 
 
-```
-Java
-
+```Java
 public class Car {
-	
-	private String color,brand,yearMake;
-	
-	public Car(String color,String brand,String yearMake) {
-		
+	private String color, brand, yearMake;
+	public Car(String color, String brand, String yearMake) {
 		this.color=color;
 		this.brand=brand;
 		this.yearMake=yearMake;
 	}
 	public void repaint() {
-		
 	}
-	public void Tiersupgrade() {
-		
+	public void tireUpgrade() {
 	}
-
 }
 
 public class SamsCar extends Car {
-	
-	public SamsCar(String color,String brand,String yearMake) {
+	public SamsCar(String color, String brand, String yearMake) {
 		super(color,brand,yearMake);
 	}
 	public void update() {
-		super.Tiersupgrade();
+		super.tireUpgrade();
 	}
 }
 
 public class AbesCar extends Car {
-	
-	public AbesCar(String color,String brand,String yearMake) {
+	public AbesCar(String color, String brand, String yearMake) {
 		super(color,brand,yearMake);
 	}
 	public void update() {
-		super.Tiersupgrade();
+		super.tireUpgrade();
 	}
 
 }
 public class BilsCar extends Car {
-	
-	public BilsCar(String color,String brand,String yearMake) {
+	public BilsCar(String color, String brand, String yearMake) {
 		super(color,brand,yearMake);
 	}
 	public void update() {
-		super.Tiersupgrade();
+		super.tireUpgrade();
 	}
 }
 ```
@@ -80,305 +66,137 @@ What happens if we don't use OOP?
 We will have to declare all the three attributes again and again in the classes, which is a bad practice.
 
 
-To ensure your code follows opp, you need to use composition over Inheritance to create loosely coupled classes. You should also use objects and interface to create multiple inheritances to save time. Try to avoid using Inheritance only in your code to avoid difficulties when you change your class; remember that in Inheritance, whenever you make changes to the main class, other classes follow.
+To ensure your code follows opp, you need to use composition over Inheritance to create loosely coupled classes. You should also use objects and interface to create multiple inheritances to save time. Try to avoid using only inheritance in your code to avoid difficulties when you change your class; remember that in inheritance, whenever you make changes to the main class, other classes follow.
 
 
 
 In short, OOP is ideal for complex structures which allow you to reuse your code and avoid repetition. You can create classes with specific attributes and methods that have as many instances as you like. 
 
-#### Why you should use OOP
-- [x] :one: OOP will help you simplify your complex structure 
-- [x] :two: You can use it across programs
-- [x] :three: You can set class-specific behavior through polymorphism 
-- [x] :four: It will make debugging a braze 
+### Why you should use OOP
+- OOP will help you simplify your complex structure 
+- You can use it across programs
+- You can set class-specific behavior through polymorphism 
+- It will make debugging a braze 
 
 
-### Principles of OOP
-Object-oriented programs have four principles: Inheritance, Encapsulation, Abstraction, and Polymorphism.
+## Principles of OOP
+Object-oriented programs have four principles: inheritance, encapsulation, abstraction, and polymorphism.
 
 ### Inheritance
-#### Defenition: 
+#### Definition: 
 Inheritance is the procedure in which one class inherits the attributes and methods of another class. 
 
 #### Why should you use Inheritance? 
-- [x] :one: You will be able to reuse your code 
-- [x] :two: Your code will be highly readable 
+- You will be able to reuse your code 
+- Your code will be highly readable 
 
-[Inheritance in Java Programming](https://beginnersbook.com/2013/03/inheritance-in-java/)
+[Source: Inheritance in Java Programming](https://beginnersbook.com/2013/03/inheritance-in-java/)
 
 
 ### Encapsulation
-#### Defenition: 
+#### Definition: 
 Encapsulation is a method to hide the data in a single entity or unit along with a method to protect information from outside. 
-[Encapsulation in Java](https://www.scientecheasy.com/2020/07/encapsulation-in-java.html/#:~:text=Every%20Java%20class%20is%20an,encapsulates%20several%20combinations%20of%20medicine.)
+[Source: Encapsulation in Java](https://www.scientecheasy.com/2020/07/encapsulation-in-java.html/#:~:text=Every%20Java%20class%20is%20an,encapsulates%20several%20combinations%20of%20medicine.)
 
 #### Why should you use Encapsulation? 
-- [x] :one: Help you maintain your code 
-- [x] :two: Increases your code usability
-- [x] :three: Change your code independently whenever needed 
+- Help you maintain your code 
+- Increases your code usability
+- Change your code independently whenever needed 
 
 
 #### Example (Inheritance + Encapsulation): 
 
 Let's see how both Inheritance and Encapsulation will translate in our code example. 
 
-```
-Java
-
+```Java
 public class Vehicle {
-private String color, model;  
-public Vehicle(String color,String model) {
-	this.color=color;
-	this.model=model;
+	private String color, model;  
+	public Vehicle(String color, String model) {
+		this.color=color;
+		this.model=model;
+	}
+	public String getColor() {
+		return color;
+	}
+	public void setColor(String color) {
+		this.color = color;
+	}
+	public String getModel() {
+		return model;
+	}
+	public void setModel(String model) {
+		this.model = model;
+	}
+	public void printDetails() {
+		System.out.println("Color: "+this.color+"\n"+"Model: "+this.model);	
+	}
 }
-public String getColor() {
-	return color;
-}
-public void setColor(String color) {
-	this.color = color;
-}
-public String getModel() {
-	return model;
-}
-public void setModel(String model) {
-	this.model = model;
-}
-public void printdetails() {
-	System.out.println("Color: "+this.color+"\n"+"Model: "+this.model);
-}
-}}
 
 public class Car extends Vehicle { 
-public Car(int speed,String color,String model) {
-	super(color,model);
+	public Car(int speed,String color,String model) {
+		super(color,model);
+	}
+	public void carDetails() {
+	super.printDetails();
+	}
 }
-public void carDetails() {
-	super.printdetails();
-}}
 ```
 
-First, we used Encapsulation to protect the data so the user can't access them directly when we declared our value as private, 
-then we crated car class which  inheritance from our main class "Vehicle."
+First, we used encapsulation to protect the data so the user can't access them directly when we declared our value as `private`, 
+then we crated car class which inherits from our main class `Vehicle`.
 
 
 
 ### Abstraction
-#### Defenition: 
+#### Definition: 
 Encapsulation is defined as the wrapping up of data under a single unit. It is the mechanism that binds together code and the data it manipulates.
-This we can protect the date from outside manipulation 
-
-[Difference between Abstraction and Encapsulation in Java](https://www.geeksforgeeks.org/difference-between-abstraction-and-encapsulation-in-java-with-examples/)
+This we can protect the date from outside manipulation [Difference between Abstraction and Encapsulation in Java](https://www.geeksforgeeks.org/difference-between-abstraction-and-encapsulation-in-java-with-examples/).
 
 #### Why should you use Abstraction? 
-- [x] :one:  Reduce your code complexity
-- [x] :two: Increase your application security by providing important details only to users 
-- [x] :three: Write your code once & avoid repetition 
+- Reduce your code complexity
+- Increase your application security by providing important details only to users 
+- Write your code once & avoid repetition 
 
 
 ### Polymorphism
-#### Defenition: 
-Polymorphism means "many forms," It occurs when we have many classes related to each other by Inheritance. 
+#### Definition: 
+Polymorphism means "many forms," It occurs when we have many classes related to each other by inheritance. 
 
 
 #### Why should you use polymorphism? 
-- [x] :one: Type your code once and reuse it as much you like 
-- [x] :two: Makes debug easier 
-- [x] :three: Store multiple data types in a single variable 
-
-#### Summery  
-- [x] :one: OOP relies on the concept of classes and objects 
-- [x] :two: OOP is used to structure a software program into simple, reusable pieces of code 
-- [x] :three: JavaScript, C++, Java, and Python are examples of OOP programming languages 
-- [x] :four: OOP has four principles Inheritance, Encapsulation, Abstraction, and, Polymorphism 
+- Type your code once and reuse it as much you like 
+- Makes debugging easier 
+- Store multiple data types in a single variable 
 
 #### Example (Abstraction + Polymorphism): 
 
-```
-Java
-
+```Java
 public abstract class Animal {
 	public abstract void chooseColor(String color);
-}}
+}
+
 public class Cat extends Animal{
 	@override
-public void chooseColor(String color) {
-	System.out.println("Cat chosen color: "+color);
-}
-	//overloading
-public void chooseColor(String color, String color2) {
-	System.out.println("Cat first chosen colors is: "+color);
-	System.out.println("Cat second chosen colors is: "+color2);	
-}
-}
-
-```
-
-To put abstraction polymorphism into code, we crated animal class which we defined as an abstract method
-after that extended the cat class to Animal class 
-then we override the method, and in Cat class, so the same method chooseColor now gives us two methods  
-
-
-
-## Interface Segregation Principle     
-
-#### Definition 
-In the field of software engineering, the interface segregation principle states that no code should be forced to depend on methods it does not use. 
-[Wikipedia](https://en.wikipedia.org/wiki/Interface_segregation_principle)
-
-It's also one of the five SOLID principles of object-oriented design.
-
-
-#### What's the benefit of the Interface Segregation Principle?
-- [x] :one: Increase your code readability
-- [x] :two: Increase the maintainability of your code 
-
-#### Tips to help you follow the Interface Segregation Principle 
-- [x] :one: Spend some time in the design phase constricting your application 
-- [x] :two: Avoid using one large interface for your application 
-- [x] :three: Brake off application interface into smaller groups 
-
-
-#### Example
-
-```
-Java
-
-public interface Polygon {
-	abstract String getColor();
-	//default method
-	default void getSameColor(){
-	System.out.println("Polygon color is red and I will get color of polygon");
-}}
-
-public class Rectangle implements Polygon {
-	private String color;
-	public Rectangle(String color) {
-	this.color=color;
-}
-	public String getColor() {
-	return this.color;
-}
-}
-```
-Here we defined one method "Rectangle class" then, inside the class, we made the body of this abstract method, and we ended up with two classes, each has their independent methods 
-
-let's see anouther exmple for Payment interface used by an implementation BankPayment in [Interface Segregation Principle in Java](https://www.baeldung.com/java-interface-segregation)
-
-<img src="pic/interface-segregation-principle-ex-1.png"/>
-
-Notice in the class diagram, and referring to the interfaces in the earlier section, that the status() and getPayments() methods are required in both the implementations. On the other hand, initiatePayments() is only required in BankPayment, and the initiateLoanSettlement() and initiateRePayment() methods are only for the LoanPayment.
-
-With that sorted, let's break up the interfaces and apply the Interface Segregation Principle. Thus, we now have a common interface:
-
-
-```
-Java
-
-public interface Payment {
-    Object status();
-    List<Object> getPayments();
-}
-```
-
-And two more interfaces for the two types of payments:
-
-```
-Java
-public interface Bank extends Payment {
-    void initiatePayments();
-}
-```
-
-```
-Java
-public interface Loan extends Payment {
-    void intiateLoanSettlement();
-    void initiateRePayment();
-}
-```
-And the respective implementations, starting with BankPayment:
-
-```
-Java
-public class BankPayment implements Bank {
-
-    @Override
-    public void initiatePayments() {
-        // ...
-    }
-
-    @Override
-    public Object status() {
-        // ...
-    }
-
-    @Override
-    public List<Object> getPayments() {
-        // ...
-    }
+	public void chooseColor(String color) {
+		System.out.println("Cat chosen color: "+color);
+	}
+		//overloading
+	public void chooseColor(String color, String color2) {
+		System.out.println("Cat first chosen colors is: "+color);
+		System.out.println("Cat second chosen colors is: "+color2);	
+	}
 }
 
 ```
-And finally, our revised LoanPayment implementation:
 
-```
-Java
-
-
-public class LoanPayment implements Loan {
-
-    @Override
-    public void intiateLoanSettlement() {
-        // ...
-    }
-
-    @Override
-    public void initiateRePayment() {
-        // ...
-    }
-
-    @Override
-    public Object status() {
-        // ...
-    }
-
-    @Override
-    public List<Object> getPayments() {
-        // ...
-    }
-}
-```
-Now, let's review the new class diagram:
-
-
-<img src="pic/interface-segregation-principle-ex-2.png"/>
-
-As we can see, the interfaces don't violate the principle. The implementations don't have to provide empty methods. This keeps the code clean and reduces the chance of bugs.
+To put abstraction polymorphism into code, we crated animal class which we defined as an `abstract` method
+after that extended the `Cat` class to `Animal` class 
+then we override the method, and in `Cat` class, so the same method `chooseColor` now gives us two methods. 
 
 
 
-Now, let's review the new class diagram:
-
-As we can see, the interfaces don't violate the principle. The implementations don't have to provide empty methods. This keeps the code clean and reduces the chance of bugs.
-
-## Do Not Repeat Yourself Principle
-#### Definition
-> "Don't repeat yourself" is a principle of software development aimed at reducing the repetition of software patterns, replacing them with abstractions, or using data normalization to avoid redundancy. 
-[Wikipedia](https://en.wikipedia.org/wiki/Don't_repeat_yourself)
-
-In short, you should avoid copying your code, and if you find yourself doing so, take a look back on
-your code structure and see what you can improve following the dry principle 
-
-#### Example
-
-A good example of a dry concept is what we used in the "inheritance" example earlier to avoid repetition, which will essentially make debugging easier. 
-
-
-#### Why use the DRY concept when coding?
-- [x] :one: Reduce workload by reducing unnecessary code 
-- [x] :two: Maintain and debug your code easily 
-- [x] :three: Avoid technical debt 
-
-#### Tips to help you follow the DRY principle 
-- [x] :one: Avoid writing lengthy codes; instead, build your code in smaller reusable units 
-- [x] :two: Establish your code logic first to help with your code writing process 
+## Summary  
+- OOP relies on the concept of classes and objects 
+- OOP is used to structure a software program into simple, reusable pieces of code 
+- JavaScript, C++, Java, and Python are examples of OOP programming languages 
+- OOP has four principles Inheritance, Encapsulation, Abstraction, and, Polymorphism 
